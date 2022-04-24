@@ -1,17 +1,37 @@
-import React, { useState } from "react";
+import * as React from "react";
 import { View, Stack, Input, Button, Text } from "native-base";
 // import errorMessages from "../errorMessages/errorMessages";
 
-const FormInputs = () => {
-    const [name, setName] = useState();
-    const [nameError, setNameError] = useState();
+const FormInputs = (navigation) => {
+    const [name, setName] = React.useState("");
+    const [nameError, setNameError] = React.useState("");
+
+    const [age, setAge] = React.useState("");
+    const [ageError, setAgeError] = React.useState("");
+
+    const [password, setPassword] = React.useState("");
+    const [passwordError, setPasswordError] = React.useState("");
+
+    // const numbers = /^[-+]?[0-9]+$/;
+
     const signIn = () => {
-       if(name!="") {
-           setNameError("");
-           alert(name);
-       }else {
-           setNameError("To pole nie może być puste!");
-       }
+        if (name != "") {
+            setNameError("");
+        } else {
+            setNameError("Field name cannot be empty!");
+        }
+        if (age != "") {
+            setAgeError("");
+        } else {
+            setAgeError("Field age cannot be empty!");
+        }
+        if (password != "") {
+            setPasswordError("");
+            console.log(name, age, password);
+            alert(name + age + password);
+        } else {
+            setPasswordError("Field password cannot be empty!");
+        }
     }
     return (
         <>
@@ -20,7 +40,7 @@ const FormInputs = () => {
                 marginTop={-10}
                 marginLeft={10}
                 marginBottom={10}
-                space={0} 
+                space={0}
                 w="75%"
                 maxW="full"
             >
@@ -30,14 +50,14 @@ const FormInputs = () => {
                     variant="underlined"
                     placeholder="Your Name"
                     value={name}
-                    onChangeText={(nothing) => setName(nothing)}
+                    onChangeText={(text) => setName(text)}
                     onChange={() => setNameError("")}
                 />
                 <Text
                     padding={1}
                     color="red.600"
                 >
-                {nameError}
+                    {nameError}
                     {/* To pole nie może być puste! */}
                 </Text>
                 <Input
@@ -45,11 +65,14 @@ const FormInputs = () => {
                     fontSize="md"
                     variant="underlined"
                     placeholder="Your Age"
+                    onChangeText={(text) => setAge(text)}
+                    onChange={() => setAgeError("")}
                 />
-                 <Text
+                <Text
                     padding={1}
                     color="red.600"
                 >
+                    {ageError}
                     {/* To pole nie może być puste! */}
                 </Text>
                 <Input
@@ -57,11 +80,14 @@ const FormInputs = () => {
                     fontSize="md"
                     variant="underlined"
                     placeholder="Your Password"
+                    onChangeText={(text) => setPassword(text)}
+                    onChange={() => setPasswordError("")}
                 />
-                 <Text
+                <Text
                     padding={1}
                     color="red.600"
                 >
+                    {passwordError}
                     {/* To pole nie może być puste! */}
                 </Text>
             </Stack>

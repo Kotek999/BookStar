@@ -2,13 +2,27 @@ import React from "react";
 import { NativeBaseProvider } from "native-base";
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Button, Text } from "native-base";
 import Home from './src/home/home';
+import UserProfile from "./src/userProfile/userProfile";
 
-function HomeScreen() {
+const HomeScreen = ({ navigation }) => {
   return (
-      <Home/>
+    <>
+      <Home />
+      <Button
+        title="Go to Your profile"
+        onPress={() =>
+          navigation.navigate('UserProfile', { name: 'Roman' })
+        }
+      />
+    </>
   );
 }
+
+const ProfileScreen = ({ navigation, route }) => {
+  return <Text>This is {route.params.name} profile</Text>
+};
 
 const Stack = createNativeStackNavigator();
 
@@ -17,17 +31,18 @@ function App() {
     <NavigationContainer>
       <NativeBaseProvider>
         {/* <Center flex={1} px="6" backgroundColor={"rgb(201, 125, 71).500"}> */}
-        <Stack.Navigator 
+        <Stack.Navigator
           initialRouteName="Home"
         >
-          <Stack.Screen 
+          <Stack.Screen
             name="Home"
-            component={HomeScreen} 
+            component={HomeScreen}
             options={{
               title: "My Home",
               headerShown: false,
             }}
           />
+          <Stack.Screen name="UserProfile" component={ProfileScreen} />
         </Stack.Navigator>
         {/* </Center> */}
       </NativeBaseProvider>

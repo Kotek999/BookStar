@@ -1,6 +1,6 @@
 import React from "react";
 import { Dimensions, ImageBackground } from "react-native";
-import { View, Text, ScrollView } from "native-base";
+import { View, Text, ScrollView, Button } from "native-base";
 // import Icon from 'react-native-vector-icons/Ionicons';
 import FormInputs from "../common/formInputs/formInputs";
 
@@ -52,8 +52,8 @@ const Home = () => {
                 >
                     Welcome on Login Page
                 </Text>
-                </View>
-                <FormInputs />
+            </View>
+            <FormInputs />
         </ScrollView>
     );
 };
