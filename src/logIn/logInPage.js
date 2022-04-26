@@ -4,7 +4,7 @@ import { View, Text, ScrollView, Button } from "native-base";
 // import Icon from 'react-native-vector-icons/Ionicons';
 import FormInputs from "../common/formInputs/formInputs";
 
-const Home = () => {
+const LogInPage = () => {
     return (
         <ScrollView
             flex={1}
@@ -58,4 +58,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default LogInPage;
