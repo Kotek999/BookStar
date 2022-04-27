@@ -3,6 +3,7 @@ import routes from '../routing/routes';
 import { Dimensions, ImageBackground, Image } from "react-native";
 import { View, Text, ScrollView, Button } from "native-base";
 import logoNativeBase from '../images/nativebaseLogoImage.png';
+import BuildingAFormExample from '../test/test';
 
 const HomeScreen = (props) => {
 
@@ -28,8 +29,8 @@ const HomeScreen = (props) => {
                 alignContent="center"
             >
                 <View
-                    width={300}
-                    height={200}
+                    width="300px"
+                    height="300px"
                 >
                     <Image
                         source={logoNativeBase}
@@ -37,6 +38,7 @@ const HomeScreen = (props) => {
                         resizeMode="contain"
                     />
                 </View>
+                {/* <BuildingAFormExample /> */}
                 <Text
                     margin={8}
                     fontSize={20}

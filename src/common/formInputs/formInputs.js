@@ -1,40 +1,42 @@
 import * as React from "react";
-import { View, Stack, Input, Button, Text } from "native-base";
+import { View, Stack, Input, Button, Text, FormControl } from "native-base";
 // import errorMessages from "../errorMessages/errorMessages";
 
-const FormInputs = (navigation) => {
-    const [name, setName] = React.useState("");
-    const [nameError, setNameError] = React.useState("");
 
-    const [age, setAge] = React.useState("");
-    const [ageError, setAgeError] = React.useState("");
+const FormInputs = () => {
 
-    const [password, setPassword] = React.useState("");
-    const [passwordError, setPasswordError] = React.useState("");
+    const [values, setValues] = React.useState({
+        name: "",
+        age: "",
+        password: "",
+    });
+
+    const [submitted, setSubmitted] = React.useState(false);
+    const [valid, setValid] = React.useState(false);
+
+    const handleNameInputChange = (e) => {
+        setValues({ ...values, name: e.target.value })
+    }
+    const handleAgeInputChange = (e) => {
+        setValues({ ...values, age: e.target.value })
+    }
+    const handlePasswordInputChange = (e) => {
+        setValues({ ...values, password: e.target.value })
+    }
+
+    const handleSignIn = (e) => {
+        e.preventDefault();
+        if (values.name && values.age && values.password) {
+            setValid(true);
+        }
+        setSubmitted(true);
+    }
 
     // const numbers = /^[-+]?[0-9]+$/;
 
-    const signIn = () => {
-        if (name != "") {
-            setNameError("");
-        } else {
-            setNameError("Field name cannot be empty!");
-        }
-        if (age != "") {
-            setAgeError("");
-        } else {
-            setAgeError("Field age cannot be empty!");
-        }
-        if (password != "") {
-            setPasswordError("");
-            console.log(name, age, password);
-            alert(name + age + password);
-        } else {
-            setPasswordError("Field password cannot be empty!");
-        }
-    }
     return (
-        <>
+        <View>
+            {submitted && valid ? <Text>coś</Text> : null}
             <Stack
                 justifyContent="center"
                 marginTop={-10}
@@ -49,54 +51,65 @@ const FormInputs = (navigation) => {
                     fontSize="md"
                     variant="underlined"
                     placeholder="Your Name"
-                    value={name}
-                    onChangeText={(text) => setName(text)}
-                    onChange={() => setNameError("")}
+                    name="name"
+                    disabled={submitted}
+                    marginBottom={2}
+                    value={values.name}
+                    onChange={handleNameInputChange}
+                
                 />
-                <Text
-                    padding={1}
-                    color="red.600"
-                >
-                    {nameError}
-                    {/* To pole nie może być puste! */}
-                </Text>
+                {submitted && !values.name ?
+                    <Text
+                        padding={1}
+                        color="red.600"
+                    >
+                        Field name cannot be empty!
+
+                    </Text>
+                    : null}
                 <Input
                     type="number"
                     fontSize="md"
                     variant="underlined"
                     placeholder="Your Age"
-                    onChangeText={(text) => setAge(text)}
-                    onChange={() => setAgeError("")}
+                    name="age"
+                    marginBottom={2}
+                    value={values.age}
+                    onChange={handleAgeInputChange}
                 />
-                <Text
-                    padding={1}
-                    color="red.600"
-                >
-                    {ageError}
-                    {/* To pole nie może być puste! */}
-                </Text>
+                {submitted && !values.age ?
+                    <Text
+                        padding={1}
+                        color="red.600"
+                    >
+                        Field age cannot be empty!
+                    </Text>
+                    : null}
                 <Input
                     type="password"
                     fontSize="md"
                     variant="underlined"
                     placeholder="Your Password"
-                    onChangeText={(text) => setPassword(text)}
-                    onChange={() => setPasswordError("")}
+                    name="password"
+                    marginBottom={2}
+                    value={values.password}
+                    onChange={handlePasswordInputChange}
                 />
-                <Text
-                    padding={1}
-                    color="red.600"
-                >
-                    {passwordError}
-                    {/* To pole nie może być puste! */}
-                </Text>
+                {submitted && !values.password ?
+                    <Text
+                        padding={1}
+                        color="red.600"
+                    >
+                        Field password cannot be empty!
+                    </Text>
+                    : null}
             </Stack>
             <View
                 alignContent="center"
                 alignItems="center"
             >
                 <Button
-                    onPress={signIn}
+                    onPress={handleSignIn}
                     flex={1}
                     variant="solid"
                     size="lg"
@@ -107,7 +120,7 @@ const FormInputs = (navigation) => {
                     Sign In
                 </Button>
             </View>
-        </>
+        </View>
     );
 };
 
