@@ -3,14 +3,13 @@ import routes from '../routing/routes';
 import { Dimensions, ImageBackground, Image } from "react-native";
 import { View, Text, ScrollView, Button } from "native-base";
 import logoNativeBase from '../images/nativebaseLogoImage.png';
-import BuildingAFormExample from '../test/test';
 
 const HomeScreen = (props) => {
 
     const DimensionsHeight = Dimensions.get('window').height
     const DimensionsWidth = Dimensions.get('window').width
 
-    const onClickGoToLogIn = () => props.navigation.navigate(routes.LogInPage)
+    const onClickGoToLogIn = () => props.navigation.navigate(routes.BooksChoice)
 
 
     return (
@@ -38,7 +37,7 @@ const HomeScreen = (props) => {
                         resizeMode="contain"
                     />
                 </View>
-                {/* <BuildingAFormExample /> */}
+
                 <Text
                     margin={8}
                     fontSize={20}

@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import routes from "./src/routing/routes";
 import LogInPageRoute from "./src/Routes/logInPageRoute";
 import HomeScreen from "./src/homeScreenPage/homeScreen";
+import booksRoute from "./src/Routes/booksRoute";
 
 
 const Stack = createNativeStackNavigator();
@@ -63,9 +64,13 @@ function rootRouter(props) {
                 name="Main"
                 children={() => <MainStackScreen />}
             />
-            <RootStack.Screen 
+            {/* <RootStack.Screen 
                 name={routes.LogInPage}
                 component={LogInPageRoute}
+            /> */}
+            <RootStack.Screen 
+                name={routes.BooksChoice}
+                component={booksRoute}
             />
         </RootStack.Navigator>
         
