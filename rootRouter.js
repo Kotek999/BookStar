@@ -24,23 +24,8 @@ function MainStackScreen() {
                 //  header
               } 
           }
-          initialRouteName={routes.Start}
+          initialRouteName={routes.HomeScreen}
         >
-            <Stack.Screen
-                name={routes.Start}
-                options={{
-                    headerShown: false,
-                    headerStyle: {
-                        backgroundColor: "#fff",
-                    },
-                    headerTintColor: "#000",
-                    headerTitleStyle: {
-                        fontWeight: "bold",
-                    },
-                    ...stylesForOptions,
-                }}
-                component={HomeScreen}
-            />
           {/* <Stack.Screen
             name="Home"
             component={HomeScreen}
@@ -60,9 +45,20 @@ function rootRouter(props) {
       <NativeBaseProvider>
         {/* <Center flex={1} px="6" backgroundColor={"rgb(201, 125, 71).500"}> */}
         <RootStack.Navigator mode="modal" headerMode="none">
-            <RootStack.Screen 
-                name="Main"
-                children={() => <MainStackScreen />}
+        <RootStack.Screen
+                name={routes.HomeScreen}
+                options={{
+                    headerShown: true,
+                    headerStyle: {
+                        backgroundColor: "#fff",
+                    },
+                    headerTintColor: "#000",
+                    headerTitleStyle: {
+                        fontWeight: "bold",
+                    },
+                    ...stylesForOptions,
+                }}
+                component={HomeScreen}
             />
             {/* <RootStack.Screen 
                 name={routes.LogInPage}
@@ -70,6 +66,11 @@ function rootRouter(props) {
             /> */}
             <RootStack.Screen 
                 name={routes.BooksChoice}
+                options={{
+                  headerTitleStyle: {
+                    fontWeight: "bold",
+                  }
+                }}  
                 component={booksRoute}
             />
         </RootStack.Navigator>
