@@ -13,13 +13,15 @@ import {
 } from "native-base";
 import logoNativeBase from '../images/nativebaseLogoImage.png';
 import { LinearGradient } from 'expo-linear-gradient';
+import RightArrowIconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import { data } from './data';
 
-const Books = (props) => {
+const Welcome = (props) => {
 
     const DimensionsHeight = Dimensions.get('window').height
     const DimensionsWidth = Dimensions.get('window').width
 
-    // const onClickGoToLogIn = () => props.navigation.navigate(routes.LogInPage)
+    const onClickGoToBooksChoice = () => props.navigation.navigate(routes.BooksChoice)
 
 
     return (
@@ -49,38 +51,43 @@ const Books = (props) => {
                             resizeMode="contain"
                         />
                     </View> */}
+                    <LinearGradient
+                        colors={['#272ba1', '#373837', '#373837']}
 
-                    <Box>
-                        <Heading 
-                            size="xl" 
-                            mb="4"
-                            color="white"
-                        >
-                            Witamy
-                        </Heading>
-                        <Text 
-                        margin={0}
-                        color="white"
-                        fontWeight="bold"
-                        fontSize="xl">
-                            Dobrze wiemy jak trudne są przygotowania do matury z polskiego.
-                            Chcemy Tobie w tym pomóc, dlatego Nasza aplikacja to baza wiedzy 
-                            lektur z gwiazdką. 
-                        </Text>
-                    </Box>
-
-                    <Text
-                        margin={8}
-                        fontSize={16}
-                        color="white"
-                        fontWeight="bold"
-                        textAlign="center"
                     >
-                        Books
-                    </Text>
-
+                        <Box
+                            margin={0}
+                            padding={7}
+                            borderColor="white"
+                            borderWidth={0}
+                            width={DimensionsWidth}
+                            height={DimensionsHeight / 3.3}
+                            shadowColor="white"
+                            shadowOpacity={0.1}
+                            shadowRadius={10}
+                        >
+                            <Heading
+                                size="xl"
+                                mb="4"
+                                color="white"
+                                margin={0}
+                                padding={0}
+                            >
+                                {data.title}
+                            </Heading>
+                            <Text
+                                margin={0}
+                                padding={0}
+                                color="white"
+                                fontWeight="bold"
+                                fontSize="lg">
+                                {data.content}
+                            </Text>
+                        </Box>
+                    </LinearGradient>
                     <Button
-                        // onPress={onClickGoToLogIn}
+                        onPress={onClickGoToBooksChoice}
+                        margin={20}
                         width={DimensionsWidth / 2.5}
                         height={DimensionsHeight / 18}
                         borderColor="white"
@@ -93,11 +100,16 @@ const Books = (props) => {
 
                     >
                         <Text
-                            fontSize={20}
+                            fontSize={16}
                             textTransform="uppercase"
                             color="#272ba1"
                         >
-                            Join to Us!
+                            {data.buttonText} {""}
+                            <RightArrowIconMaterialIcons
+                                name="arrow-forward-ios"
+                                size={12}
+                                color="#272ba1"
+                            />
                         </Text>
                     </Button>
                 </View>
@@ -106,4 +118,4 @@ const Books = (props) => {
     );
 };
 
-export default Books;
+export default Welcome;

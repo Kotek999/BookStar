@@ -5,6 +5,7 @@ import { View, Text, ScrollView, Button } from "native-base";
 import logoNativeBase from '../images/nativebaseLogoImage.png';
 import { LinearGradient } from 'expo-linear-gradient';
 import BookIconEntypo from 'react-native-vector-icons/Entypo';
+import { data } from './data';
 
 
 const HomeScreen = (props) => {
@@ -12,7 +13,7 @@ const HomeScreen = (props) => {
     const DimensionsHeight = Dimensions.get('window').height
     const DimensionsWidth = Dimensions.get('window').width
 
-    const onClickGoToLogIn = () => props.navigation.navigate(routes.BooksChoice)
+    const onClickGoToLogIn = () => props.navigation.navigate(routes.WelcomeBooksPage)
 
 
     return (
@@ -32,6 +33,7 @@ const HomeScreen = (props) => {
                     justifyContent="center"
                     alignItems="center"
                     alignContent="center"
+                    marginTop={0}
                 >
                     <View>
                         <Text
@@ -41,7 +43,7 @@ const HomeScreen = (props) => {
                             fontWeight="bold"
                             textAlign="center"
                         >
-                            BookStar {""}
+                            {data.title} {""}
                             <BookIconEntypo 
                                 name="open-book"
                                 size={34}
@@ -67,7 +69,7 @@ const HomeScreen = (props) => {
                         fontWeight="bold"
                         textAlign="center"
                     >
-                        Potrzebujesz najważniejszych informacji do matury z polskiego?
+                        {data.content}
                     </Text>
 
                     <Button
@@ -88,7 +90,7 @@ const HomeScreen = (props) => {
                             textTransform="uppercase"
                             color="#272ba1"
                         >
-                            Rozpocznij!
+                           {data.buttonText}
                         </Text>
                     </Button>
                 </View>
