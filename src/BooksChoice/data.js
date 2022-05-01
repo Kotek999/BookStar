@@ -1,35 +1,32 @@
+import { BeerImage } from '../images/beerBackground.jpg';
+
 export const data = {
-    title: "Wybierz książkę jaka Ciebie interesuje:",
+    title: "Wybierz lekturę jaka Ciebie interesuje:",
 }
 
 export const booksData = [{
     id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
     title: "Pan Tadeusz",
-    timeStamp: "12:47 PM",
-    recentText: "Good Day!",
-    avatarUrl: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    recentText: "„Litwo! Ojczyzno moja!...",
+    avatarUrl: "https://www.swiatksiazki.pl/media/catalog/product/cache/eaf55611dc9c3a2fa4224fad2468d647/9/3/9399906483293.jpg",
 }, {
     id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
     title: "Dziady Cz. III",
-    timeStamp: "11:11 PM",
-    recentText: "Cheer up, there!",
-    avatarUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyEaZqT3fHeNrPGcnjLLX1v_W4mvBlgpwxnA&usqp=CAU"
+    recentText: "„Nasz naród jak lawa,...",
+    avatarUrl: "https://image.ceneostatic.pl/data/products/527516/i-biblioteczka-opracowan-dziady-czesc-iii-adama-mickiewicza.jpg"
 }, {
     id: "58694a0f-3da1-471f-bd96-145571e29d72",
     title: "Lalka",
-    timeStamp: "6:22 PM",
-    recentText: "Good Day!",
-    avatarUrl: "https://miro.medium.com/max/1400/0*0fClPmIScV5pTLoE.jpg"
+    recentText: "„Jedni giną z niedostatku,...",
+    avatarUrl: "https://img.tantis.pl/image/bd4150f0-f46d-492a-a5b4-71009e0d48b1/550x400/webp"
 }, {
     id: "68694a0f-3da1-431f-bd56-142371e29d72",
     title: "Ferdydurke",
-    timeStamp: "8:56 PM",
-    recentText: "All the best",
-    avatarUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr01zI37DYuR8bMV5exWQBSw28C1v_71CAh8d7GP1mplcmTgQA6Q66Oo--QedAN1B4E1k&usqp=CAU"
+    recentText: "„Choćbym chciał, nie mogę,...",
+    avatarUrl: "https://pim.eduksiazka.pl/media/catalog/product/9/7/9788308070536.jpg"
 }, {
     id: "28694a0f-3da1-471f-bd96-142456e29d72",
     title: "Wesele",
-    timeStamp: "12:47 PM",
-    recentText: "I will call today.",
-    avatarUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&usqp=CAU"
+    recentText: "„Jak się żenić, to się żenić!”...",
+    avatarUrl: "https://www.swiatksiazki.pl/media/catalog/product/cache/eaf55611dc9c3a2fa4224fad2468d647/3/7/3799906504837.jpg"
 }];

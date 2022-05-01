@@ -6,6 +6,7 @@ import logoNativeBase from '../images/nativebaseLogoImage.png';
 import { LinearGradient } from 'expo-linear-gradient';
 import BookIconEntypo from 'react-native-vector-icons/Entypo';
 import { data } from './data';
+import BackgroundScreen from '../common/BackgroundScreen/BackgroundScreen';
 
 
 const HomeScreen = (props) => {
@@ -17,15 +18,7 @@ const HomeScreen = (props) => {
 
 
     return (
-        <ImageBackground
-            style={{
-                width: DimensionsWidth,
-                height: DimensionsHeight,
-            }}>
-            <LinearGradient
-               colors={['#373837', '#272ba1', '#272ba1']}
-            >
-
+        <BackgroundScreen isScrollView={true}>
                 <View
                     width={DimensionsWidth}
                     height={DimensionsHeight} 
@@ -94,8 +87,7 @@ const HomeScreen = (props) => {
                         </Text>
                     </Button>
                 </View>
-            </LinearGradient>
-        </ImageBackground >
+        </BackgroundScreen>
     );
 };
 

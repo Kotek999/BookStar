@@ -11,13 +11,10 @@ import {
     Text,
     Button,
 } from "native-base";
-import logoNativeBase from '../images/nativebaseLogoImage.png';
-import { LinearGradient } from 'expo-linear-gradient';
 import RightArrowIconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import { data } from './data';
 import BackgroundScreen from '../common/BackgroundScreen/BackgroundScreen';
 
-const Welcome = (props) => {
+const BooksPage = (props) => {
 
     const DimensionsHeight = Dimensions.get('window').height
     const DimensionsWidth = Dimensions.get('window').width
@@ -63,7 +60,7 @@ const Welcome = (props) => {
                         margin={0}
                         padding={0}
                     >
-                        {data.title}
+                        Pan Tadeusz
                     </Heading>
                     <Text
                         margin={0}
@@ -71,7 +68,7 @@ const Welcome = (props) => {
                         color="white"
                         fontWeight="bold"
                         fontSize="lg">
-                        {data.content}
+                        
                     </Text>
                 </Box>
                 <Button
@@ -93,7 +90,6 @@ const Welcome = (props) => {
                         textTransform="uppercase"
                         color="#272ba1"
                     >
-                        {data.buttonText} {""}
                         <RightArrowIconMaterialIcons
                             name="arrow-forward-ios"
                             size={12}
@@ -106,4 +102,4 @@ const Welcome = (props) => {
     );
 };
 
-export default Welcome;
+export default BooksPage;

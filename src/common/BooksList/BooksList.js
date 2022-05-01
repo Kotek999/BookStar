@@ -5,13 +5,19 @@ import RightArrowIconMaterialIcons from 'react-native-vector-icons/MaterialIcons
 import { View } from 'native-base';
 import routes from "../../routing/routes";
 import { useNavigation } from "@react-navigation/native";
+import { ScrollView, Dimensions } from 'react-native';
 
-const BooksList = () => {
+const BooksList = (goTo) => {
 
     const navigation = useNavigation();
+    const DimensionsHeight = Dimensions.get('window').height
+    const DimensionsWidth = Dimensions.get('window').width
 
     return (
-        <Box>
+        <Box
+            width={DimensionsWidth}
+            height={DimensionsHeight / 1.4}
+        >
             <Heading
                 size="sm"
                 mb="2"
@@ -27,7 +33,7 @@ const BooksList = () => {
                 borderColor: "gray.600"
             }} borderColor="coolGray.200" pl="5" pr="5" py="7">
                     <HStack space={4} justifyContent="space-between">
-                        <Avatar size="50px" source={{
+                        <Avatar size="60px" source={{
                             uri: item.avatarUrl
                         }} />
                         <VStack>
@@ -36,7 +42,7 @@ const BooksList = () => {
                             }} color="white" bold>
                                 {item.title}
                             </Text>
-                            <Text color="coolGray.400" _dark={{
+                            <Text fontStyle="italic" color="coolGray.400" _dark={{
                                 color: "warmGray.600"
                             }}>
                                 {item.recentText}
@@ -49,11 +55,12 @@ const BooksList = () => {
                             <RightArrowIconMaterialIcons
                                 name="arrow-forward-ios"
                                 size={24}
-                                color="cyan"
-                                onPress={() => navigation.navigate(routes.WelcomeBooksPage)}
+                                color="lightgreen"
+                                onPress={() => navigation.navigate(routes.BooksPage)}
                             />
                         </View>
                     </HStack>
+
                 </Box>} keyExtractor={item => item.id} />
         </Box>
     );

@@ -16,6 +16,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import RightArrowIconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { data } from './data';
 import BooksList from '../common/BooksList/BooksList';
+import BackgroundScreen from '../common/BackgroundScreen/BackgroundScreen';
 
 const BooksChoice = (props) => {
 
@@ -26,23 +27,18 @@ const BooksChoice = (props) => {
 
 
     return (
-        <ImageBackground
-            style={{
-                width: DimensionsWidth,
-                height: DimensionsHeight,
-            }}>
-            <LinearGradient
-                colors={['#373837', '#272ba1', '#272ba1']}
+        <BackgroundScreen 
+            isScrollView={false}
+        >
+            <View
+                width={DimensionsWidth}
+                height={DimensionsHeight}
+                flexDirection="column"
+                alignItems="center"
+                alignContent="center"
+                marginTop={10}
             >
-                <View
-                    width={DimensionsWidth}
-                    height={DimensionsHeight}
-                    flexDirection="column"
-                    alignItems="center"
-                    alignContent="center"
-                    marginTop={20}
-                >
-                    {/* <View
+                {/* <View
                         width="300px"
                         height="300px"
                     >
@@ -52,15 +48,14 @@ const BooksChoice = (props) => {
                             resizeMode="contain"
                         />
                     </View> */}
-                    <View
+                <View
                     width={DimensionsWidth}
                     height={DimensionsHeight}
-                    >
-                        <BooksList/>
-                    </View>
+                >
+                    <BooksList />
                 </View>
-            </LinearGradient>
-        </ImageBackground>
+            </View>
+        </BackgroundScreen>
     );
 };
 

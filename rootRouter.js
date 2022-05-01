@@ -7,27 +7,28 @@ import LogInPageRoute from "./src/Routes/logInPageRoute";
 import HomeScreen from "./src/homeScreenPage/homeScreen";
 import welcomeBooksRoute from "./src/Routes/welcomeBooksRoute";
 import booksChoiceRoute from "./src/Routes/booksChoiceRoute";
+import booksPageRoute from "./src/Routes/booksPageRoute";
 
 
 const Stack = createNativeStackNavigator();
 const RootStack = createNativeStackNavigator();
 
 const stylesForOptions = {
-    cardStyle: {
-        backgroundColor: "white",
-    },
+  cardStyle: {
+    backgroundColor: "white",
+  },
 };
 function MainStackScreen() {
-    return (
-        <Stack.Navigator
-          stylesForOptions= {
-              {
-                //  header
-              } 
-          }
-          initialRouteName={routes.HomeScreen}
-        >
-          {/* <Stack.Screen
+  return (
+    <Stack.Navigator
+      stylesForOptions={
+        {
+          //  header
+        }
+      }
+      initialRouteName={routes.HomeScreen}
+    >
+      {/* <Stack.Screen
             name="Home"
             component={HomeScreen}
             options={{
@@ -36,8 +37,8 @@ function MainStackScreen() {
             }}
           />
           <Stack.Screen name="UserProfile" component={ProfileScreen} /> */}
-        </Stack.Navigator>
-    )
+    </Stack.Navigator>
+  )
 }
 
 function rootRouter(props) {
@@ -46,45 +47,55 @@ function rootRouter(props) {
       <NativeBaseProvider>
         {/* <Center flex={1} px="6" backgroundColor={"rgb(201, 125, 71).500"}> */}
         <RootStack.Navigator mode="modal" headerMode="none">
-        <RootStack.Screen
-                name={routes.HomeScreen}
-                options={{
-                    headerShown: true,
-                    headerStyle: {
-                        backgroundColor: "#fff",
-                    },
-                    headerTintColor: "#000",
-                    headerTitleStyle: {
-                        fontWeight: "bold",
-                    },
-                    ...stylesForOptions,
-                }}
-                component={HomeScreen}
-            />
-            {/* <RootStack.Screen 
+          <RootStack.Screen
+            name={routes.HomeScreen}
+            options={{
+              headerShown: true,
+              headerStyle: {
+                backgroundColor: "#fff",
+              },
+              headerTintColor: "#000",
+              headerTitleStyle: {
+                fontWeight: "bold",
+              },
+              ...stylesForOptions,
+            }}
+            component={HomeScreen}
+          />
+          {/* <RootStack.Screen 
                 name={routes.LogInPage}
                 component={LogInPageRoute}
             /> */}
-            <RootStack.Screen 
-                name={routes.WelcomeBooksPage}
-                options={{
-                  headerTitleStyle: {
-                    fontWeight: "bold",
-                  }
-                }}  
-                component={welcomeBooksRoute}
-            />
-            <RootStack.Screen 
-                name={routes.BooksChoice}
-                options={{
-                  headerTitleStyle: {
-                    fontWeight: "bold",
-                  }
-                }}  
-                component={booksChoiceRoute}
-            />
+          <RootStack.Screen
+            name={routes.WelcomeBooksPage}
+            options={{
+              headerTitleStyle: {
+                fontWeight: "bold",
+              }
+            }}
+            component={welcomeBooksRoute}
+          />
+          <RootStack.Screen
+            name={routes.BooksChoice}
+            options={{
+              headerTitleStyle: {
+                fontWeight: "bold",
+              }
+            }}
+            component={booksChoiceRoute}
+          />
+          <RootStack.Screen
+            name={routes.BooksPage}
+            options={{
+              headerShown: true,
+              headerTitleStyle: {
+                fontWeight: "bold",
+              }
+            }}
+            component={booksPageRoute}
+          />
         </RootStack.Navigator>
-        
+
         {/* </Center> */}
       </NativeBaseProvider>
     </NavigationContainer>

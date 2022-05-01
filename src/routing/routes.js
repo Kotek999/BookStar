@@ -3,6 +3,7 @@ const routes = {
     Start: "Main Page",
     HomeScreen: "BookStar",
     WelcomeBooksPage: "Witamy!",
-    BooksChoice: "Wybór Książki",
+    BooksChoice: "Lektury",
+    BooksPage: "Book",
 }
 export default routes;
