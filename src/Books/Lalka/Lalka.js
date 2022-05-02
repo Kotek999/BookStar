@@ -1,5 +1,5 @@
 import * as React from 'react';
-import routes from '../routing/routes';
+import routes from '../../routing/routes';
 import { Dimensions, ImageBackground, Image } from "react-native";
 import {
     Box,
@@ -12,9 +12,9 @@ import {
     Button,
 } from "native-base";
 import RightArrowIconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import BackgroundScreen from '../common/BackgroundScreen/BackgroundScreen';
+import BackgroundScreen from '../../common/BackgroundScreen/BackgroundScreen';
 
-const BooksPage = (props) => {
+const Lalka = (props) => {
 
     const DimensionsHeight = Dimensions.get('window').height
     const DimensionsWidth = Dimensions.get('window').width
@@ -60,7 +60,7 @@ const BooksPage = (props) => {
                         margin={0}
                         padding={0}
                     >
-                        Pan Tadeusz
+                        Lalka
                     </Heading>
                     <Text
                         margin={0}
@@ -102,4 +102,4 @@ const BooksPage = (props) => {
     );
 };
 
-export default BooksPage;
+export default Lalka;

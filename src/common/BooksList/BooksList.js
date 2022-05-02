@@ -52,12 +52,7 @@ const BooksList = (goTo) => {
                         <View
                             margin={3}
                         >
-                            <RightArrowIconMaterialIcons
-                                name="arrow-forward-ios"
-                                size={24}
-                                color="lightgreen"
-                                onPress={() => navigation.navigate(routes.BooksPage)}
-                            />
+                           <Text>{item.linkTo}</Text> 
                         </View>
                     </HStack>
 

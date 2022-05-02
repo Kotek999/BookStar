@@ -4,6 +4,10 @@ const routes = {
     HomeScreen: "BookStar",
     WelcomeBooksPage: "Witamy!",
     BooksChoice: "Lektury",
-    BooksPage: "Book",
+    PanTadeusz: "Pan Tadeusz",
+    Dziady: "Dziady Cz. III",
+    Lalka: "Lalka",
+    Ferdydurke: "Ferdydurke",
+    Wesele: "Wesele",
 }
 export default routes;

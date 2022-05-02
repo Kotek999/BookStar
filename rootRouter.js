@@ -7,7 +7,11 @@ import LogInPageRoute from "./src/Routes/logInPageRoute";
 import HomeScreen from "./src/homeScreenPage/homeScreen";
 import welcomeBooksRoute from "./src/Routes/welcomeBooksRoute";
 import booksChoiceRoute from "./src/Routes/booksChoiceRoute";
-import booksPageRoute from "./src/Routes/booksPageRoute";
+import panTadeuszRoute from "./src/Routes/panTadeuszRoute";
+import dziadyRoute from "./src/Routes/dziadyRoute";
+import lalkaRoute from "./src/Routes/lalkaRoute";
+import ferdydurkeRoute from "./src/Routes/ferdydurkeRoute";
+import weseleRoute from "./src/Routes/weseleRoute";
 
 
 const Stack = createNativeStackNavigator();
@@ -85,14 +89,54 @@ function rootRouter(props) {
             component={booksChoiceRoute}
           />
           <RootStack.Screen
-            name={routes.BooksPage}
+            name={routes.PanTadeusz}
             options={{
               headerShown: true,
               headerTitleStyle: {
                 fontWeight: "bold",
               }
             }}
-            component={booksPageRoute}
+            component={panTadeuszRoute}
+          />
+          <RootStack.Screen
+            name={routes.Dziady}
+            options={{
+              headerShown: true,
+              headerTitleStyle: {
+                fontWeight: "bold",
+              }
+            }}
+            component={dziadyRoute}
+          />
+          <RootStack.Screen
+            name={routes.Lalka}
+            options={{
+              headerShown: true,
+              headerTitleStyle: {
+                fontWeight: "bold",
+              }
+            }}
+            component={lalkaRoute}
+          />
+          <RootStack.Screen
+            name={routes.Ferdydurke}
+            options={{
+              headerShown: true,
+              headerTitleStyle: {
+                fontWeight: "bold",
+              }
+            }}
+            component={ferdydurkeRoute}
+          />
+          <RootStack.Screen
+            name={routes.Wesele}
+            options={{
+              headerShown: true,
+              headerTitleStyle: {
+                fontWeight: "bold",
+              }
+            }}
+            component={weseleRoute}
           />
         </RootStack.Navigator>
 
