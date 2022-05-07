@@ -1,39 +1,27 @@
 import * as React from 'react';
 import routes from '../routing/routes';
-import { Dimensions, ImageBackground, Image } from "react-native";
+import { Dimensions } from "react-native";
+import { StyleSheet } from 'react-native';
 import {
     Box,
     Heading,
-    Center,
-    NativBaseProvider,
     View,
-    ScrollView,
     Text,
     Button,
 } from "native-base";
-import logoNativeBase from '../images/nativebaseLogoImage.png';
-import { LinearGradient } from 'expo-linear-gradient';
-import RightArrowIconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { data } from './data';
 import BackgroundScreen from '../common/BackgroundScreen/BackgroundScreen';
+import WelcomeContentText from '../common/WelcomeContentText/WelcomeContentText';
+import ButtonCustom from '../common/ButtonCustom/ButtonCustom';
 
-const Welcome = (props) => {
-
-    const DimensionsHeight = Dimensions.get('window').height
-    const DimensionsWidth = Dimensions.get('window').width
-
-    const onClickGoToBooksChoice = () => props.navigation.navigate(routes.BooksChoice)
-
+const Welcome = () => {
 
     return (
-        <BackgroundScreen isScrollView={true}>
+        <BackgroundScreen
+            isScrollView={true}
+        >
             <View
-                width={DimensionsWidth}
-                height={DimensionsHeight}
-                flexDirection="column"
-                alignItems="center"
-                alignContent="center"
-                marginTop={20}
+                style={styles.container}
             >
                 {/* <View
                         width="300px"
@@ -46,64 +34,45 @@ const Welcome = (props) => {
                         />
                     </View> */}
                 <Box
-                    margin={0}
-                    padding={7}
-                    borderColor="white"
-                    borderWidth={0}
-                    width={DimensionsWidth}
-                    height={DimensionsHeight / 3.3}
-                    shadowColor="white"
-                    shadowOpacity={0.1}
-                    shadowRadius={10}
+                    style={styles.contentContainer}
                 >
                     <Heading
                         size="xl"
-                        mb="4"
                         color="white"
-                        margin={0}
-                        padding={0}
                     >
                         {data.title}
                     </Heading>
-                    <Text
-                        margin={0}
-                        padding={0}
-                        color="white"
-                        fontWeight="bold"
-                        fontSize="lg">
-                        {data.content}
-                    </Text>
+                    <WelcomeContentText />
                 </Box>
-                <Button
-                    onPress={onClickGoToBooksChoice}
-                    margin={20}
-                    width={DimensionsWidth / 2.5}
-                    height={DimensionsHeight / 18}
-                    borderColor="white"
-                    borderWidth={1}
-                    borderRadius={20}
-                    backgroundColor="white"
-                    shadowColor="black"
-                    shadowOpacity={0.5}
-                    shadowRadius={10}
-
-                >
-                    <Text
-                        fontSize={16}
-                        textTransform="uppercase"
-                        color="#272ba1"
-                    >
-                        {data.buttonText} {""}
-                        <RightArrowIconMaterialIcons
-                            name="arrow-forward-ios"
-                            size={12}
-                            color="#272ba1"
-                        />
-                    </Text>
-                </Button>
+                <ButtonCustom 
+                    value={data.buttonText}
+                />
             </View>
         </BackgroundScreen>
     );
 };
 
 export default Welcome;
+
+const DimensionsHeight = Dimensions.get('window').height
+const DimensionsWidth = Dimensions.get('window').width
+
+const styles = StyleSheet.create({
+    container: {
+        width: DimensionsWidth,
+        height: DimensionsHeight,
+        flexDirection: "column",
+        alignItems: "center",
+        alignContent: "center",
+        marginTop: 60,
+    },
+    contentContainer: {
+        width: DimensionsWidth,
+        height: DimensionsHeight / 3.3,
+        margin: 0,
+        padding: 20,
+        shadowColor: "white",
+        shadowOpacity: 0.1,
+        shadowRadius: 10,
+    },
+});
