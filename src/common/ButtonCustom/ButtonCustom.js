@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Text } from 'native-base';
+import { Button, Text, View } from 'native-base';
 import { StyleSheet, Dimensions } from 'react-native';
 import IconForward from '../IconForward/IconForward';
 import routes from '../../routing/routes';
@@ -13,17 +13,21 @@ export default function ButtonCustom(props) {
     return (
         <>
             {props.isForwardIcon ? (
-                <Button
-                    style={styles.button}
-                    onPress={() => navigation.navigate(routes.BooksChoice)}
+                <View
+                    style={styles.container}
                 >
-                    <Text
-                        style={styles.buttonTitle}
+                    <Button
+                        style={styles.button}
+                        onPress={() => navigation.navigate(routes.BooksChoice)}
                     >
-                        {props.value}
-                        <IconForward />
-                    </Text>
-                </Button>
+                        <Text
+                            style={styles.buttonTitle}
+                        >
+                            {props.value}
+                            <IconForward />
+                        </Text>
+                    </Button>
+                </View>
             ) : (<Button
                 style={styles.button}
                 onPress={() => navigation.navigate(routes.WelcomeBooksPage)}
@@ -44,6 +48,14 @@ const DimensionsHeight = Dimensions.get('window').height
 const DimensionsWidth = Dimensions.get('window').width
 
 const styles = StyleSheet.create({
+    container: {
+        width: DimensionsWidth,
+        height: DimensionsHeight,
+        flexDirection: "column",
+        alignItems: "center",
+        alignContent: "center",
+        marginTop: 60,
+    },
     button: {
         width: DimensionsWidth / 2.5,
         height: DimensionsHeight / 18,

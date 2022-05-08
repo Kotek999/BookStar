@@ -1,56 +1,19 @@
 import * as React from 'react';
-import routes from '../routing/routes';
-import { Dimensions, ImageBackground, Image } from "react-native";
-import {
-    Box,
-    Heading,
-    Center,
-    NativBaseProvider,
-    View,
-    Text,
-    ScrollView,
-    Button
-} from "native-base";
-import logoNativeBase from '../images/nativebaseLogoImage.png';
-import { LinearGradient } from 'expo-linear-gradient';
-import RightArrowIconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import { data } from './data';
+import { Dimensions, StyleSheet } from "react-native";
+import { View } from "native-base";
 import BooksList from '../common/BooksList/BooksList';
 import BackgroundScreen from '../common/BackgroundScreen/BackgroundScreen';
 
-const BooksChoice = (props) => {
-
-    const DimensionsHeight = Dimensions.get('window').height
-    const DimensionsWidth = Dimensions.get('window').width
-
-    // const onClickGoToLogIn = () => props.navigation.navigate(routes.LogInPage)
-
-
+const BooksChoice = () => {
     return (
-        <BackgroundScreen 
+        <BackgroundScreen
             isScrollView={false}
         >
             <View
-                width={DimensionsWidth}
-                height={DimensionsHeight}
-                flexDirection="column"
-                alignItems="center"
-                alignContent="center"
-                marginTop={10}
+                style={styles.container}
             >
-                {/* <View
-                        width="300px"
-                        height="300px"
-                    >
-                        <Image
-                            source={logoNativeBase}
-                            flex={1}
-                            resizeMode="contain"
-                        />
-                    </View> */}
                 <View
-                    width={DimensionsWidth}
-                    height={DimensionsHeight}
+                    style={styles.listContainer}
                 >
                     <BooksList />
                 </View>
@@ -60,3 +23,21 @@ const BooksChoice = (props) => {
 };
 
 export default BooksChoice;
+
+const DimensionsHeight = Dimensions.get('window').height
+const DimensionsWidth = Dimensions.get('window').width
+
+const styles = StyleSheet.create({
+    container: {
+        width: DimensionsWidth,
+        height: DimensionsHeight,
+        flexDirection: "column",
+        alignItems: "center",
+        alignContent: "center",
+        marginTop: 30
+    },
+    listContainer: {
+        width: DimensionsWidth,
+        height: DimensionsHeight
+    },
+});
