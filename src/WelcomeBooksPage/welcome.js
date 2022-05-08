@@ -1,14 +1,6 @@
 import * as React from 'react';
-import routes from '../routing/routes';
-import { Dimensions } from "react-native";
-import { StyleSheet } from 'react-native';
-import {
-    Box,
-    Heading,
-    View,
-    Text,
-    Button,
-} from "native-base";
+import { Dimensions, StyleSheet } from "react-native";
+import { Box, Heading, View } from "native-base";
 import { data } from './data';
 import BackgroundScreen from '../common/BackgroundScreen/BackgroundScreen';
 import WelcomeContentText from '../common/WelcomeContentText/WelcomeContentText';
@@ -44,8 +36,9 @@ const Welcome = () => {
                     </Heading>
                     <WelcomeContentText />
                 </Box>
-                <ButtonCustom 
+                <ButtonCustom
                     value={data.buttonText}
+                    isForwardIcon={true}
                 />
             </View>
         </BackgroundScreen>

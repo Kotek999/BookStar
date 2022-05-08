@@ -1,94 +1,72 @@
 import * as React from 'react';
-import routes from '../routing/routes';
-import { Dimensions, ImageBackground, Image } from "react-native";
-import { View, Text, ScrollView, Button } from "native-base";
-import logoNativeBase from '../images/nativebaseLogoImage.png';
-import { LinearGradient } from 'expo-linear-gradient';
+import { Dimensions, StyleSheet } from "react-native";
+import { View, Text } from "native-base";
 import BookIconEntypo from 'react-native-vector-icons/Entypo';
 import { data } from './data';
 import BackgroundScreen from '../common/BackgroundScreen/BackgroundScreen';
+import ButtonCustom from '../common/ButtonCustom/ButtonCustom';
 
 
-const HomeScreen = (props) => {
-
-    const DimensionsHeight = Dimensions.get('window').height
-    const DimensionsWidth = Dimensions.get('window').width
-
-    const onClickGoToLogIn = () => props.navigation.navigate(routes.WelcomeBooksPage)
-
+const HomeScreen = () => {
 
     return (
         <BackgroundScreen isScrollView={true}>
-                <View
-                    width={DimensionsWidth}
-                    height={DimensionsHeight} 
-                    flexDirection="column"
-                    justifyContent="center"
-                    alignItems="center"
-                    alignContent="center"
-                    marginTop={0}
-                >
-                    <View>
-                        <Text
-                            margin={4}
-                            fontSize={34}
-                            color="white"
-                            fontWeight="bold"
-                            textAlign="center"
-                        >
-                            {data.title} {""}
-                            <BookIconEntypo 
-                                name="open-book"
-                                size={34}
-                                color="white"
-                            />
-                        </Text>
-                    </View>
-                    {/* <View
-                        width="300px"
-                        height="300px"
-                    >
-                        <Image
-                            source={logoNativeBase}
-                            flex={1}
-                            resizeMode="contain"
-                        />
-                    </View> */}
-
+            <View
+                style={styles.container}
+            >
+                <View>
                     <Text
-                        margin={8}
-                        fontSize={20}
-                        color="white"
-                        fontWeight="bold"
-                        textAlign="center"
+                        style={styles.mainTitle}
                     >
-                        {data.content}
+                        {data.title} {""}
+                        <BookIconEntypo
+                            name="open-book"
+                            size={34}
+                            color="white"
+                        />
                     </Text>
-
-                    <Button
-                        onPress={onClickGoToLogIn}
-                        width={DimensionsWidth / 2.5}
-                        height={DimensionsHeight / 18}
-                        borderColor="white"
-                        borderWidth={1}
-                        borderRadius={20}
-                        backgroundColor="white"
-                        shadowColor="black"
-                        shadowOpacity={0.5}
-                        shadowRadius={10}
-
-                    >
-                        <Text
-                            fontSize={16}
-                            textTransform="uppercase"
-                            color="#272ba1"
-                        >
-                           {data.buttonText}
-                        </Text>
-                    </Button>
                 </View>
+                <Text
+                    style={styles.content}
+                    fontSize="lg"
+                >
+                    {data.content}
+                </Text>
+                <ButtonCustom isForwardIcon={false} value={data.buttonText} />
+            </View>
         </BackgroundScreen>
     );
 };
 
 export default HomeScreen;
+
+const DimensionsHeight = Dimensions.get('window').height
+const DimensionsWidth = Dimensions.get('window').width
+
+const styles = StyleSheet.create({
+    container: {
+        width: DimensionsWidth,
+        height: DimensionsHeight,
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        alignContent: "center",
+        marginTop: 0
+    },
+    mainTitle: {
+        padding: 40,
+        margin: 0,
+        fontSize: 34,
+        color: "white",
+        fontWeight: "bold",
+        textAlign: "center"
+    },
+    content: {
+        padding: 10,
+        margin: 10,
+        marginBottom: 30,
+        color: "white",
+        fontWeight: "bold",
+        textAlign: "center"
+    },
+});

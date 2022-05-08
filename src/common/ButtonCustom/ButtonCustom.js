@@ -12,17 +12,30 @@ export default function ButtonCustom(props) {
 
     return (
         <>
-            <Button
+            {props.isForwardIcon ? (
+                <Button
+                    style={styles.button}
+                    onPress={() => navigation.navigate(routes.BooksChoice)}
+                >
+                    <Text
+                        style={styles.buttonTitle}
+                    >
+                        {props.value}
+                        <IconForward />
+                    </Text>
+                </Button>
+            ) : (<Button
                 style={styles.button}
-                onPress={() => navigation.navigate(routes.BooksChoice)}
+                onPress={() => navigation.navigate(routes.WelcomeBooksPage)}
             >
                 <Text
                     style={styles.buttonTitle}
                 >
                     {props.value}
-                    <IconForward />
                 </Text>
             </Button>
+            )}
+
         </>
     );
 };
