@@ -1,10 +1,11 @@
 
 import * as React from 'react';
-import { Center, Text } from 'native-base';
+import { Center } from 'native-base';
+import LogoText from '../LogoText/LogoText';
+import { data } from '../../homeScreenPage/data';
 
 
 export default function CenterContainer() {
-
     return (
         <Center
             bg="violet.500"
@@ -21,7 +22,7 @@ export default function CenterContainer() {
             px="3"
             py="1.5"
         >
-            <Text>PHOTOS</Text>
+           <LogoText value={data.title}/>
         </Center>
     );
 };

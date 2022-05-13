@@ -2,8 +2,9 @@ export const dataBooks = [{
     id: "83223jd2-6y2e-46c2-aed5-35gee321f8ba",
     imageUrlPT: "",
     titlePT: "Pan Tadeusz",
-    authorPT: "",
-    contentPT: "",
+    authorPT: "Adam Mickiewicz",
+    authorText: "Autor:",
+    contentPT: "„Litwo! Ojczyzno moja! Ty jesteś jak zdrowie; Ile cię trzeba cenić, ten tylko się dowie; Kto cię stracił. Dziś piękność twą w całej ozdobie Widzę i opisuję, bo tęsknię po tobie”.",
     date: "",
 }, {
     id: "fej93jnj-5hy2-48d3-a4f8-uew8u8w2sass",

@@ -5,6 +5,7 @@ import BookIconEntypo from 'react-native-vector-icons/Entypo';
 import { data } from './data';
 import BackgroundScreen from '../common/BackgroundScreen/BackgroundScreen';
 import ButtonCustom from '../common/ButtonCustom/ButtonCustom';
+import LogoText from '../common/LogoText/LogoText';
 
 
 const HomeScreen = () => {
@@ -14,18 +15,7 @@ const HomeScreen = () => {
             <View
                 style={styles.container}
             >
-                <View>
-                    <Text
-                        style={styles.mainTitle}
-                    >
-                        {data.title} {""}
-                        <BookIconEntypo
-                            name="open-book"
-                            size={34}
-                            color="white"
-                        />
-                    </Text>
-                </View>
+                <LogoText isHomeScreen={true} value={data.title} />
                 <Text
                     style={styles.content}
                     fontSize="lg"
