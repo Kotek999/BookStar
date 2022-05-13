@@ -1,15 +1,11 @@
 import React from "react";
-import { Box, FlatList, Heading, Avatar, HStack, VStack, Text, Spacer, Center, NativeBaseProvider, Button } from "native-base";
+import { Box, FlatList, Heading, Avatar, HStack, VStack, Text, Spacer } from "native-base";
 import { data, booksData } from "../../BooksChoice/data";
-import RightArrowIconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { View } from 'native-base';
-import routes from "../../routing/routes";
-import { useNavigation } from "@react-navigation/native";
-import { ScrollView, Dimensions } from 'react-native';
+import { Dimensions } from 'react-native';
 
-const BooksList = (goTo) => {
+const BooksList = () => {
 
-    const navigation = useNavigation();
     const DimensionsHeight = Dimensions.get('window').height
     const DimensionsWidth = Dimensions.get('window').width
 

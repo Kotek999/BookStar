@@ -1,5 +1,3 @@
-
-import { BeerImage } from '../images/beerBackground.jpg';
 import PanTadeuszNavigationArrow from '../common/BooksNavigationArrows/PanTadeuszBook';
 import DziadyNavigationArrow from '../common/BooksNavigationArrows/DziadyBook';
 import LalkaNavigationArrow from '../common/BooksNavigationArrows/LalkaBook';
