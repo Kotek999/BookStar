@@ -4,7 +4,7 @@ import { Stack, HStack, Heading, Text } from 'native-base';
 import { dataBooks } from '../../Books/DataBooks/data';
 import Time from '../Time/Time';
 
-export default function StackContainer(props) {
+export default function StackContainer() {
     return (
         <Stack
             p="4"
@@ -85,7 +85,7 @@ export default function StackContainer(props) {
                             color: "warmGray.200"
                         }}
                         fontWeight="400">
-                        Do wakacji pozostało: <Time {...props}/> 
+                        Do wakacji pozostało: <Time /> 
                     </Text>
                 </HStack>
             </HStack>
