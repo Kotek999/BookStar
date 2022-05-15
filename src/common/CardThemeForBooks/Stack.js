@@ -84,9 +84,70 @@ export default function StackContainer() {
                         _dark={{
                             color: "warmGray.200"
                         }}
-                        fontWeight="400">
-                        Do wakacji pozostało: <Time /> 
-                    </Text>
+                        fontWeight="600"
+                        fontSize={13.5}
+                    >
+
+                         <Time /> 
+                    </Text> 
+                </HStack>
+            </HStack>
+            <HStack
+                flexDirection='row'
+                justifyContent='flex-end'
+                alignItems='center'
+                alignContent='flex-end'
+            >
+                <HStack
+                    alignItems="center"
+                >
+                    <Text
+                        color="coolGray.600"
+                        _dark={{
+                            color: "warmGray.200"
+                        }}
+                        fontWeight="600"
+                        fontSize={10.5}
+                        marginRight={5}
+                    >
+
+                        Dni 
+                    </Text> 
+                    <Text
+                        color="coolGray.600"
+                        _dark={{
+                            color: "warmGray.200"
+                        }}
+                        fontWeight="600"
+                        fontSize={10.5}
+                        marginRight={5}
+                    >
+
+                        Godzin
+                    </Text> 
+                    <Text
+                        color="coolGray.600"
+                        _dark={{
+                            color: "warmGray.200"
+                        }}
+                        fontWeight="600"
+                        fontSize={10.5}
+                        marginRight={5}
+                    >
+
+                        Minut
+                    </Text> 
+                    <Text
+                        color="coolGray.600"
+                        _dark={{
+                            color: "warmGray.200"
+                        }}
+                        fontWeight="600"
+                        fontSize={10.5}
+                    >
+
+                        Sekund
+                    </Text> 
                 </HStack>
             </HStack>
         </Stack>

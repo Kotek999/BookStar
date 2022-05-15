@@ -11,25 +11,25 @@ export default function Time() {
     const [seconds, setSeconds] = React.useState(0);
 
     React.useEffect(() => {
-        const target = new Date("05/14/2022 23:59:59");
+        const target = new Date("06/28/2022 23:59:59");
 
         const interval = setInterval(() => {
             const now = new Date();
             const difference = target.getTime() - now.getTime();
 
-            const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-            setDays(d);
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            setDays(days);
 
-            const h = Math.floor(
+            const hours = Math.floor(
                 (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
             );
-            setHours(h);
+            setHours(hours);
 
-            const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            setMinutes(m);
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            setMinutes(minutes);
 
-            const s = Math.floor((difference % (1000 * 60)) / 1000);
-            setSeconds(s);
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            setSeconds(seconds);
         }, 1000);
 
         return () => clearInterval(interval);
@@ -37,14 +37,39 @@ export default function Time() {
     return (
         <View
             flexDirection="row"
+            marginTop={0}
         >
             <Text
-                marginRight={2}
-            >{days}</Text>
+                color="violet.500"
+                fontWeight="600"
+                fontSize={12.5}
+                marginRight={9}
+            >
+                {days}
+            </Text>
             <Text
-            marginRight={2}>{hours}</Text>
-            <Text marginRight={2}>{minutes}</Text>
-            <Text marginRight={2}>{seconds}</Text>
+                color="violet.500"
+                fontWeight="600"
+                fontSize={12.5}
+                marginRight={12}
+            > 
+                {hours} 
+            </Text>
+            <Text
+                color="violet.500"
+                fontWeight="600"
+                fontSize={12.5}
+                marginRight={10}
+            >
+                {minutes} 
+            </Text>
+            <Text
+                color="violet.500"
+                fontWeight="600"
+                fontSize={12.5}
+            >
+                {seconds}
+            </Text>
         </View>
     )
 };
