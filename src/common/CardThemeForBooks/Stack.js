@@ -1,8 +1,8 @@
 
 import * as React from 'react';
-import { Stack, HStack, Heading, Text } from 'native-base';
+import { Stack, HStack, Heading, Text, View } from 'native-base';
 import { dataBooks } from '../../Books/DataBooks/data';
-import Time from '../Time/Time';
+import TimeLogic from '../Time/TimeLogic';
 
 export default function StackContainer() {
     return (
@@ -71,11 +71,37 @@ export default function StackContainer() {
                     </React.Fragment>
                 ))}
             </Text>
+            <Text
+                textAlign="right"
+            >
+                {dataBooks.map((item, date) => (
+                    <React.Fragment
+                        key={date}
+                    >
+                         {item.datePT}
+                    </React.Fragment>
+                ))}
+            </Text>
             <HStack
                 alignItems="center"
                 space={4}
                 justifyContent="flex-end"
+                flexDirection="column"
             >
+                <HStack
+                    alignItems="center"
+                    margin={2}
+                >
+                    <Text
+                        color="coolGray.600"
+                        _dark={{
+                            color: "warmGray.200"
+                        }}
+                        fontWeight="600"
+                        fontSize={13.5}
+                    >
+                        Do wakacji pozostało:</Text>
+                </HStack>
                 <HStack
                     alignItems="center"
                 >
@@ -87,67 +113,8 @@ export default function StackContainer() {
                         fontWeight="600"
                         fontSize={13.5}
                     >
-
-                         <Time /> 
-                    </Text> 
-                </HStack>
-            </HStack>
-            <HStack
-                flexDirection='row'
-                justifyContent='flex-end'
-                alignItems='center'
-                alignContent='flex-end'
-            >
-                <HStack
-                    alignItems="center"
-                >
-                    <Text
-                        color="coolGray.600"
-                        _dark={{
-                            color: "warmGray.200"
-                        }}
-                        fontWeight="600"
-                        fontSize={10.5}
-                        marginRight={5}
-                    >
-
-                        Dni 
-                    </Text> 
-                    <Text
-                        color="coolGray.600"
-                        _dark={{
-                            color: "warmGray.200"
-                        }}
-                        fontWeight="600"
-                        fontSize={10.5}
-                        marginRight={5}
-                    >
-
-                        Godzin
-                    </Text> 
-                    <Text
-                        color="coolGray.600"
-                        _dark={{
-                            color: "warmGray.200"
-                        }}
-                        fontWeight="600"
-                        fontSize={10.5}
-                        marginRight={5}
-                    >
-
-                        Minut
-                    </Text> 
-                    <Text
-                        color="coolGray.600"
-                        _dark={{
-                            color: "warmGray.200"
-                        }}
-                        fontWeight="600"
-                        fontSize={10.5}
-                    >
-
-                        Sekund
-                    </Text> 
+                        <TimeLogic />
+                    </Text>
                 </HStack>
             </HStack>
         </Stack>
