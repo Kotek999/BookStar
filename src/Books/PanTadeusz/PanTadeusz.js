@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Dimensions, StyleSheet } from "react-native";
+import { Dimensions, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 import {
     Box,
     Heading,
@@ -17,12 +17,12 @@ import CardThemeForBooks from '../../common/CardThemeForBooks/CardThemeForBooks'
 const PanTadeusz = () => {
     return (
         <BackgroundScreen
-            isScrollView={true}
+            // isScrollView = {true or false} - przywraca ogólny scroll
         >
             <View
                 style={styles.container}
             >
-                <CardThemeForBooks />
+                    <CardThemeForBooks />
             </View>
         </BackgroundScreen>
     );

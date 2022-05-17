@@ -21,8 +21,11 @@ export default function CenterContainer() {
             bottom="0"
             px="3"
             py="1.5"
+            opacity={95}
         >
-           <LogoText value={data.title}/>
+           <LogoText 
+                value={data.title}
+            />
         </Center>
     );
 };

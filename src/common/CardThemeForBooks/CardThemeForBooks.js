@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Dimensions, StyleSheet } from "react-native";
+import { Dimensions, StyleSheet, ScrollView, SafeAreaView} from "react-native";
 import { Box, View, AspectRatio, Image } from "native-base";
 import BackgroundScreen from '../../common/BackgroundScreen/BackgroundScreen';
 import BoxContainer from './Box';
@@ -9,7 +9,7 @@ import StackContainer from './Stack';
 function CardThemeForBooks() {
     return (
         <BackgroundScreen
-            isScrollView={true}
+            // isScrollView = {true or false } - przywraca ogólny scroll
         >
             <View
                 style={styles.container}
@@ -52,15 +52,6 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         alignItems: "center",
         alignContent: "center",
-        marginTop: 60,
-    },
-    contentContainer: {
-        width: DimensionsWidth,
-        height: DimensionsHeight / 3.3,
-        margin: 0,
-        padding: 20,
-        shadowColor: "white",
-        shadowOpacity: 0.1,
-        shadowRadius: 10,
+        marginTop: 40,
     },
 });
