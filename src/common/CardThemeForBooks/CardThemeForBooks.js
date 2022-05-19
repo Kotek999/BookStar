@@ -5,8 +5,12 @@ import BackgroundScreen from '../../common/BackgroundScreen/BackgroundScreen';
 import BoxContainer from './Box';
 import CenterContainer from './Center';
 import StackContainer from './Stack';
+import isWEB from '../Resolutions/isWEB';
 
 function CardThemeForBooks() {
+
+    const { height } = Dimensions.get("window");
+
     return (
         <BackgroundScreen
             // isScrollView = {true or false } - przywraca ogólny scroll
@@ -21,7 +25,7 @@ function CardThemeForBooks() {
                         <Box>
                             <AspectRatio
                                 w="100%"
-                                ratio={16 / 9}
+                                ratio={(isWEB() && height > 700) ? 16 / 9 : 16 / 9 } 
                             >
                                 <Image
                                     source={{

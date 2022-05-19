@@ -6,6 +6,12 @@ export const dataBooks = [{
     authorText: "Autor:",
     contentPT: "„Litwo! Ojczyzno moja! Ty jesteś jak zdrowie; Ile cię trzeba cenić, ten tylko się dowie; Kto cię stracił. Dziś piękność twą w całej ozdobie Widzę i opisuję, bo tęsknię po tobie”.",
     datePT: "28 czerwca 1834",
+    themesPT: [
+        {
+            icon: [ "ikonka xD" ],
+            type: [ "typ motywu jako tekst" ],
+        },
+    ],
 }, {
     id: "fej93jnj-5hy2-48d3-a4f8-uew8u8w2sass",
     imageUrlDZIII: "",

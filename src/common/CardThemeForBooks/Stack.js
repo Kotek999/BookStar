@@ -5,13 +5,20 @@ import { Dimensions } from 'react-native';
 import { dataBooks } from '../../Books/DataBooks/data';
 import TimeLogic from '../Time/TimeLogic';
 
+
 export default function StackContainer() {
 
     const DimensionsHeight = Dimensions.get('window').height
     const marginTop = 20
 
     return (
-        <ScrollView maxH={DimensionsHeight / 2} marginTop={0}>
+        <ScrollView 
+            maxH={DimensionsHeight / 2} 
+            marginTop={0}
+            padding={0}
+            marginBottom={DimensionsHeight / 30}
+            backgroundColor="amber.300"
+        >
             <Stack
                 p="4"
                 space={3}
@@ -103,12 +110,36 @@ export default function StackContainer() {
                     >
                         Motywy:
                     </Heading>
+                    {/* {dataBooks.map(itemIn => {
+                        return (
+                            <React.Fragment key={itemIn.themesPT}>
 
-                    <Text>ikonka + tekst</Text>
-                    <Text>ikonka + tekst</Text>
-                    <Text>ikonka + tekst</Text>
-                    <Text>ikonka + tekst</Text>
-                    <Text>ikonka + tekst</Text>
+                           
+                            {itemIn.themesPT.map(theme => (
+                                <Text key={theme.icon}>
+
+                                </Text>
+                            ))}
+                            </React.Fragment>
+                        )
+                    })} */}
+                    {/* {dataBooks.map((item, themes) => {
+                        return (
+                            <React.Fragment key={themes}>
+                                {item.themesPT}
+                                {
+                                    item.dataBooks.map((subitem, i) => {
+                                        <Text>{subitem.themesPT}</Text>
+                                    })
+                                }
+                            </React.Fragment>
+                        )
+                    })} */}
+                    {/* {dataBooks[dataBooks].themesPT.map((item, themes) => {
+                        return <React.Fragment key={themes}>
+                                {item.icon}
+                        </React.Fragment>
+                    })} */}
                 </Stack>
                 <HStack
                     alignItems="center"

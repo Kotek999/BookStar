@@ -14,7 +14,6 @@ export default function BoxContainer(props) {
         <Box {...props}
             maxWidth={DimensionsWidth - margin}
             maxHeight={DimensionsHeight}
-            
             rounded="xl"
             overflow="hidden"
             borderColor="coolGray.200"
