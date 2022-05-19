@@ -8,8 +8,8 @@ export const dataBooks = [{
     datePT: "28 czerwca 1834",
     themesPT: [
         {
-            icon: [ "ikonka xD" ],
-            type: [ "typ motywu jako tekst" ],
+            icon: "ikonka xD" ,
+            type: "typ motywu jako tekst",
         },
     ],
 }, {
