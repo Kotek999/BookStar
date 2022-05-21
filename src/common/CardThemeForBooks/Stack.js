@@ -11,9 +11,15 @@ export default function StackContainer() {
     const DimensionsHeight = Dimensions.get('window').height
     const marginTop = 20
 
+    // function searchDataBooks(searchText) {
+    //     return dataBooks.filter(entry => entry.themes.some(item => item.icon.includes(searchText)));
+    // }
+
+    // console.log(searchDataBooks("ikonka xD"))
+
     return (
-        <ScrollView 
-            maxH={DimensionsHeight / 2} 
+        <ScrollView
+            maxH={DimensionsHeight / 2}
             marginTop={0}
             padding={0}
             marginBottom={DimensionsHeight / 30}
@@ -23,6 +29,7 @@ export default function StackContainer() {
                 p="4"
                 space={3}
                 height={600}
+                padding={6}
             >
                 <Stack
                     space={2}
@@ -110,36 +117,28 @@ export default function StackContainer() {
                     >
                         Motywy:
                     </Heading>
-                    {/* {dataBooks.map(itemIn => {
-                        return (
-                            <React.Fragment key={itemIn.themesPT}>
-
-                           
-                            {itemIn.themesPT.map(theme => (
-                                <Text key={theme.icon}>
-
-                                </Text>
-                            ))}
-                            </React.Fragment>
-                        )
-                    })} */}
-                    {/* {dataBooks.map((item, themes) => {
-                        return (
-                            <React.Fragment key={themes}>
-                                {item.themesPT}
-                                {
-                                    item.dataBooks.map((subitem, i) => {
-                                        <Text>{subitem.themesPT}</Text>
-                                    })
-                                }
-                            </React.Fragment>
-                        )
-                    })} */}
-                    {/* {dataBooks[dataBooks].themesPT.map((item, themes) => {
-                        return <React.Fragment key={themes}>
-                                {item.icon}
-                        </React.Fragment>
-                    })} */}
+                    <Stack
+                        flexDirection="row"
+                    >
+                        {dataBooks.map(data => {
+                            return (
+                                <Stack>
+                                    {data.themes.map(themes => (
+                                        <Stack>
+                                            <Text>
+                                            {themes.iconArkadii}
+                                            {themes.typeArkadii}
+                                            </Text>
+                                            <Text>
+                                            {themes.iconMiłość}
+                                            {themes.typeMiłość}
+                                            </Text>
+                                        </Stack>
+                                    ))}
+                                </Stack>
+                            )
+                        })}
+                    </Stack>
                 </Stack>
                 <HStack
                     alignItems="center"
@@ -177,6 +176,6 @@ export default function StackContainer() {
                     </HStack>
                 </HStack>
             </Stack>
-            </ScrollView>
+        </ScrollView>
     );
 };
