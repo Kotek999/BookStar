@@ -1,3 +1,16 @@
+import { 
+    IconClover, 
+    IconHeart, 
+    IconChange,
+    IconFamily,
+    IconHome,
+    IconMan,
+    IconResidence,
+    IconNature,
+    IconPatriot
+} 
+from "../../common/ThemesIcons/Icons";
+
 export const dataBooks = [
     {
         id: "83223jd2-6y2e-46c2-aed5-35gee321f8ba",
@@ -9,32 +22,32 @@ export const dataBooks = [
         datePT: "28 czerwca 1834",
         themes: [
             {
-                iconArkadii: "",
-                typeArkadii: "Arkadii",
+                iconArkadii: <IconClover />,
+                typeArkadii: " - Arkadii",
 
-                iconMiłość: "",
-                typeMiłość: "Miłości nieszczęśliwej (miłość romantyczna)",
+                iconMiłość: <IconHeart />,
+                typeMiłość:  " - Miłości Nieszczęśliwej",
 
-                iconPrzemiana: "",
-                typePrzemiana: "Przemiany wewnętrznej bohatera",
+                iconPrzemiana: <IconChange />,
+                typePrzemiana: " - Przemiany Wewnętrznej Bohatera",
 
-                iconRodzina: "",
-                typeRodzina: "Rodziny",
+                iconRodzina: <IconFamily />,
+                typeRodzina: " - Rodziny",
 
-                iconOjczyzna: "",
-                typeOjczyzna: "Ojczyzny",
+                iconOjczyzna: <IconHome />,
+                typeOjczyzna: " - Ojczyzny",
 
-                iconSzlchacic: "",
-                typeSzlachcic: "Szlachcica",
+                iconSzlachcic: <IconMan />,
+                typeSzlachcic: " - Szlachcica",
 
-                iconDworek: "",
-                typeDworek: "Dworku",
+                iconDworek: <IconResidence />,
+                typeDworek: " - Dworku",
 
-                iconPrzyroda: "",
-                typePrzyroda: "Przyrody",
+                iconPrzyroda: <IconNature />,
+                typePrzyroda: " - Przyrody",
 
-                iconPatriotyzm: "",
-                typePatriotyzm: "Patriotyzmu",
+                iconPatriotyzm: <IconPatriot />,
+                typePatriotyzm: " - Patriotyzmu",
             },
         ],
     }, {

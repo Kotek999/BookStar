@@ -25,7 +25,7 @@ function CardThemeForBooks() {
                         <Box>
                             <AspectRatio
                                 w="100%"
-                                ratio={(isWEB() && height > 700) ? 16 / 9 : 16 / 9 } 
+                                ratio={(isWEB() && height > 700) ? 0 : 16 / 9 } 
                             >
                                 <Image
                                     source={{

@@ -5,10 +5,12 @@ import { Box } from 'native-base';
 
 export default function BoxContainer(props) {
 
+    const { height } = Dimensions.get('window')
+
     const DimensionsWidth = Dimensions.get('window').width
     const DimensionsHeight = Dimensions.get('window').height
     const margin = 40;
-    const marginBottom = 0.5;
+    const marginBottom = 400;
 
     return (
         <Box {...props}

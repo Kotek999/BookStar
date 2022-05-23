@@ -4,7 +4,7 @@ import { Stack, HStack, Heading, Text, View, Divider, ScrollView } from 'native-
 import { Dimensions } from 'react-native';
 import { dataBooks } from '../../Books/DataBooks/data';
 import TimeLogic from '../Time/TimeLogic';
-
+import MapThemes from '../MapThemes/MapThemes';
 
 export default function StackContainer() {
 
@@ -19,11 +19,11 @@ export default function StackContainer() {
 
     return (
         <ScrollView
-            maxH={DimensionsHeight / 2}
+            maxH={DimensionsHeight / 2.3}
             marginTop={0}
             padding={0}
-            marginBottom={DimensionsHeight / 30}
-            backgroundColor="amber.300"
+            marginBottom={DimensionsHeight / 50}
+            backgroundColor="white"
         >
             <Stack
                 p="4"
@@ -111,35 +111,7 @@ export default function StackContainer() {
                     ))}
                 </Text>
                 <Divider backgroundColor="violet.300" />
-                <Stack>
-                    <Heading
-                        fontSize="xl"
-                    >
-                        Motywy:
-                    </Heading>
-                    <Stack
-                        flexDirection="row"
-                    >
-                        {dataBooks.map(data => {
-                            return (
-                                <Stack>
-                                    {data.themes.map(themes => (
-                                        <Stack>
-                                            <Text>
-                                            {themes.iconArkadii}
-                                            {themes.typeArkadii}
-                                            </Text>
-                                            <Text>
-                                            {themes.iconMiłość}
-                                            {themes.typeMiłość}
-                                            </Text>
-                                        </Stack>
-                                    ))}
-                                </Stack>
-                            )
-                        })}
-                    </Stack>
-                </Stack>
+                <MapThemes />
                 <HStack
                     alignItems="center"
                     space={4}
