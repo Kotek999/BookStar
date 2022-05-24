@@ -5,21 +5,20 @@ import { Box } from 'native-base';
 
 export default function BoxContainer(props) {
 
-    const { height } = Dimensions.get('window')
-
     const DimensionsWidth = Dimensions.get('window').width
     const DimensionsHeight = Dimensions.get('window').height
-    const margin = 40;
-    const marginBottom = 400;
+    
+    const marginLR = 20
+    const scale = 1.3
+    
 
     return (
         <Box {...props}
-            maxWidth={DimensionsWidth - margin}
-            maxHeight={DimensionsHeight}
+            maxWidth={DimensionsWidth - marginLR}
+            maxHeight={DimensionsHeight / scale}
             rounded="xl"
             overflow="hidden"
-            borderColor="coolGray.200"
-            borderWidth="1"
+            
             _dark={{
                 borderColor: "coolGray.600",
                 backgroundColor: "gray.700"
@@ -27,7 +26,7 @@ export default function BoxContainer(props) {
                 shadow: 2,
                 borderWidth: 0
             }} _light={{
-                backgroundColor: "gray.50"
+                backgroundColor: "violet.500"
             }}
         >
         </Box>

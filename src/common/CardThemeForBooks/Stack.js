@@ -1,15 +1,18 @@
 
 import * as React from 'react';
 import { Stack, HStack, Heading, Text, View, Divider, ScrollView } from 'native-base';
-import { Dimensions } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import { dataBooks } from '../../Books/DataBooks/data';
 import TimeLogic from '../Time/TimeLogic';
 import MapThemes from '../MapThemes/MapThemes';
+import BookIconEntypo from 'react-native-vector-icons/Entypo';
+import isWEB from '../Resolutions/isWEB';
+
 
 export default function StackContainer() {
 
     const DimensionsHeight = Dimensions.get('window').height
-    const marginTop = 20
+    const marginTB = 40
 
     // function searchDataBooks(searchText) {
     //     return dataBooks.filter(entry => entry.themes.some(item => item.icon.includes(searchText)));
@@ -19,16 +22,16 @@ export default function StackContainer() {
 
     return (
         <ScrollView
-            maxH={DimensionsHeight / 2.3}
-            marginTop={0}
+            height={DimensionsHeight}
+            marginTop={DimensionsHeight / marginTB}
+            marginBottom={DimensionsHeight / marginTB}
             padding={0}
-            marginBottom={DimensionsHeight / 50}
             backgroundColor="white"
         >
             <Stack
                 p="4"
                 space={3}
-                height={600}
+                height={DimensionsHeight}
                 padding={6}
             >
                 <Stack
@@ -110,7 +113,28 @@ export default function StackContainer() {
                         </React.Fragment>
                     ))}
                 </Text>
-                <Divider backgroundColor="violet.300" />
+                {(isWEB() && DimensionsHeight > 700) ? (
+                    <Divider
+                        style={styles.breakline}
+                    />
+                ) : (
+                    <Stack
+                        style={styles.lineContainer}
+                    >
+                        <Divider
+                            style={styles.breakline}
+                        />
+                        <Text
+                            style={styles.bookIcon}
+                        >
+                            <BookIconEntypo
+                                name="open-book"
+                                size={18}
+                                color="gray"
+                            />
+                        </Text>
+                    </Stack>
+                )}
                 <MapThemes />
                 <HStack
                     alignItems="center"
@@ -151,3 +175,26 @@ export default function StackContainer() {
         </ScrollView>
     );
 };
+
+const styles = StyleSheet.create({
+    lineContainer: {
+        backgroundColor: "white",
+        paddingTop: 20,
+        paddingBottom: 20,
+    },
+    breakline: {
+        height: 1.5,
+        backgroundColor: "violet",
+    },
+    bookIcon: {
+        textAlign: "center",
+        alignSelf: "center",
+        width: 45,
+        marginTop: -12,
+        height: 20,
+        color: "gray",
+        fontSize: 10,
+        letterSpacing: 1.25,
+        backgroundColor: "white"
+    }
+})
