@@ -3,8 +3,10 @@ import * as React from 'react';
 import { Stack, HStack, Heading, Text, View, Divider, ScrollView } from 'native-base';
 import { StyleSheet, Dimensions } from 'react-native';
 import { dataBooks } from '../../Books/DataBooks/data';
+import { dataCommon } from '../../Books/DataBooks/dataCommon';
 import TimeLogic from '../Time/TimeLogic';
-import MapThemes from '../MapThemes/MapThemes';
+import MapThemes from '../Maps/MapThemes';
+import MapHeroes from '../Maps/MapHeroes';
 import BookIconEntypo from 'react-native-vector-icons/Entypo';
 import isWEB from '../Resolutions/isWEB';
 
@@ -13,6 +15,7 @@ export default function StackContainer() {
 
     const DimensionsHeight = Dimensions.get('window').height
     const marginTB = 40
+    const marginLogo = 130
 
     // function searchDataBooks(searchText) {
     //     return dataBooks.filter(entry => entry.themes.some(item => item.icon.includes(searchText)));
@@ -23,7 +26,7 @@ export default function StackContainer() {
     return (
         <ScrollView
             height={DimensionsHeight}
-            marginTop={DimensionsHeight / marginTB}
+            marginTop={DimensionsHeight / marginLogo}
             marginBottom={DimensionsHeight / marginTB}
             padding={0}
             backgroundColor="white"
@@ -31,7 +34,7 @@ export default function StackContainer() {
             <Stack
                 p="4"
                 space={3}
-                height={DimensionsHeight}
+                height={DimensionsHeight + DimensionsHeight + 300}
                 padding={6}
             >
                 <Stack
@@ -136,15 +139,16 @@ export default function StackContainer() {
                     </Stack>
                 )}
                 <MapThemes />
+                <MapHeroes />
                 <HStack
                     alignItems="center"
                     space={4}
                     justifyContent="flex-end"
                     flexDirection="column"
+                    marginTop={-40}
                 >
                     <HStack
                         alignItems="center"
-                        margin={2}
                     >
                         <Text
                             color="coolGray.600"
@@ -154,10 +158,11 @@ export default function StackContainer() {
                             fontWeight="600"
                             fontSize={13.5}
                         >
-                            Do wakacji pozostało:</Text>
+                            {dataCommon.timeLeftToHoliday} </Text>
                     </HStack>
                     <HStack
                         alignItems="center"
+                        margin={2}
                     >
                         <Text
                             color="coolGray.600"

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
 import { dataBooks } from '../../Books/DataBooks/data';
+import { dataCommon } from '../../Books/DataBooks/dataCommon';
 import { Stack, Heading, Text } from 'native-base';
 
 export default function MapThemes() {
@@ -10,7 +11,7 @@ export default function MapThemes() {
             <Heading
                 fontSize="xl"
             >
-                Motywy:
+                {dataCommon.titleThemes}
             </Heading>
             <Stack
                 flexDirection="row"

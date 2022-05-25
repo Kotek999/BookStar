@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Dimensions, StyleSheet, ScrollView, SafeAreaView} from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 import { Box, View, AspectRatio, Image } from "native-base";
 import BackgroundScreen from '../../common/BackgroundScreen/BackgroundScreen';
 import BoxContainer from './Box';
@@ -34,7 +34,7 @@ function CardThemeForBooks() {
                                     alt="image"
                                 />
                             </AspectRatio>
-                            <CenterContainer />
+                           <CenterContainer />
                         </Box>
                         <StackContainer />
                     </BoxContainer>
