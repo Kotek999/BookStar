@@ -1,21 +1,17 @@
 
 import * as React from 'react';
-import { Stack, HStack, Heading, Text, View, Divider, ScrollView } from 'native-base';
+import { Stack, Heading, Text, ScrollView } from 'native-base';
 import { StyleSheet, Dimensions } from 'react-native';
 import { dataBooks } from '../../Books/DataBooks/data';
-import { dataCommon } from '../../Books/DataBooks/dataCommon';
-import TimeLogic from '../Time/TimeLogic';
+import { WebDivider } from '../BookDivider/WebDivider';
 import MapThemes from '../Maps/MapThemes';
 import MapHeroes from '../Maps/MapHeroes';
-import BookIconEntypo from 'react-native-vector-icons/Entypo';
+import TimeWrapper from '../Time/TimeWrapper';
 import isWEB from '../Resolutions/isWEB';
 
-
 export default function StackContainer() {
-
+    
     const DimensionsHeight = Dimensions.get('window').height
-    const marginTB = 40
-    const marginLogo = 130
 
     // function searchDataBooks(searchText) {
     //     return dataBooks.filter(entry => entry.themes.some(item => item.icon.includes(searchText)));
@@ -25,16 +21,11 @@ export default function StackContainer() {
 
     return (
         <ScrollView
-            height={DimensionsHeight}
-            marginTop={DimensionsHeight / marginLogo}
-            marginBottom={DimensionsHeight / marginTB}
-            padding={0}
-            backgroundColor="white"
+           style={styles.scroll}
         >
             <Stack
                 p="4"
                 space={3}
-                height={DimensionsHeight + DimensionsHeight + 300}
                 padding={6}
             >
                 <Stack
@@ -116,90 +107,29 @@ export default function StackContainer() {
                         </React.Fragment>
                     ))}
                 </Text>
-                {(isWEB() && DimensionsHeight > 700) ? (
-                    <Divider
-                        style={styles.breakline}
-                    />
-                ) : (
-                    <Stack
-                        style={styles.lineContainer}
-                    >
-                        <Divider
-                            style={styles.breakline}
-                        />
-                        <Text
-                            style={styles.bookIcon}
-                        >
-                            <BookIconEntypo
-                                name="open-book"
-                                size={18}
-                                color="gray"
-                            />
-                        </Text>
-                    </Stack>
-                )}
+                <WebDivider />
                 <MapThemes />
                 <MapHeroes />
-                <HStack
-                    alignItems="center"
-                    space={4}
-                    justifyContent="flex-end"
-                    flexDirection="column"
-                    marginTop={-40}
-                >
-                    <HStack
-                        alignItems="center"
-                    >
-                        <Text
-                            color="coolGray.600"
-                            _dark={{
-                                color: "warmGray.200"
-                            }}
-                            fontWeight="600"
-                            fontSize={13.5}
-                        >
-                            {dataCommon.timeLeftToHoliday} </Text>
-                    </HStack>
-                    <HStack
-                        alignItems="center"
-                        margin={2}
-                    >
-                        <Text
-                            color="coolGray.600"
-                            _dark={{
-                                color: "warmGray.200"
-                            }}
-                            fontWeight="600"
-                            fontSize={13.5}
-                        >
-                            <TimeLogic />
-                        </Text>
-                    </HStack>
-                </HStack>
+                {(isWEB() && DimensionsHeight > 700) ? (
+                    <TimeWrapper isMarginExist={false} />
+                ) : (
+                    <TimeWrapper isMarginExist={true} />
+                )}
             </Stack>
         </ScrollView>
     );
 };
 
+const DimensionsHeight = Dimensions.get('window').height;
+const marginTB = 40;
+const marginLogo = 130;
+
 const styles = StyleSheet.create({
-    lineContainer: {
-        backgroundColor: "white",
-        paddingTop: 20,
-        paddingBottom: 20,
-    },
-    breakline: {
-        height: 1.5,
-        backgroundColor: "violet",
-    },
-    bookIcon: {
-        textAlign: "center",
-        alignSelf: "center",
-        width: 45,
-        marginTop: -12,
-        height: 20,
-        color: "gray",
-        fontSize: 10,
-        letterSpacing: 1.25,
+    scroll: {
+        height: DimensionsHeight,
+        marginTop: DimensionsHeight / marginLogo,
+        marginBottom: DimensionsHeight / marginTB,
+        padding: 0,
         backgroundColor: "white"
-    }
+    },
 })
