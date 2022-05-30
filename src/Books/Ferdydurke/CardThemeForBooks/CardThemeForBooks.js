@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Dimensions, StyleSheet, ImageBackground } from "react-native";
 import { Box, View, AspectRatio } from "native-base";
-import BackgroundScreen from '../../common/BackgroundScreen/BackgroundScreen';
+import BackgroundScreen from '../../../common/BackgroundScreen/BackgroundScreen';
 import BoxContainer from './Box';
 import CenterContainer from './Center';
 import StackContainer from './Stack';
-import isWEB from '../Resolutions/isWEB';
+import isWEB from '../../../common/Resolutions/isWEB';
 
 function CardThemeForBooks() {
 
@@ -28,7 +28,7 @@ function CardThemeForBooks() {
                                 ratio={(isWEB() && height > 700) ? 0 : 16 / 9}
                             >
                                 <ImageBackground
-                                    source={require('../../assets/imagePT.jpeg')}
+                                    source={require('../../../assets/imagePT.jpeg')}
                                     alt="image"
                                 />
 

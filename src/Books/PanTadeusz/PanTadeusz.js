@@ -1,16 +1,6 @@
 import * as React from 'react';
-import { Dimensions, StyleSheet, ScrollView, SafeAreaView } from "react-native";
-import {
-    Box,
-    Heading,
-    View,
-    AspectRatio,
-    Image,
-    Text,
-    Center,
-    HStack,
-    Stack,
-} from "native-base";
+import { Dimensions, StyleSheet } from "react-native";
+import { View } from "native-base";
 import BackgroundScreen from '../../common/BackgroundScreen/BackgroundScreen';
 import CardThemeForBooks from '../../common/CardThemeForBooks/CardThemeForBooks';
 

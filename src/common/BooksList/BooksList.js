@@ -29,7 +29,7 @@ const BooksList = () => {
                 borderColor: "gray.600"
             }} borderColor="coolGray.200" pl="5" pr="5" py="7">
                     <HStack space={4} justifyContent="space-between">
-                        <Avatar size="60px" source={{
+                        <Avatar size="60px" alt="avatar" source={{
                             uri: item.avatarUrl
                         }} />
                         <VStack>
