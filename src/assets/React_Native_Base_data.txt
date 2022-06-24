@@ -1,0 +1,92 @@
+-------------Dziady Cz. III-------------
+
+title: Dziady Cz. III 
+author:	Adam Mickiewicz
+authorText: Autor:
+content: Nasz naród jak lawa, Z wierzchu zimna i twarda, sucha i plugawa, Lecz wewnętrznego ognia sto lat nie wyziębi; Plwajmy na tę skorupę i zstąpmy do głębi.	
+date: 1832
+themes: 
+[
+	{
+	icon("Icon")  
+	type("Text") - motyw wolności, cierpienia, poświęcenia, snu
+		miłości, patriotyzmu, samotności, władzy
+	}
+]
+ mainHeroes: (15):
+	listIcon("Icon")
+	name: (Konrad), (Ksiądz Piotr), (Nowosilcow (Senator)), (Anioły), (Diabły),(Rollison), (Rollisonowa), (Piotr Wysocki), (Cichowski)
+	content: (człowiek o wyjątkowej wrażliwości i bogatym życiu 							wewnętrznym.), (bernardyn, odważny, patriota, przenikliwy i stanowczy,samowolny tyran, bezlitosny oraz obłudny, uosobienie zła), (duchy dobre, czuwają nad Konradem),(duchy złe, budzą w duszy Konrada złe myśli o zemście), (student aresztowany za udział w antycarskim spisku.), 
+(niewidoma matka studenta, nieludzko potraktowanego przez carskich siepaczy, wdowa.), (uczestnik przyjęcia w salonie warszawskim, ocenia polski naród jako lawa.), (męczennik narodowy, dusza towarzystwa, wesoły)
+
+--------------------------------------------
+
+-------------Lalka--------------------------
+
+title: Lalka
+author:	Bolesław Prus
+authorText: Autor:
+content: Jedni giną z niedostatku, drudzy z rozpusty. Praca odejmuje sobie od ust, ażeby karmić niedołęgów; miłosierdzie hoduje bezczelnych próżniaków, a ubóstwo nie mogące zdobyć się na sprzęty otacza się wiecznie głodnymi dziećmi, których największą zaletą jest wczesna śmierć.	
+date: 1889
+themes: 
+[
+	{
+	icon("Icon")  
+	type("Text") - motyw pracy, miłości, miasta, tęsknoty, podróży,
+			domu, samotności, przyjaźni, patriotyzmu, cierpienia,
+			lalki
+	}
+]
+ mainHeroes: (15):
+	listIcon("Icon")
+	name: (Stanisław Wokulski), (Ignacy Rzecki), (Izabela Łęcka),
+		(Prezesowa Zasławska), (Starski), (Ochocki), 
+(Stary Szlangbaum), (Młody Szlangbaum), (Doktor Szuman), (Profesor Geist),
+(Helena Stawska), (Marianna), (Węgiełek)
+	content: (główny bohater, kupiec, człowiek interesu i romantyk, intelektualista), (najbliższy przyjaciel Wokulskiego, stary romantyk, gorący 
+patriota, niezwykle uczuciowy), (przedmiot uwielbienia Wokulskiego, piękna panna z rodziny arystokratycznej), (dojrzała wiekiem dama, przyjaciółka Wokulskiego, wzorowo prowadząca swój majątek), (cyniczny oszust i uwodziciel, przez niego dochodzi do rozstania między Wokulskim a Izabelą), (naukowiec i wynalazca, kuzyn Izabeli Łęckiej, wierzy bardziej w naukę niż w życie rodzinne), (najbogatszy w Warszawie Żyd, szanuje Wokulskiego oraz wyświadcza mu przysługi, przejmuje po nim wszystkie interesy), (syn wyżej wspomnianego Szlangbauma, zostaje odrzucony przez Polaków, staje się bardziej bezwzględny niż własny ojciec), (badacz zafascynowany antropologią, stary przyjaciel Wokulskiego i bliski Rzeckiego), (geniusz i wynalazca, uznawany za szaleńca, odkrywca metalu lżejszego od powietrza), (piękność w której kochają się wszyscy, pragnie tylko Wokulskiego, zaradna wobec problemów finansowych),
+(prostytutka, początkowo ordynarna i cyniczna, Wokulski daje jej szansę na zmianę swego życia), (młody, utalentowany rzemieślnik, sprowadzony przez Wokulskiego umożliwiając mu lepszy start, szczęsliwie zakochany w Mariannie)
+-------------------------------------------
+
+-------------Ferdydurke-------------
+
+title: Ferdydurke
+author:	Witold Gombrowicz
+authorText: Autor:
+content: "Choćbym chciał, nie mogę, nie mogę i nie mogę uchylić się żelaznym prawom symetrii oraz analogii". "człowiek jest najgłębiej uzależniony od swego odbicia w duszy drugiego człowieka (...) nie jesteśmy samoistni, jesteśmy tylko funkcją innych ludzi, musimy być takimi, jakimi nas widzą (...)". "Koniec i bomba.
+date: październik 1937
+themes: 
+[
+	{
+	icon("Icon")  
+	type("Text") - motyw maski, niedojrzałości, niewinności, snu, szkoły, szlacheckiego dworku, rodziny 
+	}
+]
+ mainHeroes: (15):
+	listIcon("Icon")
+	name: (Józio Kowalski), (Pimko), (Miętalski - Miętus),(Pylaszczkiewicz - Syfon), (Zuta Młodziakówna), (pani Młodziakowa) (inżynier Wiktor Młodziak),
+(pani Hurlecka)
+	content: (główny bohater, ma trzydzieći lat, pisarz, przegrywa z formą - jako zakochany porywacz opuszcza dwór), (nauczyciel języka polskiego w szkole dyrektora Piórkowskiego), (uczeń szkoły, przywódca grupy chłopców, wraz z grupą sprzeciwia się szkolnemu personelowi), (uczeń szkoły, szkolny prymus),
+(naturalna, zgrabna i wysportowana uważana za wzór młodości dla Józia przez nauczyciela Pimka), (kobieta inteligentna i uspołeczniona, z bacznym i bystrym wyrazem twarzy), (urbanista, pacyfista, oraz wielbiciel organizacji pracy), (ciotka głównego bohatera, mieszkająca w szlachetnim dworku w Bolimowie, pomimo wieku Józia traktuje go nadal jak dziecko)
+--------------------------------------------
+
+-------------Wesele-------------
+
+title: Wesele 
+author:	Stanisław Wyspiański
+authorText: Autor:
+content: dopisać
+date: 16 marca 1901,
+themes: 
+[
+	{
+	icon("Icon")  
+	type("Text") - motyw literatury, ojczyzny, powstania, wsi, 			dekadentyzmu, tańca, miłości
+	}
+]
+ mainHeroes: (15):
+	listIcon("Icon")
+	name: (Gospodarz - Włodzimiesz Tetmajer), (Gospodyni - Anna Mikołajczykówna), (Pan Młody - Lucjan Rydel) (Panna Młoda - Jadwiga Mikołaczykówna), (Poeta - Kazimierz Przerwa-Tetmajer), (Dziennikarz - Rudolf Starzewski), (Rachela - Pepa (Józefa) Singer), (Żyd - Herz Singer), (Ksiądz),
+(Dziad), (Czepiec - Błażej Czepiec) (Chochoł), (Stańczyk), (Rycerz - Zawisza Czarny), (Hetman - Branicki), (Wernyhora), (Upiór)
+	content: (malarz, mieszkaniec Bronowic, żonaty z chłopką, autorytet wśród ludzi, rozumie wielkość i godność polskiego chłopa), (siostra Panny Młodej, najważniejsze dla niej jest szczęście rodzinne oraz dobro męża i dzieci), (poeta, żeni się z Jadwigą Mikołajczykówną, wesele z chłopką traktowane jest jako przykład młodopolskiej (ludomanii(chłopomanii), popada w sztuczną egzaltację, nie rozumie praw i obyczajów), (młoda, dostojna i piękna wdzięku, narzeczona Pana Młodego, zamierza być gospodynią jak jej siostra Anna),(brat Gospodarza, poeta młodopolski, w jego wierszach dominuje dekadentyzm oraz nastroje pesymistyczne, jest sztuczny i bierny interesuje go tylko Rachela - uosobienie poezji), (redaktor pisma "Czas", ma drwiący stosunek do kobiet i chłopów, jest bierny i bezkrytyczny), (córka Heresza Singera - karczmarza z Bronowic, nadwrażliwa, uosobienie poezji i kobiecości, jest artystką przeżywania), (karczmarz z Bronowic, jest nie mile widziany na weselu, rzeczowy i konkretny, zawsze pilnuje swoich interesów), (partner w interesach Żyda, interesują go głównie pieniądze, sceptyczny), (staruszek pamiętający rabację galicyjską (rzeź szchlachty i mieszczaństwa dokonana przez chłopów), (uosobienie mitu racławskich kos, interesuje się polityką i wydarzeniami które się wokół rogrywają, odważny ale też uparty, zawzięty i porywczy, najpierw działa - później myśli), (słomiana pałuba, symbol idei odrodzenia, możliwości zmartwychwstania, osłona życia i bytu, z drugiej strony symbol idei upadku, marazmu oraz bierności), (nadworny błazen Zygmunta Starego, symbol mądrości politycznej, mądry i przenikliwy), (symbol potęgi i męstwa zarówno fizycznego jak i duchowego, ukazuje się Poecie, chce ożywić jego twórczość w imię walki o wolność i niepodległość), (symbol szlacheckiej prywaty i kosmopolityzmu, potępia bratanie się z szlachtą), (legendarny poeta-wieszcz, przybywa do Gospodarza z rozkazem rozpoczęcia powstania, gra na złotym rogu), (widmo Jakuba Szeli, symbolizuje zbrodnie rabacji galicyjskiej)
+--------------------------------------------
