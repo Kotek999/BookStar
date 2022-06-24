@@ -109,7 +109,7 @@ export default function StackContainer() {
                 </Text>
                 <WebDivider />
                 <MapThemes isThemesFD={true}/>
-                <MapHeroes />
+                <MapHeroes isHeroesFD={true}/>
                 {(isWEB() && DimensionsHeight > 700) ? (
                     <TimeWrapper isMarginExist={false} />
                 ) : (

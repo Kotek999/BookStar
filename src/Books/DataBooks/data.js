@@ -1,13 +1,20 @@
 import { 
     IconClover, 
-    IconHeart, 
+    IconBrokenHeart, 
     IconChange,
     IconFamily,
     IconHome,
     IconMan,
     IconResidence,
     IconNature,
-    IconPatriot
+    IconPatriot,
+    IconFreedom,
+    IconCry,
+    IconSacrifice,
+    IconSleep,
+    IconHeart,
+    IconAlone,
+    IconCrown,
 } 
 from "../../common/ThemesIcons/Icons";
 import { IconList } from "../../common/ListIcon/ListIcon";
@@ -17,112 +24,112 @@ export const dataBooks = [
         id: "83223jd2-6y2e-46c2-aed5-35gee321f8ba",
         titlePT: "Pan Tadeusz",
         authorPT: "Adam Mickiewicz",
-        authorText: "Autor:",
+        authorTextPT: "Autor:",
         contentPT: "„Litwo! Ojczyzno moja! Ty jesteś jak zdrowie; Ile cię trzeba cenić, ten tylko się dowie; Kto cię stracił. Dziś piękność twą w całej ozdobie Widzę i opisuję, bo tęsknię po tobie”.",
         datePT: "28 czerwca 1834",
         themes: [
             {
                 iconArkadii: <IconClover />,
-                typeArkadii: " - Arkadii",
+                typeArkadii: " Arkadii",
 
-                iconMiłość: <IconHeart />,
-                typeMiłość:  " - Miłości Nieszczęśliwej",
+                iconMiłość: <IconBrokenHeart />,
+                typeMiłość: " Miłości Nieszczęśliwej",
 
                 iconPrzemiana: <IconChange />,
-                typePrzemiana: " - Przemiany Wewnętrznej Bohatera",
+                typePrzemiana: " Przemiany Wewnętrznej Bohatera",
 
                 iconRodzina: <IconFamily />,
-                typeRodzina: " - Rodziny",
+                typeRodzina: " Rodziny",
 
                 iconOjczyzna: <IconHome />,
-                typeOjczyzna: " - Ojczyzny",
+                typeOjczyzna: " Ojczyzny",
 
                 iconSzlachcic: <IconMan />,
-                typeSzlachcic: " - Szlachcica",
+                typeSzlachcic: " Szlachcica",
 
                 iconDworek: <IconResidence />,
-                typeDworek: " - Dworku",
+                typeDworek: " Dworku",
 
                 iconPrzyroda: <IconNature />,
-                typePrzyroda: " - Przyrody",
+                typePrzyroda: " Przyrody",
 
                 iconPatriotyzm: <IconPatriot />,
-                typePatriotyzm: " - Patriotyzmu",
+                typePatriotyzm: " Patriotyzmu",
             },
         ],
         mainHeroes: [
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Pan Tadeusz - Tadeusz Soplica",
                 contentPT: "(Syn Jacka Soplicy i bratanek Sędziego)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Ksiądz Robak - Jacek Soplica",
                 contentPT: "(Ojciec Tadeusza)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Sędzia",
                 contentPT: "(Brat Jacka Soplicy i opiekun Tadeusza)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Zosia",
                 contentPT: "(Córka Ewy Horeszko)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Telimena",
                 contentPT: "(Opiekunka Zosi, jej daleka krewna)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Hrabia",
                 contentPT: "(krewny Horeszków)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Wojski",
                 contentPT: "(Długoletni przyjaciel Sopliców)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Podkomorzy",
                 contentPT: "(Przyjaciel Sędziego)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Rejent",
                 contentPT: "(dobry znajomy Sędziego)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Asesor",
                 contentPT: "(Znajomy i częsty gość Sędziego Soplicy)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Gerwazy",
                 contentPT: "(Stary klucznik zamku Horeszków)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT:<IconList />,
                 namePT: "Protazy",
                 contentPT: "(Wierny, stary sługa Sędziego)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Maciej Dobrzyński",
                 contentPT: "(Przedstawiciel szlachty zaściankowej)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Jankiel",
                 contentPT: "(Stary Żyd, właściciel karczmy)."
             },
             {
-                listIcon: <IconList />,
+                listIconPT: <IconList />,
                 namePT: "Stolnik",
                 contentPT: "(Przypadkowo ginie z rąk Jacka Soplicy)."
             }
@@ -131,33 +138,34 @@ export const dataBooks = [
         id: "fej93jnj-5hy2-48d3-a4f8-uew8u8w2sass",
         titleDZIII: "Dziady Cz. III",
         authorDZIII: "Adam Mickiewicz",
-        contentDZIII: "Nasz naród jak lawa, Z wierzchu zimna i twarda, sucha i plugawa, Lecz wewnętrznego ognia sto lat nie wyziębi; Plwajmy na tę skorupę i zstąpmy do głębi.",
+        authorTextDZIII: "Autor:",
+        contentDZIII: "„Nasz naród jak lawa, Z wierzchu zimna i twarda, sucha i plugawa, Lecz wewnętrznego ognia sto lat nie wyziębi; Plwajmy na tę skorupę i zstąpmy do głębi”.",
         dateDZIII: "1832",
         themes: [
             {
-                iconWolność_DZIII: "ikonka xD",
-                typeWolność_DZIII: "typ motywu jako tekst",
+                iconWolność_DZIII: <IconFreedom />,
+                typeWolność_DZIII: " Wolności",
 
-                iconCierpienie_DZIII: "ikonka xD",
-                typeCierpienie_DZIII: "typ motywu jako tekst",
+                iconCierpienie_DZIII: <IconCry />,
+                typeCierpienie_DZIII: " Cierpienia",
 
-                iconPoświęcenie_DZIII: "ikonka xD",
-                typePoświęcenie_DZIII: "typ motywu jako tekst",
+                iconPoświęcenie_DZIII: <IconSacrifice />,
+                typePoświęcenie_DZIII: " Poświęcenia",
 
-                iconSen_DZIII: "ikonka xD",
-                typeSen_DZIII: "typ motywu jako tekst",
+                iconSen_DZIII: <IconSleep />,
+                typeSen_DZIII: " Snu",
 
-                iconMiłość_DZIII: "ikonka xD",
-                typeMiłość_DZIII: "typ motywu jako tekst",
+                iconMiłość_DZIII: <IconHeart />,
+                typeMiłość_DZIII: " Miłości",
 
-                iconPatriotyzm_DZIII: "ikonka xD",
-                typePatriotyzm_DZIII: "typ motywu jako tekst",
+                iconPatriotyzm_DZIII: <IconPatriot />,
+                typePatriotyzm_DZIII: " Patriotyzmu",
 
-                iconSamotność_DZIII: "ikonka xD",
-                typeSamotność_DZIII: "typ motywu jako tekst",
+                iconSamotność_DZIII: <IconAlone />,
+                typeSamotność_DZIII: " Samotności",
 
-                iconWładza_DZIII: "ikonka xD",
-                typeWładza_DZIII: "typ motywu jako tekst",
+                iconWładza_DZIII: <IconCrown />,
+                typeWładza_DZIII: " Władzy",
             },
             
         ],

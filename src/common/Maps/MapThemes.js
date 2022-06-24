@@ -93,7 +93,81 @@ export default function MapThemes(props) {
                 null)
             }
             {props.isThemesDZIII ? (
-                <Heading>Dziady</Heading>
+                <Stack>
+                    <Heading
+                        fontSize="xl"
+                    >
+                        {dataCommon.titleThemes}
+                    </Heading>
+                    <Stack
+                        flexDirection="row"
+                        marginTop={5}
+                    >
+                        {dataBooks.map((item, dataDZIII) => {
+                            return (
+                                <Stack
+                                    key={dataDZIII}
+                                >
+                                    {item.themes.map((themes, themesDZIII) => (
+                                        <Stack
+                                            key={themesDZIII}
+                                            flexDirection="column"
+                                        >
+                                            <Text
+                                                style={styles.themesTitle}
+                                            >
+                                                {themes.iconWolność_DZIII}
+                                                {themes.typeWolność_DZIII}
+                                            </Text>
+                                            <Text
+                                                style={styles.themesTitle}
+                                            >
+                                                {themes.iconCierpienie_DZIII}
+                                                {themes.typeCierpienie_DZIII}
+                                            </Text>
+                                            <Text
+                                                style={styles.themesTitle}
+                                            >
+                                                {themes.iconPoświęcenie_DZIII}
+                                                {themes.typePoświęcenie_DZIII}
+                                            </Text>
+                                            <Text
+                                                style={styles.themesTitle}
+                                            >
+                                                {themes.iconSen_DZIII}
+                                                {themes.typeSen_DZIII}
+                                            </Text>
+                                            <Text
+                                                style={styles.themesTitle}
+                                            >
+                                                {themes.iconMiłość_DZIII}
+                                                {themes.typeMiłość_DZIII}
+                                            </Text>
+                                            <Text
+                                                style={styles.themesTitle}
+                                            >
+                                                {themes.iconPatriotyzm_DZIII}
+                                                {themes.typePatriotyzm_DZIII}
+                                            </Text>
+                                            <Text
+                                                style={styles.themesTitle}
+                                            >
+                                                {themes.iconSamotność_DZIII}
+                                                {themes.typeSamotność_DZIII}
+                                            </Text>
+                                            <Text
+                                                style={styles.themesTitle}
+                                            >
+                                                {themes.iconWładza_DZIII}
+                                                {themes.typeWładza_DZIII}
+                                            </Text>
+                                        </Stack>
+                                    ))}
+                                </Stack>
+                            )
+                        })}
+                    </Stack>
+                </Stack>
             ) : (
                 null
             )}
@@ -107,7 +181,7 @@ export default function MapThemes(props) {
             ) : (
                 null
             )}
-            {props.isThemesWS? (
+            {props.isThemesWS ? (
                 <Heading>Wesele</Heading>
             ) : (
                 null

@@ -39,7 +39,7 @@ export default function StackContainer() {
                             <Text
                                 key={`card-${id + 1}`}
                             >
-                                {item.titlePT}
+                                {item.titleDZIII}
                             </Text>
                         ))}
                     </Heading>
@@ -67,9 +67,9 @@ export default function StackContainer() {
                                         color: "gray.400"
                                     }}
                                 >
-                                    {item.authorText} {""}
+                                    {item.authorTextDZIII} {""}
                                 </Text>
-                                {item.authorPT}
+                                {item.authorDZIII}
                             </React.Fragment>
                         ))}
                     </Text>
@@ -84,7 +84,7 @@ export default function StackContainer() {
                         <React.Fragment
                             key={content}
                         >
-                            {item.contentPT}
+                            {item.contentDZIII}
                         </React.Fragment>
                     ))}
                 </Text>
@@ -103,13 +103,13 @@ export default function StackContainer() {
                         <React.Fragment
                             key={date}
                         >
-                            {item.datePT}
+                            {item.dateDZIII}
                         </React.Fragment>
                     ))}
                 </Text>
                 <WebDivider />
                 <MapThemes isThemesDZIII={true}/>
-                <MapHeroes />
+                <MapHeroes isHeroesDZIII={true}/>
                 {(isWEB() && DimensionsHeight > 700) ? (
                     <TimeWrapper isMarginExist={false} />
                 ) : (

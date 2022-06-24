@@ -6,7 +6,8 @@ import {
     Ionicons,
     MaterialIcons,
     MaterialCommunityIcons,
-    FontAwesome
+    FontAwesome,
+    FontAwesome5
 } from '@expo/vector-icons';
 
 
@@ -22,7 +23,7 @@ export const IconClover = () => (
         />
     </Stack>
 );
-export const IconHeart = () => (
+export const IconBrokenHeart = () => (
     <Stack
         style={styles.iconContainer}
     >
@@ -118,10 +119,96 @@ export const IconPatriot = () => (
         />
     </Stack>
 );
+// DZIII Icons
+export const IconFreedom = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={Entypo}
+            name="flag"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconCry = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={FontAwesome5}
+            name="sad-cry"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconSacrifice = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={MaterialCommunityIcons}
+            name="church"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconSleep = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={MaterialCommunityIcons}
+            name="sleep"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconHeart = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={MaterialCommunityIcons}
+            name="heart"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconAlone = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={FontAwesome5}
+            name="meh"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconCrown = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={MaterialCommunityIcons}
+            name="crown"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+
 
 const styles = StyleSheet.create({
     iconContainer: {
-        marginLeft: 1,
+        marginLeft: 3,
         marginTop: 0,
     }
 })

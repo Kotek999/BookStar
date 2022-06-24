@@ -4,7 +4,7 @@ import { dataBooks } from '../../Books/DataBooks/data';
 import { dataCommon } from '../../Books/DataBooks/dataCommon';
 import { Stack, Heading, Text } from 'native-base';
 
-export default function MapHeroes() {
+export default function MapHeroes(props) {
     return (
         <Stack
             marginTop={4}
@@ -15,35 +15,100 @@ export default function MapHeroes() {
             >
                 {dataCommon.mainHeroes}
             </Heading>
-            {dataBooks.map((item, heoresPT) => {
-                return (
-                    <Stack key={heoresPT} flexDirection="column">
-                        {item.mainHeroes.map((mainHeroes, mainHeroesPT) => (
+            {props.isHeroesPT ? (
+                <>
+                    {dataBooks.map((item, heoresPT) => {
+                        return (
                             <Stack
-                                key={mainHeroesPT}
-                                flexDirection="row"
-                                marginTop={4}
+                                key={heoresPT}
+                                flexDirection="column"
+                                justifyContent="flex-start"
+                                alignItems="flex-start"
+                                alignContent="flex-start"
                             >
-                                <Stack>
-                                    {mainHeroes.listIcon}
-                                </Stack>
-                                <Stack>
-                                    <Text 
-                                        style={styles.heroesTitle}
+                                {item.mainHeroes.map((mainHeroes, mainHeroesPT) => (
+                                    <Stack
+                                        key={mainHeroesPT}
+                                        flexDirection="row"
+                                        marginTop={4}
                                     >
-                                        {mainHeroes.namePT}
-                                    </Text>
-                                    <Text 
-                                        style={styles.heroesContent}
-                                    >
-                                        {mainHeroes.contentPT}
-                                    </Text>
-                                </Stack>
+                                        <Stack>
+                                            {mainHeroes.listIconPT}
+                                        </Stack>
+                                        <Stack>
+                                            <Text
+                                                style={styles.heroesTitle}
+                                            >
+                                                {mainHeroes.namePT}
+                                            </Text>
+                                            <Text
+                                                style={styles.heroesContent}
+                                            >
+                                                {mainHeroes.contentPT}
+                                            </Text>
+                                        </Stack>
+                                    </Stack>
+                                ))}
                             </Stack>
-                        ))}
-                    </Stack>
-                )
-            })}
+                        )
+                    })}
+                </>
+            ) : (
+                null)
+            }
+            {props.isHeroesDZIII ? (
+                <>
+                    {dataBooks.map((item, heoresDZIII) => {
+                        return (
+                            <Stack
+                                key={heoresDZIII}
+                                marginBottom={5}
+                            >
+                                {item.mainHeroes.map((mainHeroes, mainHeroesDZIII) => (
+                                    <Stack
+                                        key={mainHeroesDZIII}
+                                        flexDirection="row"
+                                        marginTop={4}
+                                    >
+                                        <Stack>
+                                            {mainHeroes.listIconDZIII}
+                                        </Stack>
+                                        <Stack>
+                                            <Text
+                                                style={styles.heroesTitle}
+                                            >
+                                                {mainHeroes.nameDZIII}
+                                            </Text>
+                                            <Text
+                                                style={styles.heroesContent}
+                                            >
+                                                {mainHeroes.contentDZIII}
+                                            </Text>
+                                        </Stack>
+                                    </Stack>
+                                ))}
+                            </Stack>
+                        )
+                    })}
+                </>
+            ) : (
+                null
+            )}
+            {props.isHeroesLL ? (
+                <Heading>Bohateriowie -  Lalka</Heading>
+            ) : (
+                null
+            )}
+            {props.isHeroesFD ? (
+                <Heading>Bohateriowie - Ferdydurke</Heading>
+            ) : (
+                null
+            )}
+            {props.isHeroesWS ? (
+                <Heading>Bohateriowie -  Wesele</Heading>
+            ) : (
+                null
+            )}
         </Stack>
     );
 };

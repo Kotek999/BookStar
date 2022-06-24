@@ -67,7 +67,7 @@ export default function StackContainer() {
                                         color: "gray.400"
                                     }}
                                 >
-                                    {item.authorText} {""}
+                                    {item.authorTextPT} {""}
                                 </Text>
                                 {item.authorPT}
                             </React.Fragment>
@@ -109,7 +109,7 @@ export default function StackContainer() {
                 </Text>
                 <WebDivider />
                 <MapThemes isThemesPT={true}/>
-                <MapHeroes />
+                <MapHeroes isHeroesPT={true}/>
                 {(isWEB() && DimensionsHeight > 700) ? (
                     <TimeWrapper isMarginExist={false} />
                 ) : (
