@@ -129,21 +129,84 @@ export const dataBooks = [
         ]
     }, {
         id: "fej93jnj-5hy2-48d3-a4f8-uew8u8w2sass",
-        titleDZIII: "",
-        authorDZIII: "",
-        contentDZIII: "",
-        dateDZIII: "",
+        titleDZIII: "Dziady Cz. III",
+        authorDZIII: "Adam Mickiewicz",
+        contentDZIII: "Nasz naród jak lawa, Z wierzchu zimna i twarda, sucha i plugawa, Lecz wewnętrznego ognia sto lat nie wyziębi; Plwajmy na tę skorupę i zstąpmy do głębi.",
+        dateDZIII: "1832",
         themes: [
             {
-                iconDZIII: "ikonka xD",
-                typeDZIII: "typ motywu jako tekst"
+                iconWolność_DZIII: "ikonka xD",
+                typeWolność_DZIII: "typ motywu jako tekst",
+
+                iconCierpienie_DZIII: "ikonka xD",
+                typeCierpienie_DZIII: "typ motywu jako tekst",
+
+                iconPoświęcenie_DZIII: "ikonka xD",
+                typePoświęcenie_DZIII: "typ motywu jako tekst",
+
+                iconSen_DZIII: "ikonka xD",
+                typeSen_DZIII: "typ motywu jako tekst",
+
+                iconMiłość_DZIII: "ikonka xD",
+                typeMiłość_DZIII: "typ motywu jako tekst",
+
+                iconPatriotyzm_DZIII: "ikonka xD",
+                typePatriotyzm_DZIII: "typ motywu jako tekst",
+
+                iconSamotność_DZIII: "ikonka xD",
+                typeSamotność_DZIII: "typ motywu jako tekst",
+
+                iconWładza_DZIII: "ikonka xD",
+                typeWładza_DZIII: "typ motywu jako tekst",
             },
+            
         ],
         mainHeroes: [
             {
-                name: "Filip",
-                content: "Syn kogoś..."
-            }
+                listIconDZIII: <IconList />,
+                nameDZIII: "Konrad",
+                contentDZIII: "(Człowiek o wyjątkowej wrażliwości i bogatym życiu wewnętrznym).",
+            },
+            {
+                listIconDZIII: <IconList />,
+                nameDZIII: "Ksiądz Piotr",
+                contentDZIII:  "(Odważny patriota, bernardyn, przenikliwy, pokorny i stanowiczy, pomaga Konradowi podnieść się z upadku).",
+            },
+            {
+                listIconDZIII: <IconList />,
+                nameDZIII: "Senator - Nowosilcow",
+                contentDZIII:  "(Samowolny tyran, okrutny i bezlistosny, jest uosobieniem zła).",
+            },
+            {
+                listIconDZIII: <IconList />,
+                nameDZIII: "Anioły",
+                contentDZIII:  "(Dobre duchy, które czuwają nad Konradem).",
+            },
+            {
+                listIconDZIII: <IconList />,
+                nameDZIII: "Diabły",
+                contentDZIII:  "(Złe duchy, która budzą w duszy Konrada złe myśli o zemście).",
+            },
+            {
+                listIconDZIII: <IconList />,
+                nameDZIII: "Rollison",
+                contentDZIII:  "(Student aresztowany za udział w antycarskim spisku).",
+            },
+            {
+                listIconDZIII: <IconList />,
+                nameDZIII: "Rollisonowa",
+                contentDZIII:  "(Niewidoma matka studenta, wdowa, nieludzko potraktowanego przez carskich siepaczy).",
+            },
+            {
+                listIconDZIII: <IconList />,
+                nameDZIII: "Piotr Wysocki",
+                contentDZIII:  "(Uczestnik przyjęcia w salonie warszawskim, ocenia polski naród jako lawa).",
+            },
+            {
+                listIconDZIII: <IconList />,
+                nameDZIII: "Cichowski",
+                contentDZIII:  "(Męczennik narodowy, dusza towarzystwa, wesoły).",
+            }, 
         ]
     }, {
         id: "93rwefwfw-3da1-ief3-bd96-9efwej8jfjw",

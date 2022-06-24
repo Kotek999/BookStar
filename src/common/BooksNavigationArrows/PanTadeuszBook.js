@@ -4,8 +4,6 @@ import RightArrowIconEntypo from 'react-native-vector-icons/Entypo';
 import { useNavigation } from '@react-navigation/native';
 import routes from '../../routing/routes';
 
-
-
 const PanTadeuszBook = () => {
 
     const navigation = useNavigation();
@@ -15,7 +13,11 @@ const PanTadeuszBook = () => {
                 name="paper-plane"
                 size={24}
                 color="violet"
-                onPress={() => navigation.navigate(routes.PanTadeusz)}
+                onPress={() => 
+                    navigation.navigate(({
+                        name: routes.PanTadeusz,
+                        screen: "PanTadeusz",
+                }))}
             />
     );
 };

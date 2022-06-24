@@ -15,7 +15,11 @@ const WeseleBook = () => {
                 name="paper-plane"
                 size={24}
                 color="violet"
-                onPress={() => navigation.navigate(routes.Wesele)}
+                onPress={() => 
+                    navigation.navigate(({
+                        name: routes.Wesele,
+                        screen: "Wesele",
+                }))}
             />
     );
 };

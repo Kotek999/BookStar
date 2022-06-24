@@ -15,7 +15,11 @@ const DziadyBook = () => {
                 name="paper-plane"
                 size={24}
                 color="violet"
-                onPress={() => navigation.navigate(routes.Dziady)}
+                onPress={() => 
+                    navigation.navigate(({
+                        name: routes.Dziady,
+                        screen: "Dziady",
+                }))}
             />
     );
 };

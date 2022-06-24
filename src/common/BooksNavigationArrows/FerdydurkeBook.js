@@ -15,7 +15,11 @@ const FerdydurkeBook = () => {
                 name="paper-plane"
                 size={24}
                 color="violet"
-                onPress={() => navigation.navigate(routes.Ferdydurke)}
+                onPress={() => 
+                    navigation.navigate(({
+                        name: routes.Ferdydurke,
+                        screen: "Ferdydurke",
+                }))}
             />
     );
 };

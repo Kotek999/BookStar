@@ -15,7 +15,11 @@ const LalkaBook = () => {
                 name="paper-plane"
                 size={24}
                 color="violet"
-                onPress={() => navigation.navigate(routes.Lalka)}
+                onPress={() => 
+                    navigation.navigate(({
+                        name: routes.Lalka,
+                        screen: "Lalka",
+                }))}
             />
     );
 };

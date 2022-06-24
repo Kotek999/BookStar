@@ -5,7 +5,6 @@ import { dataCommon } from '../../Books/DataBooks/dataCommon';
 import { Stack, Heading, Text } from 'native-base';
 
 export default function MapHeroes() {
-
     return (
         <Stack
             marginTop={4}

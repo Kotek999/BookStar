@@ -108,7 +108,7 @@ export default function StackContainer() {
                     ))}
                 </Text>
                 <WebDivider />
-                <MapThemes />
+                <MapThemes isThemesLL={true}/>
                 <MapHeroes />
                 {(isWEB() && DimensionsHeight > 700) ? (
                     <TimeWrapper isMarginExist={false} />
