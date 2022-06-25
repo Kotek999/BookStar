@@ -29,32 +29,40 @@ export const dataBooks = [
         datePT: "28 czerwca 1834",
         themes: [
             {
-                iconArkadii: <IconClover />,
-                typeArkadii: " Arkadii",
-
-                iconMiłość: <IconBrokenHeart />,
-                typeMiłość: " Miłości Nieszczęśliwej",
-
-                iconPrzemiana: <IconChange />,
-                typePrzemiana: " Przemiany Wewnętrznej Bohatera",
-
-                iconRodzina: <IconFamily />,
-                typeRodzina: " Rodziny",
-
-                iconOjczyzna: <IconHome />,
-                typeOjczyzna: " Ojczyzny",
-
-                iconSzlachcic: <IconMan />,
-                typeSzlachcic: " Szlachcica",
-
-                iconDworek: <IconResidence />,
-                typeDworek: " Dworku",
-
-                iconPrzyroda: <IconNature />,
-                typePrzyroda: " Przyrody",
-
-                iconPatriotyzm: <IconPatriot />,
-                typePatriotyzm: " Patriotyzmu",
+                iconPT: <IconClover />,
+                typePT: " Arkadii",
+            },
+            {
+                iconPT: <IconBrokenHeart />,
+                typePT: " Miłości Nieszczęśliwej",
+            },
+            {
+                iconPT: <IconChange />,
+                typePT: " Przemiany Wewnętrznej Bohatera",
+            },
+            {
+                iconPT: <IconFamily />,
+                typePT: " Rodziny",
+            },
+            {
+                iconPT: <IconHome />,
+                typePT: " Ojczyzny",
+            },
+            {
+                iconPT: <IconMan />,
+                typePT: " Szlachcica",
+            },
+            {
+                iconPT: <IconResidence />,
+                typePT: " Dworku",
+            },
+            {
+                iconPT: <IconNature />,
+                typePT: " Przyrody",
+            },
+            {
+                iconPT: <IconPatriot />,
+                typePT: " Patriotyzmu",
             },
         ],
         mainHeroes: [
@@ -143,29 +151,36 @@ export const dataBooks = [
         dateDZIII: "1832",
         themes: [
             {
-                iconWolność_DZIII: <IconFreedom />,
-                typeWolność_DZIII: " Wolności",
-
-                iconCierpienie_DZIII: <IconCry />,
-                typeCierpienie_DZIII: " Cierpienia",
-
-                iconPoświęcenie_DZIII: <IconSacrifice />,
-                typePoświęcenie_DZIII: " Poświęcenia",
-
-                iconSen_DZIII: <IconSleep />,
-                typeSen_DZIII: " Snu",
-
-                iconMiłość_DZIII: <IconHeart />,
-                typeMiłość_DZIII: " Miłości",
-
-                iconPatriotyzm_DZIII: <IconPatriot />,
-                typePatriotyzm_DZIII: " Patriotyzmu",
-
-                iconSamotność_DZIII: <IconAlone />,
-                typeSamotność_DZIII: " Samotności",
-
-                iconWładza_DZIII: <IconCrown />,
-                typeWładza_DZIII: " Władzy",
+                iconDZIII: <IconFreedom />,
+                typeDZIII: " Wolności",
+            },
+            {
+                iconDZIII: <IconCry />,
+                typeDZIII: " Cierpienia",
+            },
+            {
+                iconDZIII: <IconSacrifice />,
+                typeDZIII: " Poświęcenia",
+            },
+            {
+                iconDZIII: <IconSleep />,
+                typeDZIII: " Snu",
+            },
+            {
+                iconDZIII: <IconHeart />,
+                typeDZIII: " Miłości",
+            },
+            {
+                iconDZIII: <IconPatriot />,
+                typeDZIII: " Patriotyzmu",
+            },
+            {
+                iconDZIII: <IconAlone />,
+                typeDZIII: " Samotności",
+            },
+            {
+                iconDZIII: <IconCrown />,
+                typeDZIII: " Władzy",
             },
             
         ],

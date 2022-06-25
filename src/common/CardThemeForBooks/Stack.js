@@ -126,7 +126,6 @@ const marginLogo = 130;
 
 const styles = StyleSheet.create({
     scroll: {
-        height: DimensionsHeight,
         marginTop: DimensionsHeight / marginLogo,
         marginBottom: DimensionsHeight / marginTB,
         padding: 0,

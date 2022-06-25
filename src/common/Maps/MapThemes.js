@@ -31,56 +31,8 @@ export default function MapThemes(props) {
                                             <Text
                                                 style={styles.themesTitle}
                                             >
-                                                {themes.iconArkadii}
-                                                {themes.typeArkadii}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconMiłość}
-                                                {themes.typeMiłość}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconPrzemiana}
-                                                {themes.typePrzemiana}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconRodzina}
-                                                {themes.typeRodzina}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconOjczyzna}
-                                                {themes.typeOjczyzna}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconSzlachcic}
-                                                {themes.typeSzlachcic}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconDworek}
-                                                {themes.typeDworek}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconPrzyroda}
-                                                {themes.typePrzyroda}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconPatriotyzm}
-                                                {themes.typePatriotyzm}
+                                                {themes.iconPT}
+                                                {themes.typePT}
                                             </Text>
                                         </Stack>
                                     ))}
@@ -116,50 +68,8 @@ export default function MapThemes(props) {
                                             <Text
                                                 style={styles.themesTitle}
                                             >
-                                                {themes.iconWolność_DZIII}
-                                                {themes.typeWolność_DZIII}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconCierpienie_DZIII}
-                                                {themes.typeCierpienie_DZIII}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconPoświęcenie_DZIII}
-                                                {themes.typePoświęcenie_DZIII}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconSen_DZIII}
-                                                {themes.typeSen_DZIII}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconMiłość_DZIII}
-                                                {themes.typeMiłość_DZIII}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconPatriotyzm_DZIII}
-                                                {themes.typePatriotyzm_DZIII}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconSamotność_DZIII}
-                                                {themes.typeSamotność_DZIII}
-                                            </Text>
-                                            <Text
-                                                style={styles.themesTitle}
-                                            >
-                                                {themes.iconWładza_DZIII}
-                                                {themes.typeWładza_DZIII}
+                                                {themes.iconDZIII}
+                                                {themes.typeDZIII}
                                             </Text>
                                         </Stack>
                                     ))}
