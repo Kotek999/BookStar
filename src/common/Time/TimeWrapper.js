@@ -8,7 +8,7 @@ export default function TimeWrapper(props) {
     return (
         <>
             {props.isMarginExist ? (
-                <Stack marginTop={-40}>
+                <Stack marginTop={10}>
                     <WebDivider />
                     <HStack
                         alignItems="center"

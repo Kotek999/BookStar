@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { Stack, Heading, Text, ScrollView } from 'native-base';
 import { StyleSheet, Dimensions } from 'react-native';
-import { dataBooks } from '../../../Books/DataBooks/data';
+import { dataDZIII } from '../../DataBooks/dataDZIII';
 import { WebDivider } from '../../../common/BookDivider/WebDivider';
 import MapThemes from '../../../common/Maps/MapThemes';
 import MapHeroes from '../../../common/Maps/MapHeroes';
@@ -35,7 +35,7 @@ export default function StackContainer() {
                         size="md"
                         ml="-1"
                     >
-                        {dataBooks.map((item, id) => (
+                        {dataDZIII.map((item, id) => (
                             <Text
                                 key={`card-${id + 1}`}
                             >
@@ -55,7 +55,7 @@ export default function StackContainer() {
                         ml="-1"
                         mt="-1"
                     >
-                        {dataBooks.map((item, author) => (
+                        {dataDZIII.map((item, author) => (
                             <React.Fragment
                                 key={author}
                             >
@@ -80,7 +80,7 @@ export default function StackContainer() {
                     letterSpacing={1}
                     fontSize="sm"
                 >
-                    {dataBooks.map((item, content) => (
+                    {dataDZIII.map((item, content) => (
                         <React.Fragment
                             key={content}
                         >
@@ -99,7 +99,7 @@ export default function StackContainer() {
                     }}
 
                 >
-                    {dataBooks.map((item, date) => (
+                    {dataDZIII.map((item, date) => (
                         <React.Fragment
                             key={date}
                         >

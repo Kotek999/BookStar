@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-import { dataBooks } from '../../Books/DataBooks/data';
 import { dataCommon } from '../../Books/DataBooks/dataCommon';
 import { Stack, Heading, Text } from 'native-base';
+import { dataPT } from '../../Books/DataBooks/dataPT';
+import { dataDZIII } from '../../Books/DataBooks/dataDZIII';
 
 export default function MapThemes(props) {
     return (
@@ -18,7 +19,7 @@ export default function MapThemes(props) {
                         flexDirection="row"
                         marginTop={5}
                     >
-                        {dataBooks.map((item, dataPT) => {
+                        {dataPT.map((item, dataPT) => {
                             return (
                                 <Stack
                                     key={dataPT}
@@ -55,7 +56,7 @@ export default function MapThemes(props) {
                         flexDirection="row"
                         marginTop={5}
                     >
-                        {dataBooks.map((item, dataDZIII) => {
+                        {dataDZIII.map((item, dataDZIII) => {
                             return (
                                 <Stack
                                     key={dataDZIII}

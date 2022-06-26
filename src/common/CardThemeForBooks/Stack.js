@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { Stack, Heading, Text, ScrollView } from 'native-base';
 import { StyleSheet, Dimensions } from 'react-native';
-import { dataBooks } from '../../Books/DataBooks/data';
+import { dataPT } from '../../Books/DataBooks/dataPT';
 import { WebDivider } from '../BookDivider/WebDivider';
 import MapThemes from '../Maps/MapThemes';
 import MapHeroes from '../Maps/MapHeroes';
@@ -35,7 +35,7 @@ export default function StackContainer() {
                         size="md"
                         ml="-1"
                     >
-                        {dataBooks.map((item, id) => (
+                        {dataPT.map((item, id) => (
                             <Text
                                 key={`card-${id + 1}`}
                             >
@@ -55,7 +55,7 @@ export default function StackContainer() {
                         ml="-1"
                         mt="-1"
                     >
-                        {dataBooks.map((item, author) => (
+                        {dataPT.map((item, author) => (
                             <React.Fragment
                                 key={author}
                             >
@@ -80,7 +80,7 @@ export default function StackContainer() {
                     letterSpacing={1}
                     fontSize="sm"
                 >
-                    {dataBooks.map((item, content) => (
+                    {dataPT.map((item, content) => (
                         <React.Fragment
                             key={content}
                         >
@@ -99,7 +99,7 @@ export default function StackContainer() {
                     }}
 
                 >
-                    {dataBooks.map((item, date) => (
+                    {dataPT.map((item, date) => (
                         <React.Fragment
                             key={date}
                         >
@@ -111,9 +111,9 @@ export default function StackContainer() {
                 <MapThemes isThemesPT={true}/>
                 <MapHeroes isHeroesPT={true}/>
                 {(isWEB() && DimensionsHeight > 700) ? (
-                    <TimeWrapper isMarginExist={false} />
+                    <TimeWrapper isMarginExist={false}/>
                 ) : (
-                    <TimeWrapper isMarginExist={true} />
+                    <TimeWrapper isMarginExist={true}/>
                 )}
             </Stack>
         </ScrollView>

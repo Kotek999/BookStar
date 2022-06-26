@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-import { dataBooks } from '../../Books/DataBooks/data';
 import { dataCommon } from '../../Books/DataBooks/dataCommon';
 import { Stack, Heading, Text } from 'native-base';
+import { dataPT } from '../../Books/DataBooks/dataPT';
+import { dataDZIII } from '../../Books/DataBooks/dataDZIII';
 
 export default function MapHeroes(props) {
     return (
@@ -17,7 +18,7 @@ export default function MapHeroes(props) {
             </Heading>
             {props.isHeroesPT ? (
                 <>
-                    {dataBooks.map((item, heoresPT) => {
+                    {dataPT.map((item, heoresPT) => {
                         return (
                             <Stack
                                 key={heoresPT}
@@ -58,7 +59,7 @@ export default function MapHeroes(props) {
             }
             {props.isHeroesDZIII ? (
                 <>
-                    {dataBooks.map((item, heoresDZIII) => {
+                    {dataDZIII.map((item, heoresDZIII) => {
                         return (
                             <Stack
                                 key={heoresDZIII}

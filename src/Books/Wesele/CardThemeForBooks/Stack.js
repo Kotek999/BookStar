@@ -2,12 +2,12 @@
 import * as React from 'react';
 import { Stack, Heading, Text, ScrollView } from 'native-base';
 import { StyleSheet, Dimensions } from 'react-native';
-import { dataBooks } from '../../../Books/DataBooks/data';
 import { WebDivider } from '../../../common/BookDivider/WebDivider';
 import MapThemes from '../../../common/Maps/MapThemes';
 import MapHeroes from '../../../common/Maps/MapHeroes';
 import TimeWrapper from '../../../common/Time/TimeWrapper';
 import isWEB from '../../../common/Resolutions/isWEB';
+import { dataWS } from '../../DataBooks/dataWS';
 
 export default function StackContainer() {
     
@@ -35,7 +35,7 @@ export default function StackContainer() {
                         size="md"
                         ml="-1"
                     >
-                        {dataBooks.map((item, id) => (
+                        {dataWS.map((item, id) => (
                             <Text
                                 key={`card-${id + 1}`}
                             >
@@ -55,7 +55,7 @@ export default function StackContainer() {
                         ml="-1"
                         mt="-1"
                     >
-                        {dataBooks.map((item, author) => (
+                        {dataWS.map((item, author) => (
                             <React.Fragment
                                 key={author}
                             >
@@ -80,7 +80,7 @@ export default function StackContainer() {
                     letterSpacing={1}
                     fontSize="sm"
                 >
-                    {dataBooks.map((item, content) => (
+                    {dataWS.map((item, content) => (
                         <React.Fragment
                             key={content}
                         >
@@ -99,7 +99,7 @@ export default function StackContainer() {
                     }}
 
                 >
-                    {dataBooks.map((item, date) => (
+                    {dataWS.map((item, date) => (
                         <React.Fragment
                             key={date}
                         >
