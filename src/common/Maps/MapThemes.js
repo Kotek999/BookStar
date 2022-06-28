@@ -4,6 +4,7 @@ import { dataCommon } from '../../Books/DataBooks/dataCommon';
 import { Stack, Heading, Text } from 'native-base';
 import { dataPT } from '../../Books/DataBooks/dataPT';
 import { dataDZIII } from '../../Books/DataBooks/dataDZIII';
+import { dataLL } from '../../Books/DataBooks/dataLL';
 
 export default function MapThemes(props) {
     return (
@@ -83,7 +84,39 @@ export default function MapThemes(props) {
                 null
             )}
             {props.isThemesLL ? (
-                <Heading>Lalka</Heading>
+                <Stack>
+                    <Heading
+                        fontSize="xl"
+                    >
+                        {dataCommon.titleThemes}
+                    </Heading>
+                    <Stack
+                        flexDirection="row"
+                        marginTop={5}
+                    >
+                        {dataLL.map((item, dataLL) => {
+                            return (
+                                <Stack
+                                    key={dataLL}
+                                >
+                                    {item.themes.map((themes, themesLL) => (
+                                        <Stack
+                                            key={themesLL}
+                                            flexDirection="column"
+                                        >
+                                            <Text
+                                                style={styles.themesTitle}
+                                            >
+                                                {themes.iconLL}
+                                                {themes.typeLL}
+                                            </Text>
+                                        </Stack>
+                                    ))}
+                                </Stack>
+                            )
+                        })}
+                    </Stack>
+                </Stack>
             ) : (
                 null
             )}

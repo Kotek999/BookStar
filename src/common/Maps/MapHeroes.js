@@ -4,6 +4,7 @@ import { dataCommon } from '../../Books/DataBooks/dataCommon';
 import { Stack, Heading, Text } from 'native-base';
 import { dataPT } from '../../Books/DataBooks/dataPT';
 import { dataDZIII } from '../../Books/DataBooks/dataDZIII';
+import { dataLL } from '../../Books/DataBooks/dataLL';
 
 export default function MapHeroes(props) {
     return (
@@ -18,10 +19,10 @@ export default function MapHeroes(props) {
             </Heading>
             {props.isHeroesPT ? (
                 <>
-                    {dataPT.map((item, heoresPT) => {
+                    {dataPT.map((item, heroesPT) => {
                         return (
                             <Stack
-                                key={heoresPT}
+                                key={heroesPT}
                                 flexDirection="column"
                                 justifyContent="flex-start"
                                 alignItems="flex-start"
@@ -59,10 +60,10 @@ export default function MapHeroes(props) {
             }
             {props.isHeroesDZIII ? (
                 <>
-                    {dataDZIII.map((item, heoresDZIII) => {
+                    {dataDZIII.map((item, heroesDZIII) => {
                         return (
                             <Stack
-                                key={heoresDZIII}
+                                key={heroesDZIII}
                                 marginBottom={5}
                             >
                                 {item.mainHeroes.map((mainHeroes, mainHeroesDZIII) => (
@@ -96,7 +97,40 @@ export default function MapHeroes(props) {
                 null
             )}
             {props.isHeroesLL ? (
-                <Heading>Bohateriowie -  Lalka</Heading>
+                <>
+                    {dataLL.map((item, heroesLL) => {
+                        return (
+                            <Stack
+                                key={heroesLL}
+                                marginBottom={5}
+                            >
+                                {item.mainHeroes.map((mainHeroes, mainHeroesLL) => (
+                                    <Stack
+                                        key={mainHeroesLL}
+                                        flexDirection="row"
+                                        marginTop={4}
+                                    >
+                                        <Stack>
+                                            {mainHeroes.listIconLL}
+                                        </Stack>
+                                        <Stack>
+                                            <Text
+                                                style={styles.heroesTitle}
+                                            >
+                                                {mainHeroes.nameLL}
+                                            </Text>
+                                            <Text
+                                                style={styles.heroesContent}
+                                            >
+                                                {mainHeroes.contentLL}
+                                            </Text>
+                                        </Stack>
+                                    </Stack>
+                                ))}
+                            </Stack>
+                        )
+                    })}
+                </>
             ) : (
                 null
             )}

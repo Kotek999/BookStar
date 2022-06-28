@@ -7,7 +7,8 @@ import {
     MaterialIcons,
     MaterialCommunityIcons,
     FontAwesome,
-    FontAwesome5
+    FontAwesome5,
+    Fontisto
 } from '@expo/vector-icons';
 
 
@@ -204,6 +205,68 @@ export const IconCrown = () => (
         />
     </Stack>
 );
+// LL Icons
+export const IconJob = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={MaterialIcons}
+            name="work"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconMiss = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={MaterialCommunityIcons}
+            name="human-male-child"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconTravel = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={MaterialCommunityIcons}
+            name="airplane"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconFriendship = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={FontAwesome}
+            name="handshake-o"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconFemale = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={Fontisto}
+            name="female"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+
 
 
 const styles = StyleSheet.create({
