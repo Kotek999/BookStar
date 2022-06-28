@@ -5,6 +5,8 @@ import { Stack, Heading, Text } from 'native-base';
 import { dataPT } from '../../Books/DataBooks/dataPT';
 import { dataDZIII } from '../../Books/DataBooks/dataDZIII';
 import { dataLL } from '../../Books/DataBooks/dataLL';
+import { dataFD } from '../../Books/DataBooks/dataFD';
+import { dataWS } from '../../Books/DataBooks/dataWS';
 
 export default function MapThemes(props) {
     return (
@@ -121,12 +123,76 @@ export default function MapThemes(props) {
                 null
             )}
             {props.isThemesFD ? (
-                <Heading>Ferdydurke</Heading>
+                <Stack>
+                    <Heading
+                        fontSize="xl"
+                    >
+                        {dataCommon.titleThemes}
+                    </Heading>
+                    <Stack
+                        flexDirection="row"
+                        marginTop={5}
+                    >
+                        {dataFD.map((item, dataFD) => {
+                            return (
+                                <Stack
+                                    key={dataFD}
+                                >
+                                    {item.themes.map((themes, themesFD) => (
+                                        <Stack
+                                            key={themesFD}
+                                            flexDirection="column"
+                                        >
+                                            <Text
+                                                style={styles.themesTitle}
+                                            >
+                                                {themes.iconFD}
+                                                {themes.typeFD}
+                                            </Text>
+                                        </Stack>
+                                    ))}
+                                </Stack>
+                            )
+                        })}
+                    </Stack>
+                </Stack>
             ) : (
                 null
             )}
             {props.isThemesWS ? (
-                <Heading>Wesele</Heading>
+                <Stack>
+                    <Heading
+                        fontSize="xl"
+                    >
+                        {dataCommon.titleThemes}
+                    </Heading>
+                    <Stack
+                        flexDirection="row"
+                        marginTop={5}
+                    >
+                        {dataWS.map((item, dataWS) => {
+                            return (
+                                <Stack
+                                    key={dataWS}
+                                >
+                                    {item.themes.map((themes, themesWS) => (
+                                        <Stack
+                                            key={themesWS}
+                                            flexDirection="column"
+                                        >
+                                            <Text
+                                                style={styles.themesTitle}
+                                            >
+                                                {themes.iconWS}
+                                                {themes.typeWS}
+                                            </Text>
+                                        </Stack>
+                                    ))}
+                                </Stack>
+                            )
+                        })}
+                    </Stack>
+                </Stack>
             ) : (
                 null
             )}

@@ -5,6 +5,8 @@ import { Stack, Heading, Text } from 'native-base';
 import { dataPT } from '../../Books/DataBooks/dataPT';
 import { dataDZIII } from '../../Books/DataBooks/dataDZIII';
 import { dataLL } from '../../Books/DataBooks/dataLL';
+import { dataFD } from '../../Books/DataBooks/dataFD';
+import { dataWS } from '../../Books/DataBooks/dataWS';
 
 export default function MapHeroes(props) {
     return (
@@ -135,12 +137,78 @@ export default function MapHeroes(props) {
                 null
             )}
             {props.isHeroesFD ? (
-                <Heading>Bohateriowie - Ferdydurke</Heading>
+                <>
+                    {dataFD.map((item, heroesFD) => {
+                        return (
+                            <Stack
+                                key={heroesFD}
+                                marginBottom={5}
+                            >
+                                {item.mainHeroes.map((mainHeroes, mainHeroesFD) => (
+                                    <Stack
+                                        key={mainHeroesFD}
+                                        flexDirection="row"
+                                        marginTop={4}
+                                    >
+                                        <Stack>
+                                            {mainHeroes.listIconFD}
+                                        </Stack>
+                                        <Stack>
+                                            <Text
+                                                style={styles.heroesTitle}
+                                            >
+                                                {mainHeroes.nameFD}
+                                            </Text>
+                                            <Text
+                                                style={styles.heroesContent}
+                                            >
+                                                {mainHeroes.contentFD}
+                                            </Text>
+                                        </Stack>
+                                    </Stack>
+                                ))}
+                            </Stack>
+                        )
+                    })}
+                </>
             ) : (
                 null
             )}
             {props.isHeroesWS ? (
-                <Heading>Bohateriowie -  Wesele</Heading>
+                <>
+                    {dataWS.map((item, heroesWS) => {
+                        return (
+                            <Stack
+                                key={heroesWS}
+                                marginBottom={5}
+                            >
+                                {item.mainHeroes.map((mainHeroes, mainHeroesWS) => (
+                                    <Stack
+                                        key={mainHeroesWS}
+                                        flexDirection="row"
+                                        marginTop={4}
+                                    >
+                                        <Stack>
+                                            {mainHeroes.listIconWS}
+                                        </Stack>
+                                        <Stack>
+                                            <Text
+                                                style={styles.heroesTitle}
+                                            >
+                                                {mainHeroes.nameWS}
+                                            </Text>
+                                            <Text
+                                                style={styles.heroesContent}
+                                            >
+                                                {mainHeroes.contentWS}
+                                            </Text>
+                                        </Stack>
+                                    </Stack>
+                                ))}
+                            </Stack>
+                        )
+                    })}
+                </>
             ) : (
                 null
             )}

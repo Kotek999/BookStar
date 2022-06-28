@@ -8,7 +8,8 @@ import {
     MaterialCommunityIcons,
     FontAwesome,
     FontAwesome5,
-    Fontisto
+    Fontisto,
+    Octicons
 } from '@expo/vector-icons';
 
 
@@ -266,9 +267,116 @@ export const IconFemale = () => (
         />
     </Stack>
 );
-
-
-
+// FD Icons
+export const IconMask= () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={FontAwesome5}
+            name="theater-masks"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconChild= () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={MaterialIcons}
+            name="child-friendly"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconInnocent= () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={Octicons}
+            name="eye-closed"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconSchool= () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={Ionicons}
+            name="ios-school"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+// WS Icons
+export const IconLiterature= () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={FontAwesome}
+            name="book"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconFight = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={MaterialCommunityIcons}
+            name="tank"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconVillage = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={Fontisto}
+            name="holiday-village"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconDown = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={MaterialCommunityIcons}
+            name="trending-down"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
+export const IconDance = () => (
+    <Stack
+        style={styles.iconContainer}
+    >
+        <Icon
+            as={MaterialCommunityIcons}
+            name="human-male-female"
+            size={19}
+            color="violet.500"
+        />
+    </Stack>
+);
 const styles = StyleSheet.create({
     iconContainer: {
         marginLeft: 3,

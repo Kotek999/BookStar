@@ -59,15 +59,27 @@ themes:
 [
 	{
 	icon("Icon")  
-	type("Text") - motyw maski, niedojrzałości, niewinności, snu, szkoły, szlacheckiego dworku, rodziny 
+	type("Text") - motyw maski, 
+	niedojrzałości, niewinności, snu, 
+	szkoły, szlacheckiego dworku, 
+	rodziny 
 	}
 ]
  mainHeroes: (15):
 	listIcon("Icon")
-	name: (Józio Kowalski), (Pimko), (Miętalski - Miętus),(Pylaszczkiewicz - Syfon), (Zuta Młodziakówna), (pani Młodziakowa) (inżynier Wiktor Młodziak),
-(pani Hurlecka)
-	content: (główny bohater, ma trzydzieći lat, pisarz, przegrywa z formą - jako zakochany porywacz opuszcza dwór), (nauczyciel języka polskiego w szkole dyrektora Piórkowskiego), (uczeń szkoły, przywódca grupy chłopców, wraz z grupą sprzeciwia się szkolnemu personelowi), (uczeń szkoły, szkolny prymus),
-(naturalna, zgrabna i wysportowana uważana za wzór młodości dla Józia przez nauczyciela Pimka), (kobieta inteligentna i uspołeczniona, z bacznym i bystrym wyrazem twarzy), (urbanista, pacyfista, oraz wielbiciel organizacji pracy), (ciotka głównego bohatera, mieszkająca w szlachetnim dworku w Bolimowie, pomimo wieku Józia traktuje go nadal jak dziecko)
+	name: (Józio Kowalski), (Pimko), 
+	(Miętalski - Miętus),(Pylaszczkiewicz - Syfon), 
+	(Zuta Młodziakówna), (pani Młodziakowa) 
+	(inżynier Wiktor Młodziak),
+	(pani Hurlecka)
+	content: (główny bohater, ma trzydzieći lat, pisarz, przegrywa z formą - jako zakochany porywacz opuszcza dwór), 
+	(nauczyciel języka polskiego w szkole dyrektora Piórkowskiego), 
+	(uczeń szkoły, przywódca grupy chłopców, wraz z grupą sprzeciwia się szkolnemu personelowi), 
+	(uczeń szkoły, szkolny prymus),
+(naturalna, zgrabna i wysportowana uważana za wzór młodości dla Józia przez nauczyciela Pimka), 
+(kobieta inteligentna i uspołeczniona, z bacznym i bystrym wyrazem twarzy), 
+(urbanista, pacyfista, oraz wielbiciel organizacji pracy), 
+(ciotka głównego bohatera, mieszkająca w szlachetnim dworku w Bolimowie, pomimo wieku Józia traktuje go nadal jak dziecko)
 --------------------------------------------
 
 -------------Wesele-------------
@@ -81,12 +93,50 @@ themes:
 [
 	{
 	icon("Icon")  
-	type("Text") - motyw literatury, ojczyzny, powstania, wsi, 			dekadentyzmu, tańca, miłości
+	type("Text") - 
+		motyw literatury, 
+		ojczyzny, 
+		powstania, 
+		wsi, 			
+		dekadentyzmu, 
+		tańca, 
+		miłości
 	}
 ]
  mainHeroes: (15):
 	listIcon("Icon")
-	name: (Gospodarz - Włodzimiesz Tetmajer), (Gospodyni - Anna Mikołajczykówna), (Pan Młody - Lucjan Rydel) (Panna Młoda - Jadwiga Mikołaczykówna), (Poeta - Kazimierz Przerwa-Tetmajer), (Dziennikarz - Rudolf Starzewski), (Rachela - Pepa (Józefa) Singer), (Żyd - Herz Singer), (Ksiądz),
-(Dziad), (Czepiec - Błażej Czepiec) (Chochoł), (Stańczyk), (Rycerz - Zawisza Czarny), (Hetman - Branicki), (Wernyhora), (Upiór)
-	content: (malarz, mieszkaniec Bronowic, żonaty z chłopką, autorytet wśród ludzi, rozumie wielkość i godność polskiego chłopa), (siostra Panny Młodej, najważniejsze dla niej jest szczęście rodzinne oraz dobro męża i dzieci), (poeta, żeni się z Jadwigą Mikołajczykówną, wesele z chłopką traktowane jest jako przykład młodopolskiej (ludomanii(chłopomanii), popada w sztuczną egzaltację, nie rozumie praw i obyczajów), (młoda, dostojna i piękna wdzięku, narzeczona Pana Młodego, zamierza być gospodynią jak jej siostra Anna),(brat Gospodarza, poeta młodopolski, w jego wierszach dominuje dekadentyzm oraz nastroje pesymistyczne, jest sztuczny i bierny interesuje go tylko Rachela - uosobienie poezji), (redaktor pisma "Czas", ma drwiący stosunek do kobiet i chłopów, jest bierny i bezkrytyczny), (córka Heresza Singera - karczmarza z Bronowic, nadwrażliwa, uosobienie poezji i kobiecości, jest artystką przeżywania), (karczmarz z Bronowic, jest nie mile widziany na weselu, rzeczowy i konkretny, zawsze pilnuje swoich interesów), (partner w interesach Żyda, interesują go głównie pieniądze, sceptyczny), (staruszek pamiętający rabację galicyjską (rzeź szchlachty i mieszczaństwa dokonana przez chłopów), (uosobienie mitu racławskich kos, interesuje się polityką i wydarzeniami które się wokół rogrywają, odważny ale też uparty, zawzięty i porywczy, najpierw działa - później myśli), (słomiana pałuba, symbol idei odrodzenia, możliwości zmartwychwstania, osłona życia i bytu, z drugiej strony symbol idei upadku, marazmu oraz bierności), (nadworny błazen Zygmunta Starego, symbol mądrości politycznej, mądry i przenikliwy), (symbol potęgi i męstwa zarówno fizycznego jak i duchowego, ukazuje się Poecie, chce ożywić jego twórczość w imię walki o wolność i niepodległość), (symbol szlacheckiej prywaty i kosmopolityzmu, potępia bratanie się z szlachtą), (legendarny poeta-wieszcz, przybywa do Gospodarza z rozkazem rozpoczęcia powstania, gra na złotym rogu), (widmo Jakuba Szeli, symbolizuje zbrodnie rabacji galicyjskiej)
+	name: (Gospodarz - Włodzimiesz Tetmajer), 
+		(Gospodyni - Anna Mikołajczykówna), 
+		(Pan Młody - Lucjan Rydel) 
+		(Panna Młoda - Jadwiga Mikołaczykówna), 
+		(Poeta - Kazimierz Przerwa-Tetmajer), 
+		(Dziennikarz - Rudolf Starzewski), 
+		(Rachela - Pepa (Józefa) Singer), 
+		(Żyd - Herz Singer), 
+		(Ksiądz),
+		(Dziad), 
+		(Czepiec - Błażej Czepiec) 
+		(Chochoł), 
+		(Stańczyk), 
+		(Rycerz - Zawisza Czarny), 
+		(Hetman - Branicki), 
+		(Wernyhora), 
+		(Upiór)
+	content: (malarz, mieszkaniec Bronowic, żonaty z chłopką, autorytet wśród ludzi, rozumie wielkość i godność polskiego chłopa), 
+		(siostra Panny Młodej, najważniejsze dla niej jest szczęście rodzinne oraz dobro męża i dzieci), 
+		(poeta, żeni się z Jadwigą Mikołajczykówną, wesele z chłopką traktowane jest jako przykład młodopolskiej (ludomanii(chłopomanii), popada w sztuczną egzaltację, nie rozumie praw i obyczajów), 
+		(młoda, dostojna i piękna wdzięku, narzeczona Pana Młodego, zamierza być gospodynią jak jej siostra Anna),
+		(brat Gospodarza, poeta młodopolski, w jego wierszach dominuje dekadentyzm oraz nastroje pesymistyczne, jest sztuczny i bierny interesuje go tylko Rachela - uosobienie poezji), 
+		(redaktor pisma "Czas", ma drwiący stosunek do kobiet i chłopów, jest bierny i bezkrytyczny), 
+		(córka Heresza Singera - karczmarza z Bronowic, nadwrażliwa, uosobienie poezji i kobiecości, jest artystką przeżywania), 
+		(karczmarz z Bronowic, jest nie mile widziany na weselu, rzeczowy i konkretny, zawsze pilnuje swoich interesów), 
+		(partner w interesach Żyda, interesują go głównie pieniądze, sceptyczny), 
+		(staruszek pamiętający rabację galicyjską (rzeź szchlachty i mieszczaństwa dokonana przez chłopów), 
+		(uosobienie mitu racławskich kos, interesuje się polityką i wydarzeniami które się wokół rogrywają, odważny ale też uparty, zawzięty i porywczy, najpierw działa - później myśli), 
+		(słomiana pałuba, symbol idei odrodzenia, możliwości zmartwychwstania, osłona życia i bytu, z drugiej strony symbol idei upadku, marazmu oraz bierności), 
+		(nadworny błazen Zygmunta Starego, symbol mądrości politycznej, mądry i przenikliwy), 
+		(symbol potęgi i męstwa zarówno fizycznego jak i duchowego, ukazuje się Poecie, chce ożywić jego twórczość w imię walki o wolność i niepodległość), 
+		(symbol szlacheckiej prywaty i kosmopolityzmu, potępia bratanie się z szlachtą), 
+		(legendarny poeta-wieszcz, przybywa do Gospodarza z rozkazem rozpoczęcia powstania, gra na złotym rogu), 
+		(widmo Jakuba Szeli, symbolizuje zbrodnie rabacji galicyjskiej)
 --------------------------------------------

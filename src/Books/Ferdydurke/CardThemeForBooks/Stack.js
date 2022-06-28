@@ -39,7 +39,7 @@ export default function StackContainer() {
                             <Text
                                 key={`card-${id + 1}`}
                             >
-                                {item.titlePT}
+                                {item.titleFD}
                             </Text>
                         ))}
                     </Heading>
@@ -67,9 +67,9 @@ export default function StackContainer() {
                                         color: "gray.400"
                                     }}
                                 >
-                                    {item.authorText} {""}
+                                    {item.authorTextFD} {""}
                                 </Text>
-                                {item.authorPT}
+                                {item.authorFD}
                             </React.Fragment>
                         ))}
                     </Text>
@@ -84,7 +84,7 @@ export default function StackContainer() {
                         <React.Fragment
                             key={content}
                         >
-                            {item.contentPT}
+                            {item.contentFD}
                         </React.Fragment>
                     ))}
                 </Text>
@@ -103,7 +103,7 @@ export default function StackContainer() {
                         <React.Fragment
                             key={date}
                         >
-                            {item.datePT}
+                            {item.dateFD}
                         </React.Fragment>
                     ))}
                 </Text>
