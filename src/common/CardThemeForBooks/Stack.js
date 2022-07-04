@@ -10,7 +10,7 @@ import TimeWrapper from '../Time/TimeWrapper';
 import isWEB from '../Resolutions/isWEB';
 
 export default function StackContainer() {
-    
+
     const DimensionsHeight = Dimensions.get('window').height
 
     // function searchDataBooks(searchText) {
@@ -21,7 +21,7 @@ export default function StackContainer() {
 
     return (
         <ScrollView
-           style={styles.scroll}
+            style={styles.scroll}
         >
             <Stack
                 p="4"
@@ -60,8 +60,9 @@ export default function StackContainer() {
                                 key={author}
                             >
                                 <Text
+                                    fontSize="xs"
                                     _light={{
-                                        color: "#afb0b3"
+                                        color: "#87888a"
                                     }}
                                     _dark={{
                                         color: "gray.400"
@@ -74,46 +75,135 @@ export default function StackContainer() {
                         ))}
                     </Text>
                 </Stack>
-                <Text
-                    margin={0}
-                    color="black"
-                    letterSpacing={1}
-                    fontSize="sm"
+                <Stack
+                    alignItems="flex-end"
                 >
-                    {dataPT.map((item, content) => (
-                        <React.Fragment
-                            key={content}
-                        >
-                            {item.contentPT}
-                        </React.Fragment>
-                    ))}
-                </Text>
-                <Text
-                    textAlign="right"
-                    fontSize="xs"
-                    _light={{
-                        color: "#87888a"
-                    }}
-                    _dark={{
-                        color: "gray.400"
-                    }}
+                    <Text
+                        ml="-1"
+                        mt="-1"
+                    >
+                        {dataPT.map((item, content_One) => (
+                            <React.Fragment
+                                key={content_One}
+                            >
+                                <Text
+                                    fontSize="xs"
+                                    _light={{
+                                        color: "#87888a"
+                                    }}
+                                    _dark={{
+                                        color: "gray.400"
+                                    }}
+                                >
+                                    {item.contentThemePT}
+                                </Text>
+                            </React.Fragment>
+                        ))}
+                    </Text>
+                </Stack>
+                <Stack
+                    alignItems="flex-end"
+                >
+                    <Text
+                        fontWeight="bold"
+                        ml="-1"
+                        mt="-1"
+                    >
+                        {dataPT.map((item, mostImportantThemePT_One) => (
+                            <React.Fragment
+                                key={mostImportantThemePT_One}
+                            >
+                                {item.mostImportantThemePT}
+                            </React.Fragment>
+                        ))}
+                    </Text>
+                </Stack>
+                <Stack
+                    alignItems="flex-start"
+                >
+                    <Text
+                        ml="-1"
+                        mt="-1"
+                    >
+                        {dataPT.map((item, content_Two) => (
+                            <React.Fragment
+                                key={content_Two}
+                            >
+                                <Text
+                                    fontSize="xs"
+                                    _light={{
+                                        color: "#87888a"
+                                    }}
+                                    _dark={{
+                                        color: "gray.400"
+                                    }}
+                                >
+                                    {item.contentHeroPT}
+                                </Text>
+                            </React.Fragment>
+                        ))}
+                    </Text>
+                </Stack>
+                <Stack
+                    alignItems="flex-start"
+                >
+                    <Text
+                        fontWeight="bold"
+                        ml="-1"
+                        mt="-1"
+                    >
+                        {dataPT.map((item, mostImportantThemePT_Two) => (
+                            <React.Fragment
+                                key={mostImportantThemePT_Two}
+                            >
+                                {item.mostImportantHeroPT}
+                            </React.Fragment>
+                        ))}
+                    </Text>
+                </Stack>
+                <Stack
+                    alignItems="flex-end"
+                >
+                    <Text
+                        fontSize="xs"
+                        _light={{
+                            color: "violet.500"
+                        }}
+                        _dark={{
+                            color: "violet.400"
+                        }}
+                        fontWeight="500"
+                        ml="-1"
+                        mt="-1"
+                    >
+                        {dataPT.map((item, date) => (
+                            <React.Fragment
+                                key={date}
+                            >
+                                <Text
+                                    fontSize="xs"
+                                    _light={{
+                                        color: "#87888a"
+                                    }}
+                                    _dark={{
+                                        color: "gray.400"
+                                    }}
 
-                >
-                    {dataPT.map((item, date) => (
-                        <React.Fragment
-                            key={date}
-                        >
-                            {item.datePT}
-                        </React.Fragment>
-                    ))}
-                </Text>
+                                >
+                                    {item.dateTitlePT}
+                                </Text>
+                                {item.datePT}
+                            </React.Fragment>
+                        ))}
+                    </Text>
+                </Stack>
                 <WebDivider />
-                <MapThemes isThemesPT={true}/>
-                <MapHeroes isHeroesPT={true}/>
+                <MapThemes isThemesPT={true} />
+                <MapHeroes isHeroesPT={true} />
                 {(isWEB() && DimensionsHeight > 700) ? (
-                    <TimeWrapper isMarginExist={false}/>
+                    <TimeWrapper isMarginExist={false} />
                 ) : (
-                    <TimeWrapper isMarginExist={true}/>
+                    <TimeWrapper isMarginExist={true} />
                 )}
             </Stack>
         </ScrollView>

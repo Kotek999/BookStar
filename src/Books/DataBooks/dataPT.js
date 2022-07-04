@@ -18,7 +18,11 @@ export const dataPT = [
         titlePT: "Pan Tadeusz",
         authorPT: "Adam Mickiewicz",
         authorTextPT: "Autor:",
-        contentPT: "„Litwo! Ojczyzno moja! Ty jesteś jak zdrowie; Ile cię trzeba cenić, ten tylko się dowie; Kto cię stracił. Dziś piękność twą w całej ozdobie Widzę i opisuję, bo tęsknię po tobie”.",
+        contentThemePT: "Najważniejszy motyw:",
+        mostImportantThemePT: "Ojczyzna",
+        contentHeroPT: "Najważniejszy bohater:",
+        mostImportantHeroPT: "Jacek Soplica",
+        dateTitlePT: "Data: ",
         datePT: "28 czerwca 1834",
         themes: [
             {

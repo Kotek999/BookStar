@@ -19,7 +19,7 @@ export const dataLL = [
         titleLL: "Lalka",
         authorLL: "Bolesław Prus",
         authorTextLL: "Autor:",
-        contentLL: "„Jedni giną z niedostatku, drudzy z rozpusty. Praca odejmuje sobie od ust, ażeby karmić niedołęgów; miłosierdzie hoduje bezczelnych próżniaków, a ubóstwo nie mogące zdobyć się na sprzęty otacza się wiecznie głodnymi dziećmi, których największą zaletą jest wczesna śmierć.”.",
+        contentLL: "",
         dateLL: "1889",
         themes: [
             {

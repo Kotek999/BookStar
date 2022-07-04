@@ -41,7 +41,7 @@ const BooksList = () => {
                             <Text fontStyle="italic" color="coolGray.400" _dark={{
                                 color: "warmGray.600"
                             }}>
-                                {item.recentText}
+                                {item.importantTheme}
                             </Text>
                         </VStack>
                         <Spacer />

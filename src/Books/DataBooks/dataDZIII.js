@@ -17,7 +17,7 @@ export const dataDZIII = [
         titleDZIII: "Dziady Cz. III",
         authorDZIII: "Adam Mickiewicz",
         authorTextDZIII: "Autor:",
-        contentDZIII: "„Nasz naród jak lawa, Z wierzchu zimna i twarda, sucha i plugawa, Lecz wewnętrznego ognia sto lat nie wyziębi; Plwajmy na tę skorupę i zstąpmy do głębi”.",
+        contentDZIII: "",
         dateDZIII: "1832",
         themes: [
             {

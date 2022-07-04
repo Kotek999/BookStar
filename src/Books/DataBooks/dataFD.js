@@ -16,7 +16,7 @@ export const dataFD = [
         titleFD: "Ferdydurke",
         authorFD: "Witold Gombrowicz",
         authorTextFD: "Autor:",
-        contentFD: "Choćbym chciał, nie mogę, nie mogę i nie mogę uchylić się żelaznym prawom symetrii oraz analogii, człowiek jest najgłębiej uzależniony od swego odbicia w duszy drugiego człowieka (...) nie jesteśmy samoistni, jesteśmy tylko funkcją innych ludzi, musimy być takimi, jakimi nas widzą (...) Koniec i bomba.",
+        contentFD: "",
         dateFD: "październik 1937",
         themes: [
             {

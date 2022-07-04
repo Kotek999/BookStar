@@ -16,7 +16,7 @@ export const dataWS = [
         titleWS: "Wesele",
         authorWS: "Stanisław Wyspiański",
         authorTextWS: "Autor:",
-        contentWS: "„Jak się żenić, to się żenić!”",
+        contentWS: "",
         dateWS: "16 marca 1901",
         themes: [
             {
