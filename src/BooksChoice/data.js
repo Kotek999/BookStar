@@ -11,7 +11,7 @@ export const data = {
 export const booksData = [{
     id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
     title: "Pan Tadeusz",
-    importantTheme: "Ojczyzna",
+    importantTheme: "Ojczyzna & Jacek Soplica...",
     avatarUrl: "https://www.swiatksiazki.pl/media/catalog/product/cache/eaf55611dc9c3a2fa4224fad2468d647/9/3/9399906483293.jpg",
     linkTo: <PanTadeuszNavigationArrow />,
 }, {

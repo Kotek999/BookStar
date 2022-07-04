@@ -1,13 +1,16 @@
 
 import * as React from 'react';
-import { Stack, Heading, Text, ScrollView } from 'native-base';
-import { StyleSheet, Dimensions } from 'react-native';
+import { Stack, Heading, Text, ScrollView, Image } from 'native-base';
+import { StyleSheet, Dimensions, View } from 'react-native';
 import { dataPT } from '../../Books/DataBooks/dataPT';
 import { WebDivider } from '../BookDivider/WebDivider';
 import MapThemes from '../Maps/MapThemes';
 import MapHeroes from '../Maps/MapHeroes';
 import TimeWrapper from '../Time/TimeWrapper';
 import isWEB from '../Resolutions/isWEB';
+import imagePT_right from '../../assets/imagePT_right.jpeg';
+import imagePT_left from '../../assets/imagePT_left.jpeg';
+
 
 export default function StackContainer() {
 
@@ -76,7 +79,7 @@ export default function StackContainer() {
                     </Text>
                 </Stack>
                 <Stack
-                    alignItems="flex-end"
+                    alignItems="center"
                 >
                     <Text
                         ml="-1"
@@ -102,13 +105,14 @@ export default function StackContainer() {
                     </Text>
                 </Stack>
                 <Stack
-                    alignItems="flex-end"
+                    alignItems="center"
                 >
                     <Text
                         fontWeight="bold"
                         ml="-1"
                         mt="-1"
                     >
+
                         {dataPT.map((item, mostImportantThemePT_One) => (
                             <React.Fragment
                                 key={mostImportantThemePT_One}
@@ -118,8 +122,28 @@ export default function StackContainer() {
                         ))}
                     </Text>
                 </Stack>
+                
+                <View style={styles.verticleLine_one}>
+                    <Image
+                        source={imagePT_left}
+                        alt="jacekSoplica_image"
+                        width="150"
+                        height="70"
+                        padding={50}
+                    >
+                    </Image>
+                    <Stack style={styles.verticleLine_two}></Stack>
+                    <Image
+                        source={imagePT_right}
+                        alt="ojczyzna_image"
+                        width="150"
+                        height="70"
+                        padding={50}
+                    >
+                    </Image>
+                </View>
                 <Stack
-                    alignItems="flex-start"
+                    alignItems="center"
                 >
                     <Text
                         ml="-1"
@@ -145,7 +169,7 @@ export default function StackContainer() {
                     </Text>
                 </Stack>
                 <Stack
-                    alignItems="flex-start"
+                    alignItems="center"
                 >
                     <Text
                         fontWeight="bold"
@@ -221,4 +245,17 @@ const styles = StyleSheet.create({
         padding: 0,
         backgroundColor: "white"
     },
+    verticleLine_one: {
+        alignItems: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        width: '100%',
+    },
+    verticleLine_two: {
+        height: 100,
+        width: 1,
+        marginLeft: 20,
+        marginRight: 20,
+        backgroundColor: '#909090',
+    }
 })

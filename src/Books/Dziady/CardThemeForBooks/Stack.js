@@ -10,7 +10,7 @@ import TimeWrapper from '../../../common/Time/TimeWrapper';
 import isWEB from '../../../common/Resolutions/isWEB';
 
 export default function StackContainer() {
-    
+
     const DimensionsHeight = Dimensions.get('window').height
 
     // function searchDataBooks(searchText) {
@@ -21,7 +21,7 @@ export default function StackContainer() {
 
     return (
         <ScrollView
-           style={styles.scroll}
+            style={styles.scroll}
         >
             <Stack
                 p="4"
@@ -74,6 +74,11 @@ export default function StackContainer() {
                         ))}
                     </Text>
                 </Stack>
+                <Stack style={styles.ridesFriends}>
+                    <Text style={styles.numbers}>132</Text>
+                    <Stack style={styles.verticleLine}></Stack>
+                    <Text style={styles.numbers}>2</Text>
+                </Stack>
                 <Text
                     margin={0}
                     color="black"
@@ -108,8 +113,8 @@ export default function StackContainer() {
                     ))}
                 </Text>
                 <WebDivider />
-                <MapThemes isThemesDZIII={true}/>
-                <MapHeroes isHeroesDZIII={true}/>
+                <MapThemes isThemesDZIII={true} />
+                <MapHeroes isHeroesDZIII={true} />
                 {(isWEB() && DimensionsHeight > 700) ? (
                     <TimeWrapper isMarginExist={false} />
                 ) : (
@@ -132,4 +137,22 @@ const styles = StyleSheet.create({
         padding: 0,
         backgroundColor: "white"
     },
+    ridesFriends: {
+        paddingTop: 70,
+        alignItems: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        width: '100%',
+        marginBottom: 20,
+    },
+    numbers: {
+        fontSize: 20,
+        color: '#31C283',
+        fontWeight: 'bold',
+    },
+    verticleLine: {
+        height: 50,
+        width: 1,
+        backgroundColor: '#909090',
+    }
 })
