@@ -8,6 +8,7 @@ import MapThemes from '../../../common/Maps/MapThemes';
 import MapHeroes from '../../../common/Maps/MapHeroes';
 import TimeWrapper from '../../../common/Time/TimeWrapper';
 import isWEB from '../../../common/Resolutions/isWEB';
+import MainContent from './MainContent';
 
 export default function StackContainer() {
 
@@ -74,25 +75,7 @@ export default function StackContainer() {
                         ))}
                     </Text>
                 </Stack>
-                <Stack style={styles.ridesFriends}>
-                    <Text style={styles.numbers}>132</Text>
-                    <Stack style={styles.verticleLine}></Stack>
-                    <Text style={styles.numbers}>2</Text>
-                </Stack>
-                <Text
-                    margin={0}
-                    color="black"
-                    letterSpacing={1}
-                    fontSize="sm"
-                >
-                    {dataDZIII.map((item, content) => (
-                        <React.Fragment
-                            key={content}
-                        >
-                            {item.contentDZIII}
-                        </React.Fragment>
-                    ))}
-                </Text>
+                <MainContent />
                 <Text
                     textAlign="right"
                     fontSize="xs"
@@ -137,22 +120,4 @@ const styles = StyleSheet.create({
         padding: 0,
         backgroundColor: "white"
     },
-    ridesFriends: {
-        paddingTop: 70,
-        alignItems: 'center',
-        flexDirection: 'row',
-        justifyContent: 'space-evenly',
-        width: '100%',
-        marginBottom: 20,
-    },
-    numbers: {
-        fontSize: 20,
-        color: '#31C283',
-        fontWeight: 'bold',
-    },
-    verticleLine: {
-        height: 50,
-        width: 1,
-        backgroundColor: '#909090',
-    }
 })

@@ -1,15 +1,14 @@
 
 import * as React from 'react';
-import { Stack, Heading, Text, ScrollView, Image } from 'native-base';
-import { StyleSheet, Dimensions, View } from 'react-native';
+import { Stack, Heading, Text, ScrollView } from 'native-base';
+import { StyleSheet, Dimensions } from 'react-native';
 import { dataPT } from '../../Books/DataBooks/dataPT';
 import { WebDivider } from '../BookDivider/WebDivider';
 import MapThemes from '../Maps/MapThemes';
 import MapHeroes from '../Maps/MapHeroes';
 import TimeWrapper from '../Time/TimeWrapper';
 import isWEB from '../Resolutions/isWEB';
-import imagePT_right from '../../assets/imagePT_right.jpeg';
-import imagePT_left from '../../assets/imagePT_left.jpeg';
+import MainContent from './MainContent';
 
 export default function StackContainer() {
 
@@ -77,139 +76,7 @@ export default function StackContainer() {
                         ))}
                     </Text>
                 </Stack>
-                <View style={styles.verticleLine_one}>
-                    <Stack flexDirection="column">
-                        <Stack
-                            alignItems="flex-end"
-                        >
-                            <Text
-                                ml="-1"
-                                mt="-1"
-                            >
-                                {dataPT.map((item, content_One) => (
-                                    <React.Fragment
-                                        key={content_One}
-                                    >
-                                        <Text
-                                            fontSize="xs"
-                                            _light={{
-                                                color: "#87888a"
-                                            }}
-                                            _dark={{
-                                                color: "gray.400"
-                                            }}
-                                        >
-                                            {item.contentThemePT}
-                                        </Text>
-                                    </React.Fragment>
-                                ))}
-                            </Text>
-                        </Stack>
-                        <Stack
-                            alignItems="center"
-                            top={2}
-                        >
-                            <Text
-                                fontWeight="bold"
-                                ml="-1"
-                                mt="-1"
-                            >
-
-                                {dataPT.map((item, mostImportantThemePT_One) => (
-                                    <React.Fragment
-                                        key={mostImportantThemePT_One}
-                                    >
-                                        {item.mostImportantThemePT}
-                                    </React.Fragment>
-                                ))}
-                            </Text>
-                        </Stack>
-                    </Stack>
-                    <Stack marginLeft={20}>
-                        <Image
-                            source={imagePT_right}
-                            alt="ojczyzna_image"
-                            width="150"
-                            height="70"
-                            padding={50}
-                            borderRadius={10}
-                            ml="1"
-                            mt="0"
-                        >
-                        </Image>
-                    </Stack>
-                </View>
-                <View style={styles.verticleLine_one}>
-                    <Stack marginRight={20}>
-                        <Image
-                            source={imagePT_left}
-                            alt="jacekSoplica_image"
-                            width="150"
-                            height="70"
-                            padding={50}
-                            borderRadius={10}
-                            ml="-1"
-                            mt="0"
-                        >
-                        </Image>
-                    </Stack>
-                    {/* <Image
-                        source={imagePT_right}
-                        alt="ojczyzna_image"
-                        width="150"
-                        height="70"
-                        padding={50}
-                        borderRightRadius={50}
-                        
-                    >
-                    </Image> */}
-                    <Stack flexDirection="column">
-                        <Stack
-                            alignItems="flex-end"
-                        >
-                            <Text
-                                ml="-1"
-                                mt="-1"
-                            >
-                                {dataPT.map((item, content_Two) => (
-                                    <React.Fragment
-                                        key={content_Two}
-                                    >
-                                        <Text
-                                            fontSize="xs"
-                                            _light={{
-                                                color: "#87888a"
-                                            }}
-                                            _dark={{
-                                                color: "gray.400"
-                                            }}
-                                        >
-                                            {item.contentHeroPT}
-                                        </Text>
-                                    </React.Fragment>
-                                ))}
-                            </Text>
-                        </Stack>
-                        <Stack
-                            alignItems="center"
-                            top={2}
-                        >
-                            <Text
-                                fontWeight="bold"
-                                ml="-1"
-                                mt="-1"
-                            >
-                                {dataPT.map((item, mostImportantThemePT_Two) => (
-                                    <React.Fragment
-                                        key={mostImportantThemePT_Two}
-                                    >
-                                        {item.mostImportantHeroPT}
-                                    </React.Fragment>
-                                ))}
-                            </Text>
-                        </Stack>
-                    </Stack>
-                </View>
+                <MainContent />
                 <Stack
                     alignItems="flex-end"
                 >
@@ -222,7 +89,7 @@ export default function StackContainer() {
                             color: "violet.400"
                         }}
                         fontWeight="500"
-                        ml="-1"
+                        mr="1"
                         mt="-1"
                     >
                         {dataPT.map((item, date) => (
@@ -270,23 +137,4 @@ const styles = StyleSheet.create({
         padding: 0,
         backgroundColor: "white"
     },
-    verticleLine_one: {
-        alignItems: 'center',
-        flexDirection: 'row',
-        width: '100%',
-    },
-    verticleLine_Image_Right_Two: {
-        height: 100,
-        width: 1.5,
-        marginLeft: 71.5,
-        marginRight: 15,
-        backgroundColor: "violet",
-    },
-    verticleLine_two: {
-        height: 100,
-        width: 1.5,
-        marginLeft: 40,
-        marginRight: 40,
-        backgroundColor: "violet",
-    }
 })

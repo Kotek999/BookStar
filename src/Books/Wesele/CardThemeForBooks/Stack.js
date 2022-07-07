@@ -8,6 +8,7 @@ import MapHeroes from '../../../common/Maps/MapHeroes';
 import TimeWrapper from '../../../common/Time/TimeWrapper';
 import isWEB from '../../../common/Resolutions/isWEB';
 import { dataWS } from '../../DataBooks/dataWS';
+import MainContent from './MainContent';
 
 export default function StackContainer() {
     
@@ -74,20 +75,7 @@ export default function StackContainer() {
                         ))}
                     </Text>
                 </Stack>
-                <Text
-                    margin={0}
-                    color="black"
-                    letterSpacing={1}
-                    fontSize="sm"
-                >
-                    {dataWS.map((item, content) => (
-                        <React.Fragment
-                            key={content}
-                        >
-                            {item.contentWS}
-                        </React.Fragment>
-                    ))}
-                </Text>
+                <MainContent />
                 <Text
                     textAlign="right"
                     fontSize="xs"
