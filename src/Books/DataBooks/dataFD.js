@@ -16,7 +16,11 @@ export const dataFD = [
         titleFD: "Ferdydurke",
         authorFD: "Witold Gombrowicz",
         authorTextFD: "Autor:",
-        contentFD: "",
+        contentThemeFD: "Najważniejszy motyw:",
+        mostImportantThemeFD: "Deformacja",
+        contentHeroFD: "Najważniejszy bohater:",
+        mostImportantHeroFD: "Józef Kowalski",
+        dateTitleFD: "Data: ",
         dateFD: "październik 1937",
         themes: [
             {

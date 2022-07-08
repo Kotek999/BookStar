@@ -17,7 +17,11 @@ export const dataDZIII = [
         titleDZIII: "Dziady Cz. III",
         authorDZIII: "Adam Mickiewicz",
         authorTextDZIII: "Autor:",
-        contentDZIII: "",
+        contentThemeDZIII: "Najważniejszy motyw:",
+        mostImportantThemeDZIII: "Wolność",
+        contentHeroDZIII: "Najważniejszy bohater:",
+        mostImportantHeroDZIII: "Konrad",
+        dateTitleDZIII: "Data: ",
         dateDZIII: "1832",
         themes: [
             {

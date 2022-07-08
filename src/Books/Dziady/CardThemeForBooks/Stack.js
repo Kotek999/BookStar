@@ -76,25 +76,42 @@ export default function StackContainer() {
                     </Text>
                 </Stack>
                 <MainContent />
-                <Text
-                    textAlign="right"
-                    fontSize="xs"
-                    _light={{
-                        color: "#87888a"
-                    }}
-                    _dark={{
-                        color: "gray.400"
-                    }}
-
+                <Stack
+                    alignItems="flex-end"
                 >
-                    {dataDZIII.map((item, date) => (
-                        <React.Fragment
-                            key={date}
-                        >
-                            {item.dateDZIII}
-                        </React.Fragment>
-                    ))}
-                </Text>
+                    <Text
+                        fontSize="xs"
+                        _light={{
+                            color: "violet.500"
+                        }}
+                        _dark={{
+                            color: "violet.400"
+                        }}
+                        fontWeight="500"
+                        mr="1"
+                        mt="-1"
+                    >
+                        {dataDZIII.map((item, date) => (
+                            <React.Fragment
+                                key={date}
+                            >
+                                <Text
+                                    fontSize="xs"
+                                    _light={{
+                                        color: "#87888a"
+                                    }}
+                                    _dark={{
+                                        color: "gray.400"
+                                    }}
+
+                                >
+                                    {item.dateTitleDZIII}
+                                </Text>
+                                {item.dateDZIII}
+                            </React.Fragment>
+                        ))}
+                    </Text>
+                </Stack>
                 <WebDivider />
                 <MapThemes isThemesDZIII={true} />
                 <MapHeroes isHeroesDZIII={true} />

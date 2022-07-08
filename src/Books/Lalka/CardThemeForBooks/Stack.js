@@ -11,7 +11,7 @@ import { dataLL } from '../../DataBooks/dataLL';
 import MainContent from './MainContent';
 
 export default function StackContainer() {
-    
+
     const DimensionsHeight = Dimensions.get('window').height
 
     // function searchDataBooks(searchText) {
@@ -22,7 +22,7 @@ export default function StackContainer() {
 
     return (
         <ScrollView
-           style={styles.scroll}
+            style={styles.scroll}
         >
             <Stack
                 p="4"
@@ -76,28 +76,45 @@ export default function StackContainer() {
                     </Text>
                 </Stack>
                 <MainContent />
-                <Text
-                    textAlign="right"
-                    fontSize="xs"
-                    _light={{
-                        color: "#87888a"
-                    }}
-                    _dark={{
-                        color: "gray.400"
-                    }}
-
+                <Stack
+                    alignItems="flex-end"
                 >
-                    {dataLL.map((item, date) => (
-                        <React.Fragment
-                            key={date}
-                        >
-                            {item.dateLL}
-                        </React.Fragment>
-                    ))}
-                </Text>
+                    <Text
+                        fontSize="xs"
+                        _light={{
+                            color: "violet.500"
+                        }}
+                        _dark={{
+                            color: "violet.400"
+                        }}
+                        fontWeight="500"
+                        mr="1"
+                        mt="-1"
+                    >
+                        {dataLL.map((item, date) => (
+                            <React.Fragment
+                                key={date}
+                            >
+                                <Text
+                                    fontSize="xs"
+                                    _light={{
+                                        color: "#87888a"
+                                    }}
+                                    _dark={{
+                                        color: "gray.400"
+                                    }}
+
+                                >
+                                    {item.dateTitleLL}
+                                </Text>
+                                {item.dateLL}
+                            </React.Fragment>
+                        ))}
+                    </Text>
+                </Stack>
                 <WebDivider />
-                <MapThemes isThemesLL={true}/>
-                <MapHeroes isHeroesLL={true}/>
+                <MapThemes isThemesLL={true} />
+                <MapHeroes isHeroesLL={true} />
                 {(isWEB() && DimensionsHeight > 700) ? (
                     <TimeWrapper isMarginExist={false} />
                 ) : (

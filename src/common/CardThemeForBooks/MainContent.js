@@ -48,7 +48,7 @@ export default function MainContent() {
                         <Text
                             fontWeight="bold"
                             ml="-1"
-                            mt="-1"
+                            mt="1"
                         >
 
                             {dataPT.map((item, mostImportantThemePT_One) => (
@@ -64,14 +64,16 @@ export default function MainContent() {
                 <Stack
                     style={styles.marginLeftContainer}
                 >
-                    <Image
-                        style={styles.image}
-                        source={imagePT_right}
-                        alt="ojczyzna_image"
-                        ml="-1"
-                        mt="0"
-                    >
-                    </Image>
+                    <Stack style={styles.imageShadowContainer}>
+                        <Image
+                            style={styles.image}
+                            source={imagePT_right}
+                            alt="ojczyzna_image"
+                            ml="-1"
+                            mt="0"
+                        >
+                        </Image>
+                    </Stack>
                 </Stack>
             </View>
             <View
@@ -80,14 +82,16 @@ export default function MainContent() {
                 <Stack
                     style={styles.marginRightContainer}
                 >
-                    <Image
-                        style={styles.image}
-                        source={imagePT_left}
-                        alt="jacekSoplica_image"
-                        ml="-1"
-                        mt="0"
-                    >
-                    </Image>
+                    <Stack style={styles.imageShadowContainer}>
+                        <Image
+                            style={styles.image}
+                            source={imagePT_left}
+                            alt="jacekSoplica_image"
+                            ml="-1"
+                            mt="0"
+                        >
+                        </Image>
+                    </Stack>
                 </Stack>
                 <Stack style={styles.columnContainer}>
                     <Stack
@@ -122,7 +126,7 @@ export default function MainContent() {
                         <Text
                             fontWeight="bold"
                             ml="-1"
-                            mt="-1"
+                            mt="1"
                         >
                             {dataPT.map((item, mostImportantThemePT_Two) => (
                                 <React.Fragment
@@ -166,5 +170,11 @@ const styles = StyleSheet.create({
         height: 70,
         padding: 50,
         borderRadius: 10,
+    },
+    imageShadowContainer: {
+        elevation: 10,
+        shadowColor: 'black',
+        shadowOffset: { width: 6, height: 6 },
+        shadowOpacity: 0.5,
     }
 })

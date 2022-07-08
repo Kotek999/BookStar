@@ -19,7 +19,11 @@ export const dataLL = [
         titleLL: "Lalka",
         authorLL: "Bolesław Prus",
         authorTextLL: "Autor:",
-        contentLL: "",
+        contentThemeLL: "Najważniejszy motyw:",
+        mostImportantThemeLL: "Praca",
+        contentHeroLL: "Najważniejszy bohater:",
+        mostImportantHeroLL: "Stanisław Wokulski",
+        dateTitleLL: "Data: ",
         dateLL: "1889",
         themes: [
             {

@@ -16,7 +16,11 @@ export const dataWS = [
         titleWS: "Wesele",
         authorWS: "Stanisław Wyspiański",
         authorTextWS: "Autor:",
-        contentWS: "",
+        contentThemeWS: "Najważniejszy motyw:",
+        mostImportantThemeWS: "Literatura",
+        contentHeroWS: "Najważniejszy bohater:",
+        mostImportantHeroWS: "Lucjan Rydel",
+        dateTitleWS: "Data: ",
         dateWS: "16 marca 1901",
         themes: [
             {
