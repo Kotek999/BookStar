@@ -1,7 +1,7 @@
 import React from "react";
 import { NativeBaseProvider } from "native-base";
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import routes from "./src/routing/routes";
 import LogInPageRoute from "./src/Routes/logInPageRoute";
 import HomeScreen from "./src/homeScreenPage/homeScreen";
@@ -12,7 +12,6 @@ import dziadyRoute from "./src/Routes/dziadyRoute";
 import lalkaRoute from "./src/Routes/lalkaRoute";
 import ferdydurkeRoute from "./src/Routes/ferdydurkeRoute";
 import weseleRoute from "./src/Routes/weseleRoute";
-
 
 const Stack = createNativeStackNavigator();
 const RootStack = createNativeStackNavigator();
@@ -42,7 +41,7 @@ function MainStackScreen() {
           />
           <Stack.Screen name="UserProfile" component={ProfileScreen} /> */}
     </Stack.Navigator>
-  )
+  );
 }
 
 function rootRouter(props) {
@@ -75,7 +74,7 @@ function rootRouter(props) {
             options={{
               headerTitleStyle: {
                 fontWeight: "bold",
-              }
+              },
             }}
             component={welcomeBooksRoute}
           />
@@ -84,7 +83,7 @@ function rootRouter(props) {
             options={{
               headerTitleStyle: {
                 fontWeight: "bold",
-              }
+              },
             }}
             component={booksChoiceRoute}
           />
@@ -94,7 +93,7 @@ function rootRouter(props) {
               headerShown: true,
               headerTitleStyle: {
                 fontWeight: "bold",
-              }
+              },
             }}
             component={panTadeuszRoute}
           />
@@ -104,7 +103,7 @@ function rootRouter(props) {
               headerShown: true,
               headerTitleStyle: {
                 fontWeight: "bold",
-              }
+              },
             }}
             component={dziadyRoute}
           />
@@ -114,7 +113,7 @@ function rootRouter(props) {
               headerShown: true,
               headerTitleStyle: {
                 fontWeight: "bold",
-              }
+              },
             }}
             component={lalkaRoute}
           />
@@ -124,7 +123,7 @@ function rootRouter(props) {
               headerShown: true,
               headerTitleStyle: {
                 fontWeight: "bold",
-              }
+              },
             }}
             component={ferdydurkeRoute}
           />
@@ -134,7 +133,7 @@ function rootRouter(props) {
               headerShown: true,
               headerTitleStyle: {
                 fontWeight: "bold",
-              }
+              },
             }}
             component={weseleRoute}
           />

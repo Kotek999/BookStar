@@ -1,5 +1,5 @@
 export const dataCommon = {
-    titleThemes: "Motywy:",
-    mainHeroes: "Bohaterowie:",
-    timeLeftToMature: "Do matury pozostało:"
-}
+  titleThemes: "Motywy:",
+  mainHeroes: "Bohaterowie:",
+  timeLeftToMature: "Do matury pozostało:",
+};

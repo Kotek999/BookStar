@@ -2,9 +2,7 @@ import React from "react";
 import RootRouter from "./rootRouter";
 
 function App() {
-  return (
-    <RootRouter />
-  );
+  return <RootRouter />;
 }
 
 export default App;
