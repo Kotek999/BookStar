@@ -23,7 +23,7 @@ function CardThemeForBooks() {
                 ratio={isWEB() && height > 700 ? 0 : 16 / 9}
               >
                 <ImageBackground
-                  source={require("../../../assets/imagePT.jpeg")}
+                  source={require("../../../assets/imageDZIII.jpg")}
                   alt="image"
                 />
               </AspectRatio>

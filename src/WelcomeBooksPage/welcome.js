@@ -40,17 +40,16 @@ const DimensionsWidth = Dimensions.get("window").width;
 const styles = StyleSheet.create({
   container: {
     width: DimensionsWidth,
-    height: DimensionsHeight,
+    height: DimensionsHeight * 1.6,
     flexDirection: "column",
+    justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
-    marginTop: 60,
+    marginTop: 0,
   },
   contentContainer: {
-    width: DimensionsWidth,
-    height: DimensionsHeight / 3.3,
     margin: 0,
-    padding: 20,
+    padding: 40,
     shadowColor: "white",
     shadowOpacity: 0.1,
     shadowRadius: 10,
