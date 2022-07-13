@@ -16,6 +16,7 @@ import imageFD_right from "../../assets/imageFD_right.jpeg";
 import imageFD_left from "../../assets/imageFD_left.jpeg";
 import imageWS_right from "../../assets/imageWS_right.jpeg";
 import imageWS_left from "../../assets/imageWS_left.jpeg";
+import { grayTitleColor, grayTitleDarkColor } from "../Colors/colors";
 
 export default function MapMainContent(props) {
   return (
@@ -31,10 +32,10 @@ export default function MapMainContent(props) {
                       <Text
                         fontSize="xs"
                         _light={{
-                          color: "#87888a",
+                          color: grayTitleColor,
                         }}
                         _dark={{
-                          color: "gray.400",
+                          color: grayTitleDarkColor,
                         }}
                       >
                         {item.contentThemePT}
@@ -77,10 +78,10 @@ export default function MapMainContent(props) {
                       <Text
                         fontSize="xs"
                         _light={{
-                          color: "#87888a",
+                          color: grayTitleColor,
                         }}
                         _dark={{
-                          color: "gray.400",
+                          color: grayTitleDarkColor,
                         }}
                       >
                         {item.contentHeroPT}
@@ -113,10 +114,10 @@ export default function MapMainContent(props) {
                       <Text
                         fontSize="xs"
                         _light={{
-                          color: "#87888a",
+                          color: grayTitleColor,
                         }}
                         _dark={{
-                          color: "gray.400",
+                          color: grayTitleDarkColor,
                         }}
                       >
                         {item.contentThemeDZIII}
@@ -159,10 +160,10 @@ export default function MapMainContent(props) {
                       <Text
                         fontSize="xs"
                         _light={{
-                          color: "#87888a",
+                          color: grayTitleColor,
                         }}
                         _dark={{
-                          color: "gray.400",
+                          color: grayTitleDarkColor,
                         }}
                       >
                         {item.contentHeroDZIII}
@@ -195,10 +196,10 @@ export default function MapMainContent(props) {
                       <Text
                         fontSize="xs"
                         _light={{
-                          color: "#87888a",
+                          color: grayTitleColor,
                         }}
                         _dark={{
-                          color: "gray.400",
+                          color: grayTitleDarkColor,
                         }}
                       >
                         {item.contentThemeLL}
@@ -241,10 +242,10 @@ export default function MapMainContent(props) {
                       <Text
                         fontSize="xs"
                         _light={{
-                          color: "#87888a",
+                          color: grayTitleColor,
                         }}
                         _dark={{
-                          color: "gray.400",
+                          color: grayTitleDarkColor,
                         }}
                       >
                         {item.contentHeroLL}
@@ -277,10 +278,10 @@ export default function MapMainContent(props) {
                       <Text
                         fontSize="xs"
                         _light={{
-                          color: "#87888a",
+                          color: grayTitleColor,
                         }}
                         _dark={{
-                          color: "gray.400",
+                          color: grayTitleDarkColor,
                         }}
                       >
                         {item.contentThemeFD}
@@ -323,10 +324,10 @@ export default function MapMainContent(props) {
                       <Text
                         fontSize="xs"
                         _light={{
-                          color: "#87888a",
+                          color: grayTitleColor,
                         }}
                         _dark={{
-                          color: "gray.400",
+                          color: grayTitleDarkColor,
                         }}
                       >
                         {item.contentHeroFD}
@@ -359,10 +360,10 @@ export default function MapMainContent(props) {
                       <Text
                         fontSize="xs"
                         _light={{
-                          color: "#87888a",
+                          color: grayTitleColor,
                         }}
                         _dark={{
-                          color: "gray.400",
+                          color: grayTitleDarkColor,
                         }}
                       >
                         {item.contentThemeWS}
@@ -405,10 +406,10 @@ export default function MapMainContent(props) {
                       <Text
                         fontSize="xs"
                         _light={{
-                          color: "#87888a",
+                          color: grayTitleColor,
                         }}
                         _dark={{
-                          color: "gray.400",
+                          color: grayTitleDarkColor,
                         }}
                       >
                         {item.contentHeroWS}

@@ -2,6 +2,7 @@ import * as React from "react";
 import { Dimensions, StyleSheet } from "react-native";
 import { Box, Heading, View } from "native-base";
 import { data } from "./data";
+import { blackColor, whiteColor } from "../common/Colors/colors";
 import BackgroundScreen from "../common/BackgroundScreen/BackgroundScreen";
 import WelcomeContentText from "../common/WelcomeContentText/WelcomeContentText";
 import ButtonCustom from "../common/ButtonCustom/ButtonCustom";
@@ -10,18 +11,8 @@ const Welcome = () => {
   return (
     <BackgroundScreen isScrollView={true}>
       <View style={styles.container}>
-        {/* <View
-                        width="300px"
-                        height="300px"
-                    >
-                        <Image
-                            source={logoNativeBase}
-                            flex={1}
-                            resizeMode="contain"
-                        />
-                    </View> */}
         <Box style={styles.contentContainer}>
-          <Heading size="xl" color="white">
+          <Heading size="xl" color={whiteColor}>
             {data.title}
           </Heading>
           <WelcomeContentText />
@@ -50,8 +41,7 @@ const styles = StyleSheet.create({
   contentContainer: {
     margin: 0,
     padding: 40,
-    shadowColor: "white",
-    shadowOpacity: 0.1,
-    shadowRadius: 10,
+    shadowColor: blackColor,
+    shadowOpacity: 0.3,
   },
 });

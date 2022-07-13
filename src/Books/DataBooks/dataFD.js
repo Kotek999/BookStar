@@ -7,7 +7,6 @@ import {
   IconInnocent,
   IconSchool,
 } from "../../common/ThemesIcons/Icons";
-import { IconList } from "../../common/ListIcon/ListIcon";
 
 export const dataFD = [
   {
@@ -53,51 +52,43 @@ export const dataFD = [
     ],
     mainHeroes: [
       {
-        listIconFD: <IconList />,
         nameFD: "Józio Kowalski",
         contentFD:
-          "Główny bohater, ma trzydzieći lat, pisarz, przegrywa z formą - jako zakochany porywacz opuszcza dwór.",
+          "Główny bohater, ma trzydzieści lat, pisarz, przegrywa z formą - jako zakochany porywacz opuszcza dwór.",
       },
       {
-        listIconFD: <IconList />,
         nameFD: "Pimko",
         contentFD:
           "Nauczyciel języka polskiego w szkole dyrektora Piórkowskiego.",
       },
       {
-        listIconFD: <IconList />,
         nameFD: "Miętalski - Miętus",
         contentFD:
           "Uczeń szkoły, przywódca grupy chłopców, wraz z grupą sprzeciwia się szkolnemu personelowi.",
       },
       {
-        listIconFD: <IconList />,
         nameFD: "Pylaszczkiewicz - Syfon",
         contentFD: "Uczeń szkoły, szkolny prymus.",
       },
       {
-        listIconFD: <IconList />,
         nameFD: "Zuta Młodziakówna",
         contentFD:
           "Naturalna i wysportowana, uważana za wzór młodości dla Józia przez nauczyciela Pimka.",
       },
       {
-        listIconFD: <IconList />,
         nameFD: "Pani Młodziakowa",
         contentFD:
           "Kobieta inteligentna i uspołeczniona, z bacznym i bystrym wyrazem twarzy.",
       },
       {
-        listIconFD: <IconList />,
         nameFD: "Wiktor Młodziak",
         contentFD:
           "Inżynier, urbanista i pacyfista, oraz wielbiciel organizacji pracy.",
       },
       {
-        listIconFD: <IconList />,
         nameFD: "Pani Hurlecka",
         contentFD:
-          "Ciotka głównego bohatera, mieszkająca w szlachetnim dworku w Bolimowie, pomimo wieku Józia traktuje go nadal jak dziecko.",
+          "Ciotka głównego bohatera, mieszkająca w szlachetnym dworku w Bolimowie, pomimo wieku Józia, traktuje go nadal jak dziecko.",
       },
     ],
   },

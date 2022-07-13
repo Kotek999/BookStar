@@ -1,12 +1,13 @@
 import * as React from "react";
 import { StyleSheet } from "react-native";
 import { dataCommon } from "../../Books/DataBooks/dataCommon";
-import { Stack, Heading, Text } from "native-base";
+import { Stack, Heading, Text, Divider } from "native-base";
 import { dataPT } from "../../Books/DataBooks/dataPT";
 import { dataDZIII } from "../../Books/DataBooks/dataDZIII";
 import { dataLL } from "../../Books/DataBooks/dataLL";
 import { dataFD } from "../../Books/DataBooks/dataFD";
 import { dataWS } from "../../Books/DataBooks/dataWS";
+import { grayHeroesDividerColor, purpleHeroesTitleColor, blackColor } from "../Colors/colors";
 
 export default function MapHeroes(props) {
   return (
@@ -20,8 +21,17 @@ export default function MapHeroes(props) {
             return (
               <Stack key={heroesPT} marginBottom={0}>
                 {item.mainHeroes.map((mainHeroes, mainHeroesPT) => (
-                  <Stack key={mainHeroesPT} marginTop={4}>
-                    <Text style={styles.heroesTitle}>{mainHeroes.namePT}</Text>
+                  <Stack key={mainHeroesPT} marginBottom={2}>
+                    <Divider
+                      my="2"
+                      _light={{
+                        bg: grayHeroesDividerColor,
+                      }}
+                      _dark={{
+                        bg: grayHeroesDividerColor,
+                      }}
+                    />
+                    <Text marginTop={2} style={styles.heroesTitle}>{mainHeroes.namePT}</Text>
                     <Stack marginTop={4}>
                       <Text style={styles.heroesContent}>
                         {mainHeroes.contentPT}
@@ -40,8 +50,17 @@ export default function MapHeroes(props) {
             return (
               <Stack key={heroesDZIII} marginBottom={0}>
                 {item.mainHeroes.map((mainHeroes, mainHeroesDZIII) => (
-                  <Stack key={mainHeroesDZIII} marginTop={4}>
-                    <Text style={styles.heroesTitle}>
+                  <Stack key={mainHeroesDZIII} marginBottom={2}>
+                    <Divider
+                      my="2"
+                      _light={{
+                        bg: grayHeroesDividerColor,
+                      }}
+                      _dark={{
+                        bg: grayHeroesDividerColor,
+                      }}
+                    />
+                    <Text marginTop={2} style={styles.heroesTitle}>
                       {mainHeroes.nameDZIII}
                     </Text>
                     <Stack marginTop={4}>
@@ -62,8 +81,17 @@ export default function MapHeroes(props) {
             return (
               <Stack key={heroesLL} marginBottom={0}>
                 {item.mainHeroes.map((mainHeroes, mainHeroesLL) => (
-                  <Stack key={mainHeroesLL} marginTop={4}>
-                    <Text style={styles.heroesTitle}>{mainHeroes.nameLL}</Text>
+                  <Stack key={mainHeroesLL} marginBottom={2}>
+                    <Divider
+                      my="2"
+                      _light={{
+                        bg: grayHeroesDividerColor,
+                      }}
+                      _dark={{
+                        bg: grayHeroesDividerColor,
+                      }}
+                    />
+                    <Text marginTop={2} style={styles.heroesTitle}>{mainHeroes.nameLL}</Text>
                     <Stack marginTop={4}>
                       <Text style={styles.heroesContent}>
                         {mainHeroes.contentLL}
@@ -82,8 +110,17 @@ export default function MapHeroes(props) {
             return (
               <Stack key={heroesFD} marginBottom={0}>
                 {item.mainHeroes.map((mainHeroes, mainHeroesFD) => (
-                  <Stack key={mainHeroesFD} marginTop={4}>
-                    <Text style={styles.heroesTitle}>{mainHeroes.nameFD}</Text>
+                  <Stack key={mainHeroesFD} marginBottom={2}>
+                    <Divider
+                      my="2"
+                      _light={{
+                        bg: grayHeroesDividerColor,
+                      }}
+                      _dark={{
+                        bg: grayHeroesDividerColor,
+                      }}
+                    />
+                    <Text marginTop={2} style={styles.heroesTitle}>{mainHeroes.nameFD}</Text>
                     <Stack marginTop={4}>
                       <Text style={styles.heroesContent}>
                         {mainHeroes.contentFD}
@@ -102,8 +139,17 @@ export default function MapHeroes(props) {
             return (
               <Stack key={heroesWS} marginBottom={0}>
                 {item.mainHeroes.map((mainHeroes, mainHeroesWS) => (
-                  <Stack key={mainHeroesWS} marginTop={4}>
-                    <Text style={styles.heroesTitle}>{mainHeroes.nameWS}</Text>
+                  <Stack key={mainHeroesWS} marginBottom={2}>
+                    <Divider
+                      my="2"
+                      _light={{
+                        bg: grayHeroesDividerColor,
+                      }}
+                      _dark={{
+                        bg: grayHeroesDividerColor,
+                      }}
+                    />
+                    <Text marginTop={2} style={styles.heroesTitle}>{mainHeroes.nameWS}</Text>
                     <Stack marginTop={4}>
                       <Text style={styles.heroesContent}>
                         {mainHeroes.contentWS}
@@ -125,7 +171,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     letterSpacing: 0.5,
     fontWeight: "bold",
-    color: "rgb(139, 92, 246)",
+    color: purpleHeroesTitleColor,
   },
   heroesContent: {
     fontSize: 14,
@@ -133,6 +179,6 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     marginRight: 25,
     textAlign: "left",
-    color: "black",
+    color: blackColor,
   },
 });

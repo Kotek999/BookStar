@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   lineContainer: {
     backgroundColor: "white",
     paddingTop: 20,
-    paddingBottom: 20,
+    paddingBottom: 0,
   },
   breakline: {
     height: 1.5,

@@ -2,6 +2,7 @@ import React from "react";
 import { NativeBaseProvider } from "native-base";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { blackColor, whiteColor } from "./src/common/Colors/colors";
 import routes from "./src/routing/routes";
 import LogInPageRoute from "./src/Routes/logInPageRoute";
 import HomeScreen from "./src/homeScreenPage/homeScreen";
@@ -18,7 +19,7 @@ const RootStack = createNativeStackNavigator();
 
 const stylesForOptions = {
   cardStyle: {
-    backgroundColor: "white",
+    backgroundColor: whiteColor,
   },
 };
 function MainStackScreen() {
@@ -55,9 +56,9 @@ function rootRouter(props) {
             options={{
               headerShown: true,
               headerStyle: {
-                backgroundColor: "#fff",
+                backgroundColor: whiteColor,
               },
-              headerTintColor: "#000",
+              headerTintColor: blackColor,
               headerTitleStyle: {
                 fontWeight: "bold",
               },

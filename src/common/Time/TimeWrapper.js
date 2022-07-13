@@ -2,25 +2,27 @@ import * as React from "react";
 import { Stack, HStack, Text } from "native-base";
 import { dataCommon } from "../../Books/DataBooks/dataCommon";
 import { WebDivider } from "../BookDivider/WebDivider";
+import { grayTimeColor, grayTimeDarkColor } from "../Colors/colors";
 import TimeLogic from "./TimeLogic";
 
 export default function TimeWrapper(props) {
   return (
     <>
       {props.isMarginExist ? (
-        <Stack marginTop={10}>
+        <Stack marginTop={0}>
           <WebDivider />
           <HStack
             alignItems="center"
             space={4}
+            marginTop={4}
             justifyContent="flex-end"
             flexDirection="column"
           >
             <HStack alignItems="center">
               <Text
-                color="coolGray.600"
+                color={grayTimeColor}
                 _dark={{
-                  color: "warmGray.200",
+                  color: grayTimeDarkColor,
                 }}
                 fontWeight="600"
                 fontSize={13.5}
@@ -30,9 +32,9 @@ export default function TimeWrapper(props) {
             </HStack>
             <HStack alignItems="center" margin={2}>
               <Text
-                color="coolGray.600"
+                color={grayTimeColor}
                 _dark={{
-                  color: "warmGray.200",
+                  color: grayTimeDarkColor,
                 }}
                 fontWeight="600"
                 fontSize={13.5}
@@ -54,9 +56,9 @@ export default function TimeWrapper(props) {
           >
             <HStack alignItems="center">
               <Text
-                color="coolGray.600"
+                color={grayTimeColor}
                 _dark={{
-                  color: "warmGray.200",
+                  color: grayTimeDarkColor,
                 }}
                 fontWeight="600"
                 fontSize={13.5}
@@ -66,9 +68,9 @@ export default function TimeWrapper(props) {
             </HStack>
             <HStack alignItems="center" margin={2}>
               <Text
-                color="coolGray.600"
+                color={grayTimeColor}
                 _dark={{
-                  color: "warmGray.200",
+                  color: grayTimeDarkColor,
                 }}
                 fontWeight="600"
                 fontSize={13.5}

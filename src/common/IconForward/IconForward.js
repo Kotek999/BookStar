@@ -1,5 +1,6 @@
 import * as React from "react";
 import RightArrowIconMaterialIcons from "react-native-vector-icons/MaterialIcons";
+import { pinkNavigateArrowColor } from "../Colors/colors";
 
 export default function IconForward() {
   return (
@@ -7,7 +8,7 @@ export default function IconForward() {
       <RightArrowIconMaterialIcons
         name="arrow-forward-ios"
         size={12}
-        color="#272ba1"
+        color={pinkNavigateArrowColor}
       />
     </>
   );

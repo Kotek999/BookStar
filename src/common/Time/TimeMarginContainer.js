@@ -2,47 +2,48 @@ import * as React from "react";
 import { Text, View } from "native-base";
 import { StyleSheet } from "react-native";
 import { dataTime } from "./data";
+import { violetColor, grayTimeColor, grayTimeDarkColor } from "../Colors/colors";
 
 export default function TimeMarginContainer(props) {
   return (
     <>
       <View style={styles.marginContainer}>
-        <Text style={styles.purpleNumber} color="violet.500">
+        <Text style={styles.purpleNumber} color={violetColor}>
           {props.hours}
         </Text>
         <Text
           style={styles.grayTime}
-          color="coolGray.600"
+          color={grayTimeColor}
           _dark={{
-            color: "warmGray.200",
+            color: grayTimeDarkColor,
           }}
         >
           {dataTime.hours}
         </Text>
       </View>
       <View style={styles.marginContainer}>
-        <Text style={styles.purpleNumber} color="violet.500">
+        <Text style={styles.purpleNumber} color={violetColor}>
           {props.minutes}
         </Text>
         <Text
           style={styles.grayTime}
-          color="coolGray.600"
+          color={grayTimeColor}
           _dark={{
-            color: "warmGray.200",
+            color: grayTimeDarkColor,
           }}
         >
           {dataTime.minutes}
         </Text>
       </View>
       <View style={styles.marginContainer}>
-        <Text style={styles.purpleNumber} color="violet.500">
+        <Text style={styles.purpleNumber} color={violetColor}>
           {props.seconds}
         </Text>
         <Text
           style={styles.grayTime}
-          color="coolGray.600"
+          color={grayTimeColor}
           _dark={{
-            color: "warmGray.200",
+            color: grayTimeDarkColor,
           }}
         >
           {dataTime.seconds}

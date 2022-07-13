@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Dimensions, StyleSheet } from "react-native";
 import { View, Text } from "native-base";
-import BookIconEntypo from "react-native-vector-icons/Entypo";
+import { blackColor, whiteColor } from "../common/Colors/colors";
 import { data } from "./data";
 import BackgroundScreen from "../common/BackgroundScreen/BackgroundScreen";
 import ButtonCustom from "../common/ButtonCustom/ButtonCustom";
@@ -35,12 +35,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "center",
     marginTop: 0,
+    shadowColor: blackColor,
+    shadowOpacity: 0.3,
   },
   mainTitle: {
     padding: 40,
     margin: 0,
     fontSize: 34,
-    color: "white",
+    color: whiteColor,
     fontWeight: "bold",
     textAlign: "center",
   },
@@ -48,7 +50,7 @@ const styles = StyleSheet.create({
     padding: 10,
     margin: 10,
     marginBottom: 30,
-    color: "white",
+    color: whiteColor,
     fontWeight: "bold",
     textAlign: "center",
   },
