@@ -1,6 +1,7 @@
 import * as React from "react";
 import { StyleSheet } from "react-native";
 import { Stack, Text, Divider } from "native-base";
+import { grayColor, whiteColor, pinkBreakLineColor } from "../Colors/colors";
 import BookIconEntypo from "react-native-vector-icons/Entypo";
 
 export const BookDivider = () => {
@@ -8,7 +9,7 @@ export const BookDivider = () => {
     <Stack style={styles.lineContainer}>
       <Divider style={styles.breakline} />
       <Text style={styles.bookIcon}>
-        <BookIconEntypo name="open-book" size={18} color="gray" />
+        <BookIconEntypo name="open-book" size={18} color={grayColor} />
       </Text>
     </Stack>
   );
@@ -16,13 +17,13 @@ export const BookDivider = () => {
 
 const styles = StyleSheet.create({
   lineContainer: {
-    backgroundColor: "white",
+    backgroundColor: whiteColor,
     paddingTop: 20,
     paddingBottom: 0,
   },
   breakline: {
     height: 1.5,
-    backgroundColor: "violet",
+    backgroundColor: pinkBreakLineColor,
   },
   bookIcon: {
     textAlign: "center",
@@ -30,9 +31,9 @@ const styles = StyleSheet.create({
     width: 45,
     marginTop: -12,
     height: 20,
-    color: "gray",
+    color: grayColor,
     fontSize: 10,
     letterSpacing: 1.25,
-    backgroundColor: "white",
+    backgroundColor: whiteColor,
   },
 });

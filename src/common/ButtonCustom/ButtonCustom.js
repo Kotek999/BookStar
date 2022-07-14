@@ -4,6 +4,7 @@ import { StyleSheet, Dimensions } from "react-native";
 import IconForward from "../IconForward/IconForward";
 import routes from "../../routing/routes";
 import { useNavigation } from "@react-navigation/native";
+import { blackColor, whiteColor, blueButtonTitleColor } from "../Colors/colors";
 
 export default function ButtonCustom(props) {
   const navigation = useNavigation();
@@ -50,17 +51,17 @@ const styles = StyleSheet.create({
     width: 155,
     height: DimensionsHeight / 18,
     margin: 20,
-    borderColor: "white",
+    borderColor: whiteColor,
     borderWidth: 1,
     borderRadius: 20,
-    backgroundColor: "white",
-    shadowColor: "black",
+    backgroundColor: whiteColor,
+    shadowColor: blackColor,
     shadowOpacity: 0.5,
     shadowRadius: 10,
   },
   buttonTitle: {
     fontSize: 16,
     textTransform: "uppercase",
-    color: "#272ba1",
+    color: blueButtonTitleColor,
   },
 });

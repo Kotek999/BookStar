@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Dimensions } from "react-native";
 import { Box } from "native-base";
+import { grayBoxColor, violetColor } from "../../../common/Colors/colors";
 
 export default function BoxContainer(props) {
   const DimensionsWidth = Dimensions.get("window").width;
@@ -17,15 +18,15 @@ export default function BoxContainer(props) {
       rounded="xl"
       overflow="hidden"
       _dark={{
-        borderColor: "coolGray.600",
-        backgroundColor: "gray.700",
+        borderColor: grayBoxColor,
+        backgroundColor: grayBoxColor,
       }}
       _web={{
         shadow: 2,
         borderWidth: 0,
       }}
       _light={{
-        backgroundColor: "violet.500",
+        backgroundColor: violetColor,
       }}
     ></Box>
   );

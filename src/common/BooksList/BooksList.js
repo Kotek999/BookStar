@@ -12,6 +12,14 @@ import {
 import { data, booksData } from "../../BooksChoice/data";
 import { View } from "native-base";
 import { Dimensions } from "react-native";
+import {
+  whiteColor,
+  grayBoxColor,
+  grayBorderColor,
+  grayTextDarkColor,
+  grayListTextColor,
+  grayListDarkTextColor,
+} from "../Colors/colors";
 
 const BooksList = () => {
   const DimensionsHeight = Dimensions.get("window").height;
@@ -19,7 +27,7 @@ const BooksList = () => {
 
   return (
     <Box width={DimensionsWidth} height={DimensionsHeight / 1.4}>
-      <Heading size="sm" mb="2" color="white" margin={0} padding={5}>
+      <Heading size="sm" mb="2" color={whiteColor} margin={0} padding={5}>
         {data.title}
       </Heading>
       <FlatList
@@ -28,9 +36,9 @@ const BooksList = () => {
           <Box
             borderBottomWidth="1"
             _dark={{
-              borderColor: "gray.600",
+              borderColor: grayBoxColor,
             }}
-            borderColor="coolGray.200"
+            borderColor={grayBorderColor}
             pl="5"
             pr="5"
             py="7"
@@ -46,25 +54,25 @@ const BooksList = () => {
               <VStack>
                 <Text
                   _dark={{
-                    color: "warmGray.50",
+                    color: grayTextDarkColor,
                   }}
-                  color="white"
+                  color={whiteColor}
                   bold
                 >
                   {item.title}
                 </Text>
                 <Text
                   fontStyle="italic"
-                  color="coolGray.400"
+                  color={grayListTextColor}
                   _dark={{
-                    color: "warmGray.600",
+                    color: grayListDarkTextColor,
                   }}
                 >
                   {item.importantTheme}
                 </Text>
               </VStack>
               <Spacer />
-              <View margin={3}>
+              <View margin={4}>
                 <Text>{item.linkTo}</Text>
               </View>
             </HStack>

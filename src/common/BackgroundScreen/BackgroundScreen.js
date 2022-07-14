@@ -1,6 +1,10 @@
 import * as React from "react";
 import { Dimensions, ImageBackground, ScrollView } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import {
+  blueValueOfGradientColor,
+  grayValueOfGradientColor,
+} from "../Colors/colors";
 
 function BackgroundScreen(props) {
   const DimensionsHeight = Dimensions.get("window").height;
@@ -18,7 +22,11 @@ function BackgroundScreen(props) {
           >
             <LinearGradient
               {...props}
-              colors={["#373837", "#272ba1", "#272ba1"]}
+              colors={[
+                blueValueOfGradientColor,
+                grayValueOfGradientColor,
+                grayValueOfGradientColor,
+              ]}
             ></LinearGradient>
           </ImageBackground>
         </ScrollView>
@@ -31,7 +39,11 @@ function BackgroundScreen(props) {
         >
           <LinearGradient
             {...props}
-            colors={["#373837", "#272ba1", "#272ba1"]}
+            colors={[
+              blueValueOfGradientColor,
+              grayValueOfGradientColor,
+              grayValueOfGradientColor,
+            ]}
           ></LinearGradient>
         </ImageBackground>
       )}

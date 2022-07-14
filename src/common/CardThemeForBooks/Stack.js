@@ -8,6 +8,12 @@ import MapThemes from "../Maps/MapThemes";
 import MapHeroes from "../Maps/MapHeroes";
 import TimeWrapper from "../Time/TimeWrapper";
 import isWEB from "../Resolutions/isWEB";
+import {
+  whiteColor,
+  grayTitleColor,
+  grayTitleDarkColor,
+  violetColor,
+} from "../Colors/colors";
 
 export default function StackContainer() {
   const DimensionsHeight = Dimensions.get("window").height;
@@ -30,10 +36,10 @@ export default function StackContainer() {
           <Text
             fontSize="xs"
             _light={{
-              color: "violet.500",
+              color: violetColor,
             }}
             _dark={{
-              color: "violet.400",
+              color: violetColor,
             }}
             fontWeight="500"
             ml="-1"
@@ -44,10 +50,10 @@ export default function StackContainer() {
                 <Text
                   fontSize="xs"
                   _light={{
-                    color: "#87888a",
+                    color: grayTitleColor,
                   }}
                   _dark={{
-                    color: "gray.400",
+                    color: grayTitleDarkColor,
                   }}
                 >
                   {item.authorTextPT} {""}
@@ -62,10 +68,10 @@ export default function StackContainer() {
           <Text
             fontSize="xs"
             _light={{
-              color: "violet.500",
+              color: violetColor,
             }}
             _dark={{
-              color: "violet.400",
+              color: violetColor,
             }}
             fontWeight="500"
             mr="1"
@@ -76,10 +82,10 @@ export default function StackContainer() {
                 <Text
                   fontSize="xs"
                   _light={{
-                    color: "#87888a",
+                    color: grayTitleColor,
                   }}
                   _dark={{
-                    color: "gray.400",
+                    color: grayTitleDarkColor,
                   }}
                 >
                   {item.dateTitlePT}
@@ -111,6 +117,6 @@ const styles = StyleSheet.create({
     marginTop: DimensionsHeight / marginLogo,
     marginBottom: DimensionsHeight / marginTB,
     padding: 0,
-    backgroundColor: "white",
+    backgroundColor: whiteColor,
   },
 });

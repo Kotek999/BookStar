@@ -2,6 +2,7 @@ import * as React from "react";
 import { StyleSheet, Dimensions } from "react-native";
 import { Divider } from "native-base";
 import { BookDivider } from "./BookDivider";
+import { pinkBreakLineColor } from "../Colors/colors";
 import isWEB from "../Resolutions/isWEB";
 
 export const WebDivider = () => {
@@ -21,6 +22,6 @@ export const WebDivider = () => {
 const styles = StyleSheet.create({
   breakline: {
     height: 1.5,
-    backgroundColor: "violet",
+    backgroundColor: pinkBreakLineColor,
   },
 });

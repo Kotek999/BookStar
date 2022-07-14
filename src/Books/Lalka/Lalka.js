@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Dimensions, StyleSheet } from "react-native";
 import { View } from "native-base";
+import { whiteColor } from "../../common/Colors/colors";
 import BackgroundScreen from "../../common/BackgroundScreen/BackgroundScreen";
 import CardThemeForBooks from "./CardThemeForBooks/CardThemeForBooks";
 
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
     height: DimensionsHeight / 3.3,
     margin: 0,
     padding: 20,
-    shadowColor: "white",
+    shadowColor: whiteColor,
     shadowOpacity: 0.1,
     shadowRadius: 10,
   },

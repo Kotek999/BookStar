@@ -8,6 +8,13 @@ import MapHeroes from "../../../common/Maps/MapHeroes";
 import TimeWrapper from "../../../common/Time/TimeWrapper";
 import isWEB from "../../../common/Resolutions/isWEB";
 import { dataWS } from "../../DataBooks/dataWS";
+import {
+  violetColor,
+  violetDarkColor,
+  whiteColor,
+  grayTitleColor,
+  grayTitleDarkColor,
+} from "../../../common/Colors/colors";
 
 export default function StackContainer() {
   const DimensionsHeight = Dimensions.get("window").height;
@@ -30,10 +37,10 @@ export default function StackContainer() {
           <Text
             fontSize="xs"
             _light={{
-              color: "violet.500",
+              color: violetColor,
             }}
             _dark={{
-              color: "violet.400",
+              color: violetDarkColor,
             }}
             fontWeight="500"
             ml="-1"
@@ -43,10 +50,10 @@ export default function StackContainer() {
               <React.Fragment key={author}>
                 <Text
                   _light={{
-                    color: "#afb0b3",
+                    color: grayTitleColor,
                   }}
                   _dark={{
-                    color: "gray.400",
+                    color: grayTitleDarkColor,
                   }}
                 >
                   {item.authorTextWS} {""}
@@ -61,10 +68,10 @@ export default function StackContainer() {
           <Text
             fontSize="xs"
             _light={{
-              color: "violet.500",
+              color: violetColor,
             }}
             _dark={{
-              color: "violet.400",
+              color: violetDarkColor,
             }}
             fontWeight="500"
             mr="1"
@@ -75,10 +82,10 @@ export default function StackContainer() {
                 <Text
                   fontSize="xs"
                   _light={{
-                    color: "#87888a",
+                    color: grayTitleColor,
                   }}
                   _dark={{
-                    color: "gray.400",
+                    color: grayTitleDarkColor,
                   }}
                 >
                   {item.dateTitleWS}
@@ -111,6 +118,6 @@ const styles = StyleSheet.create({
     marginTop: DimensionsHeight / marginLogo,
     marginBottom: DimensionsHeight / marginTB,
     padding: 0,
-    backgroundColor: "white",
+    backgroundColor: whiteColor,
   },
 });
