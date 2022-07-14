@@ -26,7 +26,7 @@ const BooksList = () => {
   const DimensionsWidth = Dimensions.get("window").width;
 
   return (
-    <Box width={DimensionsWidth} height={DimensionsHeight / 1.4}>
+    <Box width={DimensionsWidth} height={DimensionsHeight / 1.2}>
       <Heading size="sm" mb="2" color={whiteColor} margin={0} padding={5}>
         {data.title}
       </Heading>
@@ -80,6 +80,11 @@ const BooksList = () => {
         )}
         keyExtractor={(item) => item.id}
       />
+      <View justifyContent="center" alignItems="center">
+        <Heading size="sm" mb="0" color="#cccccc" marginTop={10} padding={3}>
+          &copy; {data.authors} &copy;
+        </Heading>
+      </View>
     </Box>
   );
 };

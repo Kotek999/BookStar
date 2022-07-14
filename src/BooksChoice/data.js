@@ -6,6 +6,7 @@ import WeseleNavigationArrow from "../common/BooksNavigationArrows/WeseleBook";
 
 export const data = {
   title: "Wybierz lekturę jaka Ciebie interesuje:",
+  authors: "Powered by BookStar 2022",
 };
 
 export const booksData = [
