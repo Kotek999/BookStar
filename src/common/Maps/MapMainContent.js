@@ -6,6 +6,7 @@ import { dataDZIII } from "../../Books/DataBooks/dataDZIII";
 import { dataLL } from "../../Books/DataBooks/dataLL";
 import { dataFD } from "../../Books/DataBooks/dataFD";
 import { dataWS } from "../../Books/DataBooks/dataWS";
+import { dataImage } from "./DataImage";
 import imagePT_right from "../../assets/imagePT_right.jpeg";
 import imagePT_left from "../../assets/imagePT_left.jpeg";
 import imageDZIII_right from "../../assets/imageDZIII_right.jpeg";
@@ -58,7 +59,7 @@ export default function MapMainContent(props) {
               <Image
                 style={styles.image}
                 source={imagePT_right}
-                alt="ojczyzna_image"
+                alt={dataImage.alt_One_PT}
               ></Image>
             </Stack>
           </View>
@@ -67,7 +68,7 @@ export default function MapMainContent(props) {
               <Image
                 style={styles.image}
                 source={imagePT_left}
-                alt="jacekSoplica_image"
+                alt={dataImage.alt_Two_PT}
               ></Image>
             </Stack>
             <Stack style={styles.columnContainer}>
@@ -140,7 +141,7 @@ export default function MapMainContent(props) {
               <Image
                 style={styles.image}
                 source={imageDZIII_right}
-                alt="wolnosc_image"
+                alt={dataImage.alt_One_DZIII}
               ></Image>
             </Stack>
           </View>
@@ -149,7 +150,7 @@ export default function MapMainContent(props) {
               <Image
                 style={styles.image}
                 source={imageDZIII_left}
-                alt="konrad_image"
+                alt={dataImage.alt_Two_DZIII}
               ></Image>
             </Stack>
             <Stack style={styles.columnContainer}>
@@ -222,7 +223,7 @@ export default function MapMainContent(props) {
               <Image
                 style={styles.image}
                 source={imageLL_right}
-                alt="praca_image"
+                alt={dataImage.alt_One_LL}
               ></Image>
             </Stack>
           </View>
@@ -231,7 +232,7 @@ export default function MapMainContent(props) {
               <Image
                 style={styles.image}
                 source={imageLL_left}
-                alt="stanislawWokulski_image"
+                alt={dataImage.alt_Two_LL}
               ></Image>
             </Stack>
             <Stack style={styles.columnContainer}>
@@ -304,7 +305,7 @@ export default function MapMainContent(props) {
               <Image
                 style={styles.image}
                 source={imageFD_right}
-                alt="deformacja_image"
+                alt={dataImage.alt_One_FD}
               ></Image>
             </Stack>
           </View>
@@ -313,7 +314,7 @@ export default function MapMainContent(props) {
               <Image
                 style={styles.image}
                 source={imageFD_left}
-                alt="józefKowalski_image"
+                alt={dataImage.alt_Two_FD}
               ></Image>
             </Stack>
             <Stack style={styles.columnContainer}>
@@ -386,7 +387,7 @@ export default function MapMainContent(props) {
               <Image
                 style={styles.image}
                 source={imageWS_right}
-                alt="literatura_image"
+                alt={dataImage.alt_One_WS}
               ></Image>
             </Stack>
           </View>
@@ -395,7 +396,7 @@ export default function MapMainContent(props) {
               <Image
                 style={styles.image}
                 source={imageWS_left}
-                alt="lucjanRydel_image"
+                alt={dataImage.alt_Two_WS}
               ></Image>
             </Stack>
             <Stack style={styles.columnContainer}>

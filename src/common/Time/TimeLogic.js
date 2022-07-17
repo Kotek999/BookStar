@@ -8,7 +8,7 @@ export default function TimeLogic() {
   const [seconds, setSeconds] = React.useState(0);
 
   React.useEffect(() => {
-    const target = new Date("05/04/2023 23:59:59");
+    const target = new Date("05/08/2023 23:59:59");
 
     const interval = setInterval(() => {
       const now = new Date();
