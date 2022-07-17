@@ -80,8 +80,8 @@ const BooksList = () => {
         )}
         keyExtractor={(item) => item.id}
       />
-      <View justifyContent="center" alignItems="center">
-        <Heading size="sm" mb="0" color="#cccccc" marginTop={10} padding={3}>
+      <View marginBottom={10} justifyContent="center" alignItems="center">
+        <Heading size="sm" mb="0" color="#cccccc" marginTop={4} padding={3}>
           &copy; {data.authors} &copy;
         </Heading>
       </View>

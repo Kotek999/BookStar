@@ -7,6 +7,7 @@ import { dataDZIII } from "../../Books/DataBooks/dataDZIII";
 import { dataLL } from "../../Books/DataBooks/dataLL";
 import { dataFD } from "../../Books/DataBooks/dataFD";
 import { dataWS } from "../../Books/DataBooks/dataWS";
+import IconMargin from "../IconMargin/IconMargin";
 
 export default function MapThemes(props) {
   return (
@@ -22,6 +23,7 @@ export default function MapThemes(props) {
                     <Stack key={themesPT} flexDirection="column">
                       <Text style={styles.themesTitle}>
                         {themes.iconPT}
+                        <IconMargin />
                         {themes.typePT}
                       </Text>
                     </Stack>
@@ -43,6 +45,7 @@ export default function MapThemes(props) {
                     <Stack key={themesDZIII} flexDirection="column">
                       <Text style={styles.themesTitle}>
                         {themes.iconDZIII}
+                        <IconMargin />
                         {themes.typeDZIII}
                       </Text>
                     </Stack>
@@ -64,6 +67,7 @@ export default function MapThemes(props) {
                     <Stack key={themesLL} flexDirection="column">
                       <Text style={styles.themesTitle}>
                         {themes.iconLL}
+                        <IconMargin />
                         {themes.typeLL}
                       </Text>
                     </Stack>
@@ -85,6 +89,7 @@ export default function MapThemes(props) {
                     <Stack key={themesFD} flexDirection="column">
                       <Text style={styles.themesTitle}>
                         {themes.iconFD}
+                        <IconMargin />
                         {themes.typeFD}
                       </Text>
                     </Stack>
@@ -106,6 +111,7 @@ export default function MapThemes(props) {
                     <Stack key={themesWS} flexDirection="column">
                       <Text style={styles.themesTitle}>
                         {themes.iconWS}
+                        <IconMargin />
                         {themes.typeWS}
                       </Text>
                     </Stack>
