@@ -19,12 +19,6 @@ import {
 export default function StackContainer() {
   const DimensionsHeight = Dimensions.get("window").height;
 
-  // function searchDataBooks(searchText) {
-  //     return dataBooks.filter(entry => entry.themes.some(item => item.icon.includes(searchText)));
-  // }
-
-  // console.log(searchDataBooks("ikonka xD"))
-
   return (
     <ScrollView style={styles.scroll}>
       <Stack p="4" space={3} padding={6}>
