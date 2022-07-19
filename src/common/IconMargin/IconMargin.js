@@ -6,5 +6,5 @@ import isWEB from "../Resolutions/isWEB";
 export default function IconMargin() {
   const { height } = Dimensions.get("window");
 
-  return <>{isWEB() && height > 700 ? <Text marginLeft={2} /> : null}</>;
-};
+  return <>{isWEB() && height > 700 && <Text marginLeft={2} />}</>;
+}

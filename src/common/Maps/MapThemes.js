@@ -12,7 +12,7 @@ import IconMargin from "../IconMargin/IconMargin";
 export default function MapThemes(props) {
   return (
     <>
-      {props.isThemesPT ? (
+      {props.isThemesPT && (
         <Stack>
           <Heading fontSize="xl">{dataCommon.titleThemes}</Heading>
           <Stack flexDirection="row" marginTop={5}>
@@ -33,8 +33,8 @@ export default function MapThemes(props) {
             })}
           </Stack>
         </Stack>
-      ) : null}
-      {props.isThemesDZIII ? (
+      )}
+      {props.isThemesDZIII && (
         <Stack>
           <Heading fontSize="xl">{dataCommon.titleThemes}</Heading>
           <Stack flexDirection="row" marginTop={5}>
@@ -55,8 +55,8 @@ export default function MapThemes(props) {
             })}
           </Stack>
         </Stack>
-      ) : null}
-      {props.isThemesLL ? (
+      )}
+      {props.isThemesLL && (
         <Stack>
           <Heading fontSize="xl">{dataCommon.titleThemes}</Heading>
           <Stack flexDirection="row" marginTop={5}>
@@ -77,8 +77,8 @@ export default function MapThemes(props) {
             })}
           </Stack>
         </Stack>
-      ) : null}
-      {props.isThemesFD ? (
+      )}
+      {props.isThemesFD && (
         <Stack>
           <Heading fontSize="xl">{dataCommon.titleThemes}</Heading>
           <Stack flexDirection="row" marginTop={5}>
@@ -99,8 +99,8 @@ export default function MapThemes(props) {
             })}
           </Stack>
         </Stack>
-      ) : null}
-      {props.isThemesWS ? (
+      )}
+      {props.isThemesWS && (
         <Stack>
           <Heading fontSize="xl">{dataCommon.titleThemes}</Heading>
           <Stack flexDirection="row" marginTop={5}>
@@ -121,7 +121,7 @@ export default function MapThemes(props) {
             })}
           </Stack>
         </Stack>
-      ) : null}
+      )}
     </>
   );
 }

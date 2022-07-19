@@ -7,7 +7,11 @@ import { dataDZIII } from "../../Books/DataBooks/dataDZIII";
 import { dataLL } from "../../Books/DataBooks/dataLL";
 import { dataFD } from "../../Books/DataBooks/dataFD";
 import { dataWS } from "../../Books/DataBooks/dataWS";
-import { grayHeroesDividerColor, purpleHeroesTitleColor, blackColor } from "../Colors/colors";
+import {
+  grayHeroesDividerColor,
+  purpleHeroesTitleColor,
+  blackColor,
+} from "../Colors/colors";
 
 export default function MapHeroes(props) {
   return (
@@ -15,7 +19,7 @@ export default function MapHeroes(props) {
       <Heading fontSize="xl" marginBottom={2}>
         {dataCommon.mainHeroes}
       </Heading>
-      {props.isHeroesPT ? (
+      {props.isHeroesPT && (
         <>
           {dataPT.map((item, heroesPT) => {
             return (
@@ -31,7 +35,9 @@ export default function MapHeroes(props) {
                         bg: grayHeroesDividerColor,
                       }}
                     />
-                    <Text marginTop={2} style={styles.heroesTitle}>{mainHeroes.namePT}</Text>
+                    <Text marginTop={2} style={styles.heroesTitle}>
+                      {mainHeroes.namePT}
+                    </Text>
                     <Stack marginTop={4}>
                       <Text style={styles.heroesContent}>
                         {mainHeroes.contentPT}
@@ -43,8 +49,8 @@ export default function MapHeroes(props) {
             );
           })}
         </>
-      ) : null}
-      {props.isHeroesDZIII ? (
+      )}
+      {props.isHeroesDZIII && (
         <>
           {dataDZIII.map((item, heroesDZIII) => {
             return (
@@ -74,8 +80,8 @@ export default function MapHeroes(props) {
             );
           })}
         </>
-      ) : null}
-      {props.isHeroesLL ? (
+      )}
+      {props.isHeroesLL && (
         <>
           {dataLL.map((item, heroesLL) => {
             return (
@@ -91,7 +97,9 @@ export default function MapHeroes(props) {
                         bg: grayHeroesDividerColor,
                       }}
                     />
-                    <Text marginTop={2} style={styles.heroesTitle}>{mainHeroes.nameLL}</Text>
+                    <Text marginTop={2} style={styles.heroesTitle}>
+                      {mainHeroes.nameLL}
+                    </Text>
                     <Stack marginTop={4}>
                       <Text style={styles.heroesContent}>
                         {mainHeroes.contentLL}
@@ -103,8 +111,8 @@ export default function MapHeroes(props) {
             );
           })}
         </>
-      ) : null}
-      {props.isHeroesFD ? (
+      )}
+      {props.isHeroesFD && (
         <>
           {dataFD.map((item, heroesFD) => {
             return (
@@ -120,7 +128,9 @@ export default function MapHeroes(props) {
                         bg: grayHeroesDividerColor,
                       }}
                     />
-                    <Text marginTop={2} style={styles.heroesTitle}>{mainHeroes.nameFD}</Text>
+                    <Text marginTop={2} style={styles.heroesTitle}>
+                      {mainHeroes.nameFD}
+                    </Text>
                     <Stack marginTop={4}>
                       <Text style={styles.heroesContent}>
                         {mainHeroes.contentFD}
@@ -132,8 +142,8 @@ export default function MapHeroes(props) {
             );
           })}
         </>
-      ) : null}
-      {props.isHeroesWS ? (
+      )}
+      {props.isHeroesWS && (
         <>
           {dataWS.map((item, heroesWS) => {
             return (
@@ -149,7 +159,9 @@ export default function MapHeroes(props) {
                         bg: grayHeroesDividerColor,
                       }}
                     />
-                    <Text marginTop={2} style={styles.heroesTitle}>{mainHeroes.nameWS}</Text>
+                    <Text marginTop={2} style={styles.heroesTitle}>
+                      {mainHeroes.nameWS}
+                    </Text>
                     <Stack marginTop={4}>
                       <Text style={styles.heroesContent}>
                         {mainHeroes.contentWS}
@@ -161,7 +173,7 @@ export default function MapHeroes(props) {
             );
           })}
         </>
-      ) : null}
+      )}
     </Stack>
   );
 }

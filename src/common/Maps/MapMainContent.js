@@ -22,7 +22,7 @@ import { grayTitleColor, grayTitleDarkColor } from "../Colors/colors";
 export default function MapMainContent(props) {
   return (
     <Stack>
-      {props.isMainContentPT ? (
+      {props.isMainContentPT && (
         <>
           <View style={styles.themeAndImage}>
             <Stack style={styles.columnContainer}>
@@ -103,8 +103,8 @@ export default function MapMainContent(props) {
             </Stack>
           </View>
         </>
-      ) : null}
-      {props.isMainContentDZIII ? (
+      )}
+      {props.isMainContentDZIII && (
         <>
           <View style={styles.themeAndImage}>
             <Stack style={styles.columnContainer}>
@@ -185,8 +185,8 @@ export default function MapMainContent(props) {
             </Stack>
           </View>
         </>
-      ) : null}
-      {props.isMainContentLL ? (
+      )}
+      {props.isMainContentLL && (
         <>
           <View style={styles.themeAndImage}>
             <Stack style={styles.columnContainer}>
@@ -267,8 +267,8 @@ export default function MapMainContent(props) {
             </Stack>
           </View>
         </>
-      ) : null}
-      {props.isMainContentFD ? (
+      )}
+      {props.isMainContentFD && (
         <>
           <View style={styles.themeAndImage}>
             <Stack style={styles.columnContainer}>
@@ -349,8 +349,8 @@ export default function MapMainContent(props) {
             </Stack>
           </View>
         </>
-      ) : null}
-      {props.isMainContentWS ? (
+      )}
+      {props.isMainContentWS && (
         <>
           <View style={styles.themeAndImage}>
             <Stack style={styles.columnContainer}>
@@ -431,7 +431,7 @@ export default function MapMainContent(props) {
             </Stack>
           </View>
         </>
-      ) : null}
+      )}
     </Stack>
   );
 }
