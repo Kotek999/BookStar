@@ -72,7 +72,7 @@ const BooksList = () => {
                 </Text>
               </VStack>
               <Spacer />
-              <View margin={4}>
+              <View padding={4}>
                 <Text>{item.linkTo}</Text>
               </View>
             </HStack>
