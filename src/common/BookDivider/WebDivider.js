@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StyleSheet, Dimensions } from "react-native";
 import { Divider } from "native-base";
-import { BookDivider } from "./BookDivider";
+import { StarDivider } from "./BookDivider";
 import { pinkBreakLineColor } from "../Colors/colors";
 import isWEB from "../Resolutions/isWEB";
 
@@ -13,7 +13,7 @@ export const WebDivider = () => {
       {isWEB() && DimensionsHeight > 700 ? (
         <Divider style={styles.breakline} />
       ) : (
-        <BookDivider />
+        <StarDivider />
       )}
     </>
   );

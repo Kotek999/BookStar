@@ -1,15 +1,15 @@
 import * as React from "react";
 import { StyleSheet } from "react-native";
-import { Stack, Text, Divider } from "native-base";
+import { Stack, Text, Divider, Image } from "native-base";
 import { grayColor, whiteColor, pinkBreakLineColor } from "../Colors/colors";
-import BookIconEntypo from "react-native-vector-icons/Entypo";
+import starIcon from "../../assets/star4.png";
 
-export const BookDivider = () => {
+export const StarDivider = () => {
   return (
     <Stack style={styles.lineContainer}>
       <Divider style={styles.breakline} />
-      <Text style={styles.bookIcon}>
-        <BookIconEntypo name="open-book" size={18} color={grayColor} />
+      <Text style={styles.starIconContainer}>
+        <Image source={starIcon} alt="star" style={styles.starIcon} />
       </Text>
     </Stack>
   );
@@ -25,15 +25,19 @@ const styles = StyleSheet.create({
     height: 1.5,
     backgroundColor: pinkBreakLineColor,
   },
-  bookIcon: {
+  starIconContainer: {
     textAlign: "center",
     alignSelf: "center",
-    width: 45,
-    marginTop: -12,
-    height: 20,
+    width: 40,
+    marginTop: -22,
+    height: 30,
     color: grayColor,
     fontSize: 10,
     letterSpacing: 1.25,
     backgroundColor: whiteColor,
+  },
+  starIcon: {
+    width: 30,
+    height: 30,
   },
 });
