@@ -8,6 +8,8 @@ import {
   VStack,
   Text,
   Spacer,
+  Pressable, 
+  Button
 } from "native-base";
 import { data, booksData } from "../../BooksChoice/data";
 import { View } from "native-base";
@@ -20,8 +22,15 @@ import {
   grayListTextColor,
   grayListDarkTextColor,
 } from "../Colors/colors";
+import routes from "../../routing/routes";
+import { useNavigation } from "@react-navigation/native";
+
+
 
 const BooksList = () => {
+
+  const navigation = useNavigation();
+
   return (
     <Box width={DimensionsWidth} height={DimensionsHeight / 1.2}>
       <Heading size="sm" mb="2" color={whiteColor} margin={0} padding={5}>
@@ -40,6 +49,7 @@ const BooksList = () => {
             pr="5"
             py="7"
           >
+             <Button justifyContent="flex-start" width={DimensionsWidth - 40} variant="unstyled" onPress={() => console.log("click")}>
             <HStack space={4} justifyContent="space-between">
               <Avatar
                 size="60px"
@@ -69,10 +79,11 @@ const BooksList = () => {
                 </Text>
               </VStack>
               <Spacer />
-              <View padding={4}>
+              <View padding={4} justifyContent="flex-end">
                 <Text>{item.linkTo}</Text>
               </View>
             </HStack>
+            </Button>
           </Box>
         )}
         keyExtractor={(item) => item.id}
