@@ -8,8 +8,8 @@ import {
   VStack,
   Text,
   Spacer,
-  Pressable, 
-  Button
+  Pressable,
+  Button,
 } from "native-base";
 import { data, booksData } from "../../BooksChoice/data";
 import { View } from "native-base";
@@ -22,13 +22,10 @@ import {
   grayListTextColor,
   grayListDarkTextColor,
 } from "../Colors/colors";
-import routes from "../../routing/routes";
 import { useNavigation } from "@react-navigation/native";
-
-
+import { List } from "react-native-paper";
 
 const BooksList = () => {
-
   const navigation = useNavigation();
 
   return (
@@ -36,7 +33,49 @@ const BooksList = () => {
       <Heading size="sm" mb="2" color={whiteColor} margin={0} padding={5}>
         {data.title}
       </Heading>
-      <FlatList
+      {booksData.map((item, book) => {
+        return (
+          <React.Fragment key={book}>
+            <List.Section>
+              <List.Item
+                title={item.title}
+                onPress={() => navigation.navigate(item.cardScreen)}
+                right={() => (
+                  <Avatar
+                    size="60px"
+                    alt="avatar"
+                    source={{
+                      uri: item.avatarUrl,
+                    }}
+                  />
+                )}
+                // right={PanTadeuszBook}
+              ></List.Item>
+              {/* <List.Item
+                title="Siema"
+                onPress={() => navigation.navigate(routes.Dziady)}
+                right={DziadyBook}
+              ></List.Item>
+              <List.Item
+                title="Siema"
+                onPress={() => navigation.navigate(routes.Lalka)}
+                right={LalkaBook}
+              ></List.Item>
+              <List.Item
+                title="Siema"
+                onPress={() => navigation.navigate(routes.Ferdydurke)}
+                right={FerdydurkeBook}
+              ></List.Item>
+              <List.Item
+                title="Siema"
+                onPress={() => navigation.navigate(routes.Wesele)}
+                right={WeseleBook}
+              ></List.Item> */}
+            </List.Section>
+          </React.Fragment>
+        );
+      })}
+      {/* <FlatList
         data={booksData}
         renderItem={({ item }) => (
           <Box
@@ -87,7 +126,7 @@ const BooksList = () => {
           </Box>
         )}
         keyExtractor={(item) => item.id}
-      />
+      /> */}
       <View marginBottom={10} justifyContent="center" alignItems="center">
         <Heading size="sm" mb="0" color="#cccccc" marginTop={4} padding={3}>
           &copy; {data.authors} &copy;

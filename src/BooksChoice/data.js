@@ -1,8 +1,4 @@
-import PanTadeuszNavigationArrow from "../common/BooksNavigationArrows/PanTadeuszBook";
-import DziadyNavigationArrow from "../common/BooksNavigationArrows/DziadyBook";
-import LalkaNavigationArrow from "../common/BooksNavigationArrows/LalkaBook";
-import FerdydurkeNavigationArrow from "../common/BooksNavigationArrows/FerdydurkeBook";
-import WeseleNavigationArrow from "../common/BooksNavigationArrows/WeseleBook";
+import routes from "../routing/routes";
 
 export const data = {
   title: "Wybierz lekturę jaka Ciebie interesuje:",
@@ -16,7 +12,7 @@ export const booksData = [
     importantTheme: "Ojczyzna...",
     avatarUrl:
       "https://www.swiatksiazki.pl/media/catalog/product/cache/eaf55611dc9c3a2fa4224fad2468d647/9/3/9399906483293.jpg",
-    linkTo: <PanTadeuszNavigationArrow />,
+    cardScreen: routes.PanTadeusz,
   },
   {
     id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
@@ -24,7 +20,7 @@ export const booksData = [
     importantTheme: "Wolność...",
     avatarUrl:
       "https://image.ceneostatic.pl/data/products/527516/i-biblioteczka-opracowan-dziady-czesc-iii-adama-mickiewicza.jpg",
-    linkTo: <DziadyNavigationArrow />,
+    cardScreen: routes.Dziady,
   },
   {
     id: "58694a0f-3da1-471f-bd96-145571e29d72",
@@ -32,7 +28,7 @@ export const booksData = [
     importantTheme: "Praca...",
     avatarUrl:
       "https://img.tantis.pl/image/bd4150f0-f46d-492a-a5b4-71009e0d48b1/550x400/webp",
-    linkTo: <LalkaNavigationArrow />,
+    cardScreen: routes.Lalka,
   },
   {
     id: "68694a0f-3da1-431f-bd56-142371e29d72",
@@ -40,7 +36,7 @@ export const booksData = [
     importantTheme: "Deformacja Świata...",
     avatarUrl:
       "https://pim.eduksiazka.pl/media/catalog/product/9/7/9788308070536.jpg",
-    linkTo: <FerdydurkeNavigationArrow />,
+    cardScreen: routes.Ferdydurke,
   },
   {
     id: "28694a0f-3da1-471f-bd96-142456e29d72",
@@ -48,6 +44,6 @@ export const booksData = [
     importantTheme: "Literatura...",
     avatarUrl:
       "https://www.swiatksiazki.pl/media/catalog/product/cache/eaf55611dc9c3a2fa4224fad2468d647/3/7/3799906504837.jpg",
-    linkTo: <WeseleNavigationArrow />,
+    cardScreen: routes.Wesele,
   },
 ];
