@@ -1,12 +1,9 @@
 import * as React from "react";
-import { Dimensions } from "react-native";
 import { Box } from "native-base";
 import { grayBoxColor, violetColor } from "../Colors/colors";
+import { DimensionsWidth, DimensionsHeight } from "../Dimensions/Dimensions";
 
 export default function BoxContainer(props) {
-  const DimensionsWidth = Dimensions.get("window").width;
-  const DimensionsHeight = Dimensions.get("window").height;
-
   const marginLR = 20;
   const scale = 1.3;
 

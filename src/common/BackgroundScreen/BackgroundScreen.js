@@ -1,15 +1,13 @@
 import * as React from "react";
-import { Dimensions, ImageBackground, ScrollView } from "react-native";
+import { ImageBackground, ScrollView } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { DimensionsWidth, DimensionsHeight } from "../Dimensions/Dimensions";
 import {
   blueValueOfGradientColor,
   grayValueOfGradientColor,
 } from "../Colors/colors";
 
 function BackgroundScreen(props) {
-  const DimensionsHeight = Dimensions.get("window").height;
-  const DimensionsWidth = Dimensions.get("window").width;
-
   return (
     <>
       {props.isScrollView ? (

@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Button, Text, View } from "native-base";
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet } from "react-native";
+import { DimensionsWidth, DimensionsHeight } from "../Dimensions/Dimensions";
 import IconForward from "../IconForward/IconForward";
 import routes from "../../routing/routes";
 import { useNavigation } from "@react-navigation/native";
@@ -34,9 +35,6 @@ export default function ButtonCustom(props) {
     </>
   );
 }
-
-const DimensionsHeight = Dimensions.get("window").height;
-const DimensionsWidth = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
   container: {

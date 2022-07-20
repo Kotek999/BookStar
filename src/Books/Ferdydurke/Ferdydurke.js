@@ -1,7 +1,11 @@
 import * as React from "react";
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { View } from "native-base";
 import { whiteColor } from "../../common/Colors/colors";
+import {
+  DimensionsWidth,
+  DimensionsHeight,
+} from "../../common/Dimensions/Dimensions";
 import BackgroundScreen from "../../common/BackgroundScreen/BackgroundScreen";
 import CardThemeForBooks from "./CardThemeForBooks/CardThemeForBooks";
 
@@ -18,9 +22,6 @@ const Ferdydurke = () => {
 };
 
 export default Ferdydurke;
-
-const DimensionsHeight = Dimensions.get("window").height;
-const DimensionsWidth = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
   container: {

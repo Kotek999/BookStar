@@ -1,10 +1,14 @@
 import * as React from "react";
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { View, Text, Image, NativeBaseProvider, Center } from "native-base";
 import { blackColor, whiteColor } from "../common/Colors/colors";
 import { data } from "./data";
 import BackgroundScreen from "../common/BackgroundScreen/BackgroundScreen";
 import ButtonCustom from "../common/ButtonCustom/ButtonCustom";
+import {
+  DimensionsWidth,
+  DimensionsHeight,
+} from "../common/Dimensions/Dimensions";
 
 const logo = require("../assets/LogoBookStar.png");
 
@@ -32,9 +36,6 @@ const HomeScreen = () => {
 };
 
 export default HomeScreen;
-
-const DimensionsHeight = Dimensions.get("window").height;
-const DimensionsWidth = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
   container: {

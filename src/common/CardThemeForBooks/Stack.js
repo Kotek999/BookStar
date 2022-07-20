@@ -1,8 +1,9 @@
 import * as React from "react";
 import { Stack, Heading, Text, ScrollView } from "native-base";
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet } from "react-native";
 import { dataPT } from "../../Books/DataBooks/dataPT";
 import { WebDivider } from "../BookDivider/WebDivider";
+import { DimensionsHeight } from "../Dimensions/Dimensions";
 import MapMainContent from "../Maps/MapMainContent";
 import MapThemes from "../Maps/MapThemes";
 import MapHeroes from "../Maps/MapHeroes";
@@ -16,8 +17,6 @@ import {
 } from "../Colors/colors";
 
 export default function StackContainer() {
-  const DimensionsHeight = Dimensions.get("window").height;
-
   return (
     <ScrollView style={styles.scroll}>
       <Stack p="4" space={3} padding={6}>
@@ -102,7 +101,6 @@ export default function StackContainer() {
   );
 }
 
-const DimensionsHeight = Dimensions.get("window").height;
 const marginTB = 40;
 const marginLogo = 130;
 

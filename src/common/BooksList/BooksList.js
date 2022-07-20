@@ -11,7 +11,7 @@ import {
 } from "native-base";
 import { data, booksData } from "../../BooksChoice/data";
 import { View } from "native-base";
-import { Dimensions } from "react-native";
+import { DimensionsWidth, DimensionsHeight } from "../Dimensions/Dimensions";
 import {
   whiteColor,
   grayBoxColor,
@@ -22,9 +22,6 @@ import {
 } from "../Colors/colors";
 
 const BooksList = () => {
-  const DimensionsHeight = Dimensions.get("window").height;
-  const DimensionsWidth = Dimensions.get("window").width;
-
   return (
     <Box width={DimensionsWidth} height={DimensionsHeight / 1.2}>
       <Heading size="sm" mb="2" color={whiteColor} margin={0} padding={5}>

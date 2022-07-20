@@ -1,6 +1,10 @@
 import * as React from "react";
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { View } from "native-base";
+import {
+  DimensionsWidth,
+  DimensionsHeight,
+} from "../common/Dimensions/Dimensions";
 import BooksList from "../common/BooksList/BooksList";
 import BackgroundScreen from "../common/BackgroundScreen/BackgroundScreen";
 
@@ -17,9 +21,6 @@ const BooksChoice = () => {
 };
 
 export default BooksChoice;
-
-const DimensionsHeight = Dimensions.get("window").height;
-const DimensionsWidth = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
   container: {

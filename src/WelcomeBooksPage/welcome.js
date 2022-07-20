@@ -1,11 +1,15 @@
 import * as React from "react";
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { Box, Heading, View } from "native-base";
 import { data } from "./data";
 import { blackColor, whiteColor } from "../common/Colors/colors";
 import BackgroundScreen from "../common/BackgroundScreen/BackgroundScreen";
 import WelcomeContentText from "../common/WelcomeContentText/WelcomeContentText";
 import ButtonCustom from "../common/ButtonCustom/ButtonCustom";
+import {
+  DimensionsWidth,
+  DimensionsHeight,
+} from "../common/Dimensions/Dimensions";
 
 const Welcome = () => {
   return (
@@ -24,9 +28,6 @@ const Welcome = () => {
 };
 
 export default Welcome;
-
-const DimensionsHeight = Dimensions.get("window").height;
-const DimensionsWidth = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
   container: {

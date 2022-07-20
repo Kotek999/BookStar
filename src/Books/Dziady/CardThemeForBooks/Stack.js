@@ -1,8 +1,9 @@
 import * as React from "react";
 import { Stack, Heading, Text, ScrollView } from "native-base";
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet } from "react-native";
 import { dataDZIII } from "../../DataBooks/dataDZIII";
 import { WebDivider } from "../../../common/BookDivider/WebDivider";
+import { DimensionsHeight } from "../../../common/Dimensions/Dimensions";
 import {
   violetColor,
   violetDarkColor,
@@ -17,8 +18,6 @@ import TimeWrapper from "../../../common/Time/TimeWrapper";
 import isWEB from "../../../common/Resolutions/isWEB";
 
 export default function StackContainer() {
-  const DimensionsHeight = Dimensions.get("window").height;
-
   return (
     <ScrollView style={styles.scroll}>
       <Stack p="4" space={3} padding={6}>
@@ -102,7 +101,6 @@ export default function StackContainer() {
   );
 }
 
-const DimensionsHeight = Dimensions.get("window").height;
 const marginTB = 40;
 const marginLogo = 130;
 
