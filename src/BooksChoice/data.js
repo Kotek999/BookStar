@@ -3,6 +3,7 @@ import routes from "../routing/routes";
 export const data = {
   title: "Wybierz lekturę jaka Ciebie interesuje:",
   authors: "Powered by BookStar 2022",
+  avatar: "Book_Avatar",
 };
 
 export const booksData = [

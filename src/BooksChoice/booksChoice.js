@@ -10,7 +10,7 @@ import BackgroundScreen from "../common/BackgroundScreen/BackgroundScreen";
 
 const BooksChoice = () => {
   return (
-    <BackgroundScreen isScrollView={false}>
+    <BackgroundScreen isScrollView={true}>
       <View style={styles.container}>
         <View style={styles.listContainer}>
           <BooksList />

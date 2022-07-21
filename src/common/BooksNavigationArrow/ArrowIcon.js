@@ -2,7 +2,7 @@ import * as React from "react";
 import RightArrowIconEntypo from "react-native-vector-icons/Entypo";
 import { pinkNavigateArrowColor } from "../Colors/colors";
 
-const FerdydurkeBook = () => {
+const ArrowIcon = () => {
   return (
     <RightArrowIconEntypo
       name="paper-plane"
@@ -12,4 +12,4 @@ const FerdydurkeBook = () => {
   );
 };
 
-export default FerdydurkeBook;
+export default ArrowIcon;

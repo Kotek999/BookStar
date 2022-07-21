@@ -19,5 +19,6 @@ export const grayListDarkTextColor = "warmGray.600";
 export const pinkBreakLineColor = "violet";
 export const blueValueOfGradientColor = "#373837";
 export const grayValueOfGradientColor = "#272ba1";
+export const grayDescriptionColor = "#9B9B9B";
 
 
