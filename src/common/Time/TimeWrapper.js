@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Stack, HStack, Text } from "native-base";
 import { dataCommon } from "../../Books/DataBooks/dataCommon";
-import { StarDivider } from "../StarDivider/StarDivider";
+import { WebDivider } from "../StarDivider/WebDivider";
 import { grayTimeColor, grayTimeDarkColor } from "../Colors/colors";
 import TimeLogic from "./TimeLogic";
 
@@ -10,7 +10,7 @@ export default function TimeWrapper(props) {
     <>
       {props.isMarginExist ? (
         <Stack marginTop={0}>
-          <StarDivider />
+          <WebDivider />
           <HStack
             alignItems="center"
             space={4}
@@ -46,7 +46,7 @@ export default function TimeWrapper(props) {
         </Stack>
       ) : (
         <Stack marginTop={0}>
-          <StarDivider />
+          <WebDivider/>
           <HStack
             alignItems="center"
             space={4}

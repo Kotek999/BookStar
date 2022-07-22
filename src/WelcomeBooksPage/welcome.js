@@ -1,11 +1,12 @@
 import * as React from "react";
 import { StyleSheet } from "react-native";
-import { Box, Heading, View } from "native-base";
+import { Box, Heading, View, Image } from "native-base";
 import { data } from "./data";
 import { blackColor, whiteColor } from "../common/Colors/colors";
 import BackgroundScreen from "../common/BackgroundScreen/BackgroundScreen";
 import WelcomeContentText from "../common/WelcomeContentText/WelcomeContentText";
 import ButtonCustom from "../common/ButtonCustom/ButtonCustom";
+import starIcon from "../assets/star.png";
 import {
   DimensionsWidth,
   DimensionsHeight,
@@ -18,6 +19,8 @@ const Welcome = () => {
         <Box style={styles.contentContainer}>
           <Heading size="xl" color={whiteColor}>
             {data.title}
+            {" "}
+            <Image source={starIcon} alt="star" style={styles.starIcon} />
           </Heading>
           <WelcomeContentText />
         </Box>
@@ -32,12 +35,11 @@ export default Welcome;
 const styles = StyleSheet.create({
   container: {
     width: DimensionsWidth,
-    height: DimensionsHeight * 1.6,
+    height: DimensionsHeight,
     flexDirection: "column",
-    justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
-    marginTop: 0,
+    marginTop: 80,
   },
   contentContainer: {
     margin: 0,
@@ -45,4 +47,8 @@ const styles = StyleSheet.create({
     shadowColor: blackColor,
     shadowOpacity: 0.3,
   },
+  starIcon: {
+    width: 35,
+    height: 35,
+  }
 });

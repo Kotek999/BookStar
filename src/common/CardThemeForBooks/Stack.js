@@ -2,7 +2,7 @@ import * as React from "react";
 import { Stack, Heading, Text, ScrollView } from "native-base";
 import { StyleSheet } from "react-native";
 import { dataPT } from "../../Books/DataBooks/dataPT";
-import { StarDivider } from "../StarDivider/StarDivider";
+import { WebDivider } from "../StarDivider/WebDivider";
 import { DimensionsHeight } from "../Dimensions/Dimensions";
 import MapMainContent from "../Maps/MapMainContent";
 import MapThemes from "../Maps/MapThemes";
@@ -88,7 +88,7 @@ export default function StackContainer() {
             ))}
           </Text>
         </Stack>
-        <StarDivider />
+        <WebDivider />
         <MapThemes isThemesPT={true} />
         <MapHeroes isHeroesPT={true} />
         {isWEB() && DimensionsHeight > 700 ? (

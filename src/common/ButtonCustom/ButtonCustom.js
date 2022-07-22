@@ -39,15 +39,13 @@ export default function ButtonCustom(props) {
 const styles = StyleSheet.create({
   container: {
     width: DimensionsWidth,
-    height: DimensionsHeight,
     flexDirection: "column",
     alignItems: "center",
     alignContent: "center",
-    marginTop: 60,
   },
   button: {
     width: 155,
-    height: DimensionsHeight / 18,
+    height: 40,
     margin: 20,
     borderColor: whiteColor,
     borderWidth: 1,

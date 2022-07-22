@@ -13,7 +13,7 @@ const BooksList = () => {
   const navigation = useNavigation();
 
   return (
-    <Box width={DimensionsWidth} height={DimensionsHeight}>
+    <Box>
       <Heading size="sm" mb="2" color={whiteColor} margin={0} padding={5}>
         {data.title}
       </Heading>
@@ -50,8 +50,8 @@ const BooksList = () => {
           })}
         </View>
       </View>
-      <View style={styles.copyrightContainer} marginTop={30}>
-        <Heading size="sm" mb="0" color="#cccccc" marginTop={0} padding={3}>
+      <View style={styles.copyrightContainer} marginTop={6}>
+        <Heading size="sm" mb="0" color="#cccccc">
           &copy; {data.authors} &copy;
         </Heading>
       </View>

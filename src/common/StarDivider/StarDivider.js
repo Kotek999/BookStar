@@ -2,7 +2,7 @@ import * as React from "react";
 import { StyleSheet } from "react-native";
 import { Stack, Text, Divider, Image } from "native-base";
 import { grayColor, whiteColor, pinkBreakLineColor } from "../Colors/colors";
-import starIcon from "../../assets/star4.png";
+import starIcon from "../../assets/star.png";
 import isIOS from "../Resolutions/isIOS";
 
 export const StarDivider = () => {
