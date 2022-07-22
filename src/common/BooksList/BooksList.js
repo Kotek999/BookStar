@@ -34,7 +34,7 @@ const BooksList = () => {
                         <Avatar
                           size="50px"
                           alt={data.avatar}
-                          source={{ uri: item.avatarUrl }}
+                          source={item.avatarUrl}
                         />
                       </View>
                     )}
