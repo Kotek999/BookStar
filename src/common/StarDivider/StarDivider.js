@@ -3,12 +3,15 @@ import { StyleSheet } from "react-native";
 import { Stack, Text, Divider, Image } from "native-base";
 import { grayColor, whiteColor, pinkBreakLineColor } from "../Colors/colors";
 import starIcon from "../../assets/star4.png";
+import isIOS from "../Resolutions/isIOS";
 
 export const StarDivider = () => {
   return (
     <Stack style={styles.lineContainer}>
       <Divider style={styles.breakline} />
-      <Text style={styles.starIconContainer}>
+      <Text
+        style={isIOS() ? styles.starIconContainerIOS : styles.starIconContainerAndroid}
+      >
         <Image source={starIcon} alt="star" style={styles.starIcon} />
       </Text>
     </Stack>
@@ -25,15 +28,22 @@ const styles = StyleSheet.create({
     height: 1.5,
     backgroundColor: pinkBreakLineColor,
   },
-  starIconContainer: {
+  starIconContainerAndroid: {
     textAlign: "center",
     alignSelf: "center",
     width: 40,
     marginTop: -22,
     height: 30,
     color: grayColor,
-    fontSize: 10,
-    letterSpacing: 1.25,
+    backgroundColor: whiteColor,
+  },
+  starIconContainerIOS: {
+    textAlign: "center",
+    alignSelf: "center",
+    width: 30,
+    marginTop: -17,
+    height: 30,
+    color: grayColor,
     backgroundColor: whiteColor,
   },
   starIcon: {

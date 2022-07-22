@@ -2,7 +2,7 @@ import * as React from "react";
 import { Stack, Heading, Text, ScrollView } from "native-base";
 import { StyleSheet } from "react-native";
 import { dataDZIII } from "../../DataBooks/dataDZIII";
-import { WebDivider } from "../../../common/BookDivider/WebDivider";
+import { StarDivider } from "../../../common/StarDivider/StarDivider";
 import { DimensionsHeight } from "../../../common/Dimensions/Dimensions";
 import {
   violetColor,
@@ -88,7 +88,7 @@ export default function StackContainer() {
             ))}
           </Text>
         </Stack>
-        <WebDivider />
+        <StarDivider />
         <MapThemes isThemesDZIII={true} />
         <MapHeroes isHeroesDZIII={true} />
         {isWEB() && DimensionsHeight > 700 ? (

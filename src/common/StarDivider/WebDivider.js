@@ -2,7 +2,7 @@ import * as React from "react";
 import { StyleSheet } from "react-native";
 import { DimensionsHeight } from "../Dimensions/Dimensions";
 import { Divider } from "native-base";
-import { StarDivider } from "./BookDivider";
+import { StarDivider } from "./StarDivider";
 import { pinkBreakLineColor } from "../Colors/colors";
 import isWEB from "../Resolutions/isWEB";
 
