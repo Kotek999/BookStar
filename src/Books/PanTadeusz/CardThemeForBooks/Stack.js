@@ -1,20 +1,20 @@
 import * as React from "react";
 import { Stack, Heading, Text, ScrollView } from "native-base";
 import { StyleSheet } from "react-native";
-import { dataPT } from "../../Books/DataBooks/dataPT";
-import { WebDivider } from "../StarDivider/WebDivider";
-import { DimensionsHeight } from "../Dimensions/Dimensions";
-import MapMainContent from "../Maps/MapMainContent";
-import MapThemes from "../Maps/MapThemes";
-import MapHeroes from "../Maps/MapHeroes";
-import TimeWrapper from "../Time/TimeWrapper";
-import isWEB from "../Resolutions/isWEB";
+import { dataPT } from "../../../Books/DataBooks/dataPT";
+import { WebDivider } from "../../../common/StarDivider/WebDivider";
+import { DimensionsHeight } from "../../../common/Dimensions/Dimensions";
+import MapMainContent from "../../../common/Maps/MapMainContent";
+import MapThemes from "../../../common/Maps/MapThemes";
+import MapHeroes from "../../../common/Maps/MapHeroes";
+import TimeWrapper from "../../../common/Time/TimeWrapper";
+import isWEB from "../../../common/Resolutions/isWEB";
 import {
   whiteColor,
   grayTitleColor,
   grayTitleDarkColor,
   violetColor,
-} from "../Colors/colors";
+} from "../../../common/Colors/colors";
 
 export default function StackContainer() {
   return (

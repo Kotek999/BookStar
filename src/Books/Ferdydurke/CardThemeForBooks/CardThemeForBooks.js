@@ -16,7 +16,9 @@ function CardThemeForBooks() {
     <BackgroundScreen
     // isScrollView = {true or false } - przywraca ogólny scroll
     >
-      <View style={styles.container}>
+      <View style={
+          isWEB() && DimensionsHeight > 700 ? styles.margin : styles.container
+        }>
         <Box alignItems="center">
           <BoxContainer>
             <Box>
@@ -48,6 +50,9 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     alignContent: "center",
+    marginTop: 0,
+  },
+  margin: {
     marginTop: 40,
   },
 });

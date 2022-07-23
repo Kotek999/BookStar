@@ -7,7 +7,7 @@ import {
 } from "../../common/Dimensions/Dimensions";
 import { whiteColor } from "../../common/Colors/colors";
 import BackgroundScreen from "../../common/BackgroundScreen/BackgroundScreen";
-import CardThemeForBooks from "../../common/CardThemeForBooks/CardThemeForBooks";
+import CardThemeForBooks from "../PanTadeusz/CardThemeForBooks/CardThemeForBooks";
 
 const PanTadeusz = () => {
   return (

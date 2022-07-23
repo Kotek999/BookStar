@@ -1,19 +1,26 @@
 import * as React from "react";
 import { StyleSheet, ImageBackground } from "react-native";
-import { DimensionsWidth, DimensionsHeight } from "../Dimensions/Dimensions";
+import {
+  DimensionsWidth,
+  DimensionsHeight,
+} from "../../../common/Dimensions/Dimensions";
 import { Box, View, AspectRatio } from "native-base";
-import BackgroundScreen from "../../common/BackgroundScreen/BackgroundScreen";
+import BackgroundScreen from "../../../common/BackgroundScreen/BackgroundScreen";
 import BoxContainer from "./Box";
 import CenterContainer from "./Center";
 import StackContainer from "./Stack";
-import isWEB from "../Resolutions/isWEB";
+import isWEB from "../../../common/Resolutions/isWEB";
 
 function CardThemeForBooks() {
   return (
     <BackgroundScreen
     // isScrollView = {true or false } - przywraca ogólny scroll
     >
-      <View style={styles.container}>
+      <View
+        style={
+          isWEB() && DimensionsHeight > 700 ? styles.margin : styles.container
+        }
+      >
         <Box alignItems="center">
           <BoxContainer>
             <Box>
@@ -22,7 +29,7 @@ function CardThemeForBooks() {
                 ratio={isWEB() && DimensionsHeight > 700 ? 0 : 16 / 9}
               >
                 <ImageBackground
-                  source={require("../../assets/imagePT.jpeg")}
+                  source={require("../../../assets/imagePT.jpeg")}
                   alt="image"
                 />
               </AspectRatio>
@@ -45,6 +52,9 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     alignContent: "center",
+    marginTop: 0,
+  },
+  margin: {
     marginTop: 40,
   },
 });

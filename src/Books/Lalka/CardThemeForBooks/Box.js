@@ -5,17 +5,21 @@ import {
   DimensionsHeight,
 } from "../../../common/Dimensions/Dimensions";
 import { grayBoxColor, violetColor } from "../../../common/Colors/colors";
+import isWEB from "../../../common/Resolutions/isWEB";
 
 export default function BoxContainer(props) {
-  const marginLR = 20;
+  const marginLR = 80;
   const scale = 1.3;
 
   return (
     <Box
       {...props}
-      maxWidth={DimensionsWidth - marginLR}
-      maxHeight={DimensionsHeight / scale}
-      rounded="xl"
+      maxWidth={DimensionsWidth}
+      maxHeight={
+        isWEB() && DimensionsHeight > 700
+          ? DimensionsHeight / scale
+          : DimensionsHeight - marginLR
+      }
       overflow="hidden"
       _dark={{
         borderColor: grayBoxColor,
