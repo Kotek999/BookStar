@@ -1,7 +1,7 @@
 import React from "react";
-import { Box, Heading, Avatar, View, Divider } from "native-base";
+import { Box, Heading, Avatar, View } from "native-base";
 import { data, booksData } from "../../BooksChoice/data";
-import { DimensionsWidth, DimensionsHeight } from "../Dimensions/Dimensions";
+import { DimensionsHeight } from "../Dimensions/Dimensions";
 import { whiteColor, grayColor, grayDescriptionColor } from "../Colors/colors";
 import { useNavigation } from "@react-navigation/native";
 import { List } from "react-native-paper";
