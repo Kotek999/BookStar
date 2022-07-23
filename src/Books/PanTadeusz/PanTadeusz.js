@@ -32,13 +32,4 @@ const styles = StyleSheet.create({
     alignContent: "center",
     marginTop: 0,
   },
-  contentContainer: {
-    width: DimensionsWidth,
-    height: DimensionsHeight / 3.3,
-    margin: 0,
-    padding: 20,
-    shadowColor: whiteColor,
-    shadowOpacity: 0.1,
-    shadowRadius: 10,
-  },
 });

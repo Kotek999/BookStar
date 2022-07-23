@@ -4,7 +4,7 @@ import {
   DimensionsWidth,
   DimensionsHeight,
 } from "../../../common/Dimensions/Dimensions";
-import { Box, View, AspectRatio } from "native-base";
+import { Box, View, AspectRatio, Text } from "native-base";
 import BackgroundScreen from "../../../common/BackgroundScreen/BackgroundScreen";
 import BoxContainer from "./Box";
 import CenterContainer from "./Center";
@@ -24,6 +24,7 @@ function CardThemeForBooks() {
         <Box alignItems="center">
           <BoxContainer>
             <Box>
+              <CenterContainer />
               <AspectRatio
                 w="100%"
                 ratio={isWEB() && DimensionsHeight > 700 ? 0 : 16 / 9}
@@ -33,7 +34,6 @@ function CardThemeForBooks() {
                   alt="image"
                 />
               </AspectRatio>
-              <CenterContainer />
             </Box>
             <StackContainer />
           </BoxContainer>
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     alignContent: "center",
-    marginTop: 0,
+    marginTop: 25,
   },
   margin: {
     marginTop: 40,

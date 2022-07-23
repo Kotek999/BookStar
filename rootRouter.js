@@ -29,7 +29,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.HomeScreen}
             options={{
-              headerShown: true,
+              headerShown: false,
               headerStyle: {
                 backgroundColor: whiteColor,
               },
@@ -44,6 +44,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.WelcomeBooksPage}
             options={{
+              headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
               },
@@ -53,6 +54,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.BooksChoice}
             options={{
+              headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
               },
@@ -62,7 +64,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.PanTadeusz}
             options={{
-              headerShown: true,
+              headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
               },

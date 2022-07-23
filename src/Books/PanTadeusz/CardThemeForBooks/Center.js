@@ -4,8 +4,8 @@ import CardLogo from "../../../common/CardLogo/CardLogo";
 
 export default function CenterContainer() {
   return (
-    <View alignItems="center" height={8}>
-      <CardLogo />
-    </View>
+      <View alignItems="center" height={10}>
+        <CardLogo />
+      </View>
   );
 }

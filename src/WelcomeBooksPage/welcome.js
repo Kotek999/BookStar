@@ -37,9 +37,10 @@ const styles = StyleSheet.create({
     width: DimensionsWidth,
     height: DimensionsHeight,
     flexDirection: "column",
+    justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
-    marginTop: 80,
+    marginTop: 0,
   },
   contentContainer: {
     margin: 0,

@@ -25,11 +25,12 @@ export default BooksChoice;
 const styles = StyleSheet.create({
   container: {
     width: DimensionsWidth,
-    height: DimensionsHeight + 60,
+    height: DimensionsHeight,
     flexDirection: "column",
+    justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
-    marginTop: 0,
+    marginTop: 60,
   },
   listContainer: {
     width: DimensionsWidth,
