@@ -74,7 +74,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.Dziady}
             options={{
-              headerShown: true,
+              headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
               },
@@ -84,7 +84,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.Lalka}
             options={{
-              headerShown: true,
+              headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
               },
@@ -94,7 +94,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.Ferdydurke}
             options={{
-              headerShown: true,
+              headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
               },
@@ -104,7 +104,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.Wesele}
             options={{
-              headerShown: true,
+              headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
               },

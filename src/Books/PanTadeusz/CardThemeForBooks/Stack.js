@@ -105,6 +105,7 @@ const marginTB = 40;
 
 const styles = StyleSheet.create({
   scroll: {
+    marginTop: -1,
     marginBottom: DimensionsHeight / marginTB,
     padding: 0,
     backgroundColor: whiteColor,

@@ -5,7 +5,6 @@ import {
   DimensionsWidth,
   DimensionsHeight,
 } from "../../common/Dimensions/Dimensions";
-import { whiteColor } from "../../common/Colors/colors";
 import BackgroundScreen from "../../common/BackgroundScreen/BackgroundScreen";
 import CardThemeForBooks from "../PanTadeusz/CardThemeForBooks/CardThemeForBooks";
 

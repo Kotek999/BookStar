@@ -8,7 +8,7 @@ import { grayBoxColor, violetColor } from "../../../common/Colors/colors";
 import isWEB from "../../../common/Resolutions/isWEB";
 
 export default function BoxContainer(props) {
-  const marginLR = 80;
+  const marginLR = 25;
   const scale = 1.3;
 
   return (

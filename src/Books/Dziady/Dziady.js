@@ -1,7 +1,6 @@
 import * as React from "react";
 import { StyleSheet } from "react-native";
 import { View } from "native-base";
-import { whiteColor } from "../../common/Colors/colors";
 import {
   DimensionsWidth,
   DimensionsHeight,
@@ -30,14 +29,5 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "center",
     marginTop: 0,
-  },
-  contentContainer: {
-    width: DimensionsWidth,
-    height: DimensionsHeight / 3.3,
-    margin: 0,
-    padding: 20,
-    shadowColor: whiteColor,
-    shadowOpacity: 0.1,
-    shadowRadius: 10,
   },
 });

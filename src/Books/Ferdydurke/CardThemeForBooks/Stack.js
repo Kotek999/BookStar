@@ -102,12 +102,10 @@ export default function StackContainer() {
 }
 
 const marginTB = 40;
-const marginLogo = 130;
 
 const styles = StyleSheet.create({
   scroll: {
-    height: DimensionsHeight,
-    marginTop: DimensionsHeight / marginLogo,
+    marginTop: -1,
     marginBottom: DimensionsHeight / marginTB,
     padding: 0,
     backgroundColor: whiteColor,

@@ -16,12 +16,15 @@ function CardThemeForBooks() {
     <BackgroundScreen
     // isScrollView = {true or false } - przywraca ogólny scroll
     >
-      <View style={
+      <View
+        style={
           isWEB() && DimensionsHeight > 700 ? styles.margin : styles.container
-        }>
+        }
+      >
         <Box alignItems="center">
           <BoxContainer>
             <Box>
+              <CenterContainer />
               <AspectRatio
                 w="100%"
                 ratio={isWEB() && DimensionsHeight > 700 ? 0 : 16 / 9}
@@ -31,7 +34,6 @@ function CardThemeForBooks() {
                   alt="image"
                 />
               </AspectRatio>
-              <CenterContainer />
             </Box>
             <StackContainer />
           </BoxContainer>
@@ -50,7 +52,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     alignContent: "center",
-    marginTop: 0,
+    marginTop: 25,
   },
   margin: {
     marginTop: 40,
