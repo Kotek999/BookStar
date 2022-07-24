@@ -50,11 +50,6 @@ const BooksList = () => {
           })}
         </View>
       </View>
-      <View style={styles.copyrightContainer} marginTop={6}>
-        <Heading size="sm" mb="0" color="#cccccc">
-          &copy; {data.authors} &copy;
-        </Heading>
-      </View>
     </Box>
   );
 };
@@ -83,10 +78,5 @@ const styles = StyleSheet.create({
   arrowIconContainer: {
     justifyContent: "center",
     marginRight: 6,
-  },
-  copyrightContainer: {
-    marginBottom: 10,
-    justifyContent: "center",
-    alignItems: "center",
   },
 });

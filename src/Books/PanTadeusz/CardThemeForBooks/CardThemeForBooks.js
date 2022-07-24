@@ -4,7 +4,8 @@ import {
   DimensionsWidth,
   DimensionsHeight,
 } from "../../../common/Dimensions/Dimensions";
-import { Box, View, AspectRatio, Text } from "native-base";
+import { Box, View, AspectRatio } from "native-base";
+import Copyright from "../../../common/CopyrightModule/Copyright";
 import BackgroundScreen from "../../../common/BackgroundScreen/BackgroundScreen";
 import BoxContainer from "./Box";
 import CenterContainer from "./Center";
@@ -36,6 +37,7 @@ function CardThemeForBooks() {
               </AspectRatio>
             </Box>
             <StackContainer />
+            <Copyright />
           </BoxContainer>
         </Box>
       </View>

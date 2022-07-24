@@ -8,9 +8,8 @@ const logo = require("../../assets/LogoBookStar.png");
 
 export default function CardLogo() {
   return (
-    <View> 
-      {/* flexDirection="row" width={100} */}
-      {/* <ArrowIcon /> */}
+    <View style={styles.container}>
+      <ArrowIcon isBack={true} />
       <Image
         source={logo}
         style={styles.logo}
@@ -22,6 +21,14 @@ export default function CardLogo() {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    alignSelf: "center",
+    width: "150%",
+    justifyContent: "space-around",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignItems: "flex-start",
+  },
   logo: {
     marginTop: 4,
     width: 90,

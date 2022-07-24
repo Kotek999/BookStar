@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box } from "native-base";
+import { Box, Text } from "native-base";
 import {
   DimensionsWidth,
   DimensionsHeight,

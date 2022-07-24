@@ -101,7 +101,7 @@ export default function StackContainer() {
   );
 }
 
-const marginTB = 40;
+const marginTB = 90;
 
 const styles = StyleSheet.create({
   scroll: {

@@ -64,6 +64,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.PanTadeusz}
             options={{
+              animation: "slide_from_right",
               headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
@@ -74,6 +75,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.Dziady}
             options={{
+              animation: "slide_from_right",
               headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
@@ -84,6 +86,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.Lalka}
             options={{
+              animation: "slide_from_right",
               headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
@@ -94,6 +97,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.Ferdydurke}
             options={{
+              animation: "slide_from_right",
               headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
@@ -104,6 +108,7 @@ function rootRouter() {
           <RootStack.Screen
             name={routes.Wesele}
             options={{
+              animation: "slide_from_right",
               headerShown: false,
               headerTitleStyle: {
                 fontWeight: "bold",
