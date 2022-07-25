@@ -11,7 +11,6 @@ import CardThemeForBooksWS from "../../Books/Wesele/CardThemeForBooks/CardThemeF
 import isWEB from "../Resolutions/isWEB";
 
 export default function WebRule(props) {
-  // isScrollView = {true or false} - przywraca ogólny scroll
   return (
     <>
       {props.isCardPT && (

@@ -8,7 +8,7 @@ import { Box, View, AspectRatio } from "native-base";
 import Copyright from "../../../common/CopyrightModule/Copyright";
 import BackgroundScreen from "../../../common/BackgroundScreen/BackgroundScreen";
 import BoxContainer from "../../../common/CardBoxContainer/CardBoxContainer";
-import CenterContainer from "./Center";
+import CenterContainer from "../../../common/CardCenterContainer/CardCenterContainer";
 import StackContainer from "./Stack";
 import isWEB from "../../../common/Resolutions/isWEB";
 import isIOS from "../../../common/Resolutions/isIOS";
