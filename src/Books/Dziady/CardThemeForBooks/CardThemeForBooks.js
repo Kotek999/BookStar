@@ -7,10 +7,11 @@ import {
 } from "../../../common/Dimensions/Dimensions";
 import Copyright from "../../../common/CopyrightModule/Copyright";
 import BackgroundScreen from "../../../common/BackgroundScreen/BackgroundScreen";
-import BoxContainer from "./Box";
+import BoxContainer from "../../../common/CardBoxContainer/CardBoxContainer";
 import CenterContainer from "./Center";
 import StackContainer from "./Stack";
 import isWEB from "../../../common/Resolutions/isWEB";
+import isIOS from "../../../common/Resolutions/isIOS";
 
 function CardThemeForBooks() {
   return (
@@ -19,7 +20,11 @@ function CardThemeForBooks() {
     >
       <View
         style={
-          isWEB() && DimensionsHeight > 700 ? styles.margin : styles.container
+          isWEB() && DimensionsHeight > 700
+            ? styles.margin
+            : styles.container && isIOS()
+            ? styles.containerIOS
+            : styles.container
         }
       >
         <Box alignItems="center">
@@ -55,6 +60,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "center",
     marginTop: 25,
+  },
+  containerIOS: {
+    marginTop: 0,
   },
   margin: {
     marginTop: 40,

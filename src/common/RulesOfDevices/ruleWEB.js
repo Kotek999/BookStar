@@ -3,7 +3,11 @@ import { StyleSheet } from "react-native";
 import { View } from "native-base";
 import { DimensionsWidth, DimensionsHeight } from "../Dimensions/Dimensions";
 import BackgroundScreen from "../BackgroundScreen/BackgroundScreen";
-import CardThemeForBooks from "../../Books/PanTadeusz/CardThemeForBooks/CardThemeForBooks";
+import CardThemeForBooksPT from "../../Books/PanTadeusz/CardThemeForBooks/CardThemeForBooks";
+import CardThemeForBooksDZIII from "../../Books/Dziady/CardThemeForBooks/CardThemeForBooks";
+import CardThemeForBooksLL from "../../Books/Lalka/CardThemeForBooks/CardThemeForBooks";
+import CardThemeForBooksFD from "../../Books/Ferdydurke/CardThemeForBooks/CardThemeForBooks";
+import CardThemeForBooksWS from "../../Books/Wesele/CardThemeForBooks/CardThemeForBooks";
 import isWEB from "../Resolutions/isWEB";
 
 export default function WebRule(props) {
@@ -15,12 +19,12 @@ export default function WebRule(props) {
           {isWEB() ? (
             <BackgroundScreen>
               <View style={styles.container}>
-                <CardThemeForBooks />
+                <CardThemeForBooksPT />
               </View>
             </BackgroundScreen>
           ) : (
             <View style={styles.container}>
-              <CardThemeForBooks />
+              <CardThemeForBooksPT />
             </View>
           )}
         </>
@@ -30,12 +34,12 @@ export default function WebRule(props) {
           {isWEB() ? (
             <BackgroundScreen>
               <View style={styles.container}>
-                <CardThemeForBooks />
+                <CardThemeForBooksDZIII />
               </View>
             </BackgroundScreen>
           ) : (
             <View style={styles.container}>
-              <CardThemeForBooks />
+              <CardThemeForBooksDZIII />
             </View>
           )}
         </>
@@ -45,12 +49,12 @@ export default function WebRule(props) {
           {isWEB() ? (
             <BackgroundScreen>
               <View style={styles.container}>
-                <CardThemeForBooks />
+                <CardThemeForBooksLL />
               </View>
             </BackgroundScreen>
           ) : (
             <View style={styles.container}>
-              <CardThemeForBooks />
+              <CardThemeForBooksLL />
             </View>
           )}
         </>
@@ -60,12 +64,12 @@ export default function WebRule(props) {
           {isWEB() ? (
             <BackgroundScreen>
               <View style={styles.container}>
-                <CardThemeForBooks />
+                <CardThemeForBooksFD />
               </View>
             </BackgroundScreen>
           ) : (
             <View style={styles.container}>
-              <CardThemeForBooks />
+              <CardThemeForBooksFD />
             </View>
           )}
         </>
@@ -75,12 +79,12 @@ export default function WebRule(props) {
           {isWEB() ? (
             <BackgroundScreen>
               <View style={styles.container}>
-                <CardThemeForBooks />
+                <CardThemeForBooksWS />
               </View>
             </BackgroundScreen>
           ) : (
             <View style={styles.container}>
-              <CardThemeForBooks />
+              <CardThemeForBooksWS />
             </View>
           )}
         </>
