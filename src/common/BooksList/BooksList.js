@@ -60,6 +60,8 @@ const styles = StyleSheet.create({
   listContainer: {
     alignItems: "center",
     justifyContent: "center",
+    paddingTop: 14,
+    paddingBottom: 14,
   },
   title: {
     color: whiteColor,

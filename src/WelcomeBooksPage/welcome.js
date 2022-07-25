@@ -12,11 +12,15 @@ import {
   DimensionsHeight,
 } from "../common/Dimensions/Dimensions";
 
+const gif = require("../assets/book_gif.gif");
+
 const Welcome = () => {
   return (
+    // <iframe src="https://giphy.com/embed/eJEvETAuEly6H7jGaR" width="438" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/book-books-read-eJEvETAuEly6H7jGaR">via GIPHY</a></p>
     <SafeAreaView styles={{ flex: 1 }}>
       <BackgroundScreen isScrollView={true}>
         <View style={styles.container}>
+          <Image style={styles.gif} source={gif} alt="image" />
           <Box style={styles.contentContainer}>
             <Heading size="xl" color={whiteColor}>
               {data.title}{" "}
@@ -45,7 +49,7 @@ const styles = StyleSheet.create({
   },
   contentContainer: {
     margin: 0,
-    padding: 40,
+    padding: 0,
     shadowColor: blackColor,
     shadowOpacity: 0.3,
   },
@@ -53,4 +57,8 @@ const styles = StyleSheet.create({
     width: 35,
     height: 35,
   },
+  gif: {
+    width: 270,
+    height: 300
+  }
 });
