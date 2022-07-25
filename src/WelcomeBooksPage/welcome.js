@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StyleSheet } from "react-native";
+import { SafeAreaView, StyleSheet } from "react-native";
 import { Box, Heading, View, Image } from "native-base";
 import { data } from "./data";
 import { blackColor, whiteColor } from "../common/Colors/colors";
@@ -14,19 +14,20 @@ import {
 
 const Welcome = () => {
   return (
-    <BackgroundScreen isScrollView={true}>
-      <View style={styles.container}>
-        <Box style={styles.contentContainer}>
-          <Heading size="xl" color={whiteColor}>
-            {data.title}
-            {" "}
-            <Image source={starIcon} alt="star" style={styles.starIcon} />
-          </Heading>
-          <WelcomeContentText />
-        </Box>
-        <ButtonCustom value={data.buttonText} isForwardIcon={true} />
-      </View>
-    </BackgroundScreen>
+    <SafeAreaView styles={{ flex: 1 }}>
+      <BackgroundScreen isScrollView={true}>
+        <View style={styles.container}>
+          <Box style={styles.contentContainer}>
+            <Heading size="xl" color={whiteColor}>
+              {data.title}{" "}
+              <Image source={starIcon} alt="star" style={styles.starIcon} />
+            </Heading>
+            <WelcomeContentText />
+          </Box>
+          <ButtonCustom value={data.buttonText} isForwardIcon={true} />
+        </View>
+      </BackgroundScreen>
+    </SafeAreaView>
   );
 };
 
@@ -51,5 +52,5 @@ const styles = StyleSheet.create({
   starIcon: {
     width: 35,
     height: 35,
-  }
+  },
 });

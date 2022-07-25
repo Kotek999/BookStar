@@ -11,37 +11,42 @@ import BoxContainer from "./Box";
 import CenterContainer from "./Center";
 import StackContainer from "./Stack";
 import isWEB from "../../../common/Resolutions/isWEB";
+import isIOS from "../../../common/Resolutions/isIOS";
 
 function CardThemeForBooks() {
   return (
-    <BackgroundScreen
-    // isScrollView = {true or false } - przywraca ogólny scroll
-    >
-      <View
-        style={
-          isWEB() && DimensionsHeight > 700 ? styles.margin : styles.container
-        }
+      <BackgroundScreen
+      // isScrollView = {true or false } - przywraca ogólny scroll
       >
-        <Box alignItems="center">
-          <BoxContainer>
-            <Box>
-              <CenterContainer />
-              <AspectRatio
-                w="100%"
-                ratio={isWEB() && DimensionsHeight > 700 ? 0 : 16 / 9}
-              >
-                <ImageBackground
-                  source={require("../../../assets/imagePT.jpeg")}
-                  alt="image"
-                />
-              </AspectRatio>
-            </Box>
-            <StackContainer />
-            <Copyright />
-          </BoxContainer>
-        </Box>
-      </View>
-    </BackgroundScreen>
+        <View
+          style={
+            isWEB() && DimensionsHeight > 700
+              ? styles.margin
+              : styles.container && isIOS()
+              ? styles.containerIOS
+              : styles.container
+          }
+        >
+          <Box alignItems="center">
+            <BoxContainer>
+              <Box>
+                <CenterContainer />
+                <AspectRatio
+                  w="100%"
+                  ratio={isWEB() && DimensionsHeight > 700 ? 0 : 16 / 9}
+                >
+                  <ImageBackground
+                    source={require("../../../assets/imagePT.jpeg")}
+                    alt="image"
+                  />
+                </AspectRatio>
+              </Box>
+              <StackContainer />
+              <Copyright />
+            </BoxContainer>
+          </Box>
+        </View>
+      </BackgroundScreen>
   );
 }
 
@@ -55,6 +60,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "center",
     marginTop: 25,
+  },
+  containerIOS: {
+    marginTop: 0,
   },
   margin: {
     marginTop: 40,

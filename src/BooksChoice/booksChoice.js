@@ -1,5 +1,6 @@
 import * as React from "react";
-import { StyleSheet } from "react-native";
+import { SafeAreaView, StyleSheet } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { View } from "native-base";
 import {
   DimensionsWidth,
@@ -9,14 +10,18 @@ import BooksList from "../common/BooksList/BooksList";
 import BackgroundScreen from "../common/BackgroundScreen/BackgroundScreen";
 
 const BooksChoice = () => {
+  const insets = useSafeAreaInsets();
+
   return (
-    <BackgroundScreen isScrollView={true}>
-      <View style={styles.container}>
-        <View style={styles.listContainer}>
-          <BooksList />
+    <SafeAreaView styles={{ flex: 1 }}>
+      <BackgroundScreen isScrollView={true} paddingTop={insets.top}>
+        <View style={styles.container}>
+          <View style={styles.listContainer}>
+            <BooksList />
+          </View>
         </View>
-      </View>
-    </BackgroundScreen>
+      </BackgroundScreen>
+    </SafeAreaView>
   );
 };
 
@@ -30,7 +35,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
-    marginTop: 60,
   },
   listContainer: {
     width: DimensionsWidth,
