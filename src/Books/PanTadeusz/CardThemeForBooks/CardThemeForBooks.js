@@ -1,32 +1,21 @@
 import * as React from "react";
-import { StyleSheet, ImageBackground } from "react-native";
-import {
-  DimensionsWidth,
-  DimensionsHeight,
-} from "../../../common/Dimensions/Dimensions";
-import { Box, View, AspectRatio } from "native-base";
+import { ImageBackground } from "react-native";
+import { DimensionsHeight } from "../../../common/Dimensions/Dimensions";
+import { Box, AspectRatio } from "native-base";
 import Copyright from "../../../common/CopyrightModule/Copyright";
 import BackgroundScreen from "../../../common/BackgroundScreen/BackgroundScreen";
 import BoxContainer from "../../../common/CardBoxContainer/CardBoxContainer";
 import CenterContainer from "../../../common/CardCenterContainer/CardCenterContainer";
 import StackContainer from "./Stack";
 import isWEB from "../../../common/Resolutions/isWEB";
-import isIOS from "../../../common/Resolutions/isIOS";
+import IosRule from "../../../common/RulesOfDevices/ruleIOS";
 
 function CardThemeForBooks() {
   return (
     <BackgroundScreen
     // isScrollView = {true or false } - przywraca ogólny scroll
     >
-      <View
-        style={
-          isWEB() && DimensionsHeight > 700
-            ? styles.margin
-            : styles.container && isIOS()
-            ? styles.containerIOS
-            : styles.container
-        }
-      >
+      <IosRule>
         <Box alignItems="center">
           <BoxContainer>
             <Box>
@@ -45,26 +34,9 @@ function CardThemeForBooks() {
             <Copyright />
           </BoxContainer>
         </Box>
-      </View>
+      </IosRule>
     </BackgroundScreen>
   );
 }
 
 export default CardThemeForBooks;
-
-const styles = StyleSheet.create({
-  container: {
-    width: DimensionsWidth,
-    height: DimensionsHeight,
-    flexDirection: "column",
-    alignItems: "center",
-    alignContent: "center",
-    marginTop: 25,
-  },
-  containerIOS: {
-    marginTop: 0,
-  },
-  margin: {
-    marginTop: 40,
-  },
-});
